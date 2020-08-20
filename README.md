@@ -4,9 +4,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 **Status: Work In Progress**
 
-[![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest)[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)]() [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)
-
-
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)]()[![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest)[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
@@ -124,23 +122,23 @@ The `SmUUID` part gets copied to SystemUUID.
 
 ### CPU Power Management
 
-- Recommended additional steps to improve battery life with optimized CPU power management:
+Recommended additional steps to improve battery life with optimized CPU power management:
 
-  - Open Terminal, copy and paste the following command:
+- Open Terminal, copy and paste the following command:
 
-    ```
-    curl -o ~/ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/master/ssdtPRGen.sh
-    chmod +x ~/ssdtPRGen.sh
-    ./ssdtPRGen.sh
-    ```
+  ```
+  curl -o ~/ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/master/ssdtPRGen.sh
+  chmod +x ~/ssdtPRGen.sh
+  ./ssdtPRGen.sh
+  ```
 
-  - A customized SSDT.aml for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
+- A customized SSDT.aml for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
 
-  - Copy the file name SSDT.aml to OC/ACPI/ and reboot
+- Copy the file name SSDT.aml to OC/ACPI/ and reboot
 
 ### WIFI
 
-Inbuilt Intel WiFi won't work out of the box.
+Inbuilt Intel WiFi won't work out of box.
 
 There are some work arounds with BIOS modified:
 
