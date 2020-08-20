@@ -1,10 +1,10 @@
-# X230-OpenCore-Hackintosh
+# X230-Hackintosh
 
 macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 **Status: Work In Progress**
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)]()[![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest)[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)]() [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
