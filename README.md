@@ -67,7 +67,7 @@ Booting is supported using OpenCore
 - [x] Intel Ethernet
 - [x] Keyboard `Volume and brightness hotkeys`
 - [x] SD Card Reader `Fortunately, USB connected`
-- [x] Sound `automatic headphone detection, mute, volume controls fully working`
+- [x] Sound `Automatic headphone detection, mute, volume controls fully working`
 - [x] Touchpad `1-4 fingers swipe works`
 - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
 - [x] USB Ports
