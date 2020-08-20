@@ -16,13 +16,14 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
 | Computer model	    | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i5-3320M                         |
-| Memory              | Micron DDR3L 16GB (8x2) Bus 1867MHz         |
+| Processor           | Intel Core i5-3320M (2 Cores, 4 Threads) |
+| Memory              | Micron 8GB DDR3L 1867MHz     |
 | Hard Disk           | WD Blue 3D 250GB WDS250G2B0A      |
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Monitor             | LG LP125WH2-SLB1 HD IPS 1366x768            |
-| Sound Card          | Realtek ALC269 (layout-id: 18)           |
+| Sound Card          | Realtek ALC269VC (layout-id: 18)         |
 | Wireless Card       | Intel Centrino Advanced-N 6205              |
+| Bluetooth | Broadcom Bluetooth 4.0 |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
 ## Main Software
