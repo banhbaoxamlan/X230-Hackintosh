@@ -1,13 +1,14 @@
-X230-Hackintosh
+# X230-OpenCore-Hackintosh
 
 macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
-Booting is supported using OpenCore
-
 **Status: Work In Progress**
 
-- To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
+[![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest)[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)]() [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)
 
+
+
+- To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
 
 
@@ -91,8 +92,8 @@ A simple method to install a modified BIOS is available [here](https://github.co
 
 ### BIOS settings
 
-| Main | Sub #1 | Sub #2 | Sub #3 | Setting |
-| :------------ | :----------: | ------------- | ------------- | ------------- |
+| Main | Sub #1                                 | Sub #2 | Sub #3 | Setting |
+| :------------ | :----------- | ------------- | ------------- | ------------- |
 | Config | Network | Wake On Lan |  | Disabled |
 |  | Serial ATA (SATA) | Mode |  | AHCI |
 | Advanced | System Agent (SA) configuration | Graphics Configuration | DVMT Pre-Allocated | 128MB |
@@ -135,7 +136,7 @@ The `SmUUID` part gets copied to SystemUUID.
 
   - A customized SSDT.aml for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
 
-  - Copy the file named SSDT.aml to OC/ACPI/ and reboot
+  - Copy the file name SSDT.aml to OC/ACPI/ and reboot
 
 ### WIFI
 
