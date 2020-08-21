@@ -4,7 +4,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 **Status: Work In Progress**
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)]() [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](/) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
@@ -38,8 +38,8 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | Kext                | Version |
 | :------------------ | :------ |
 | AppleALC            | 1.5.1   |
-| Bluetooth_Broadcom  |         |
-| EFICheckDisabler    |         |
+| Bluetooth_Broadcom  | 1.0.0   |
+| EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.3   |
 | Lilu                | 1.4.6   |
 | USBInjectAll        | 0.7.5   |
@@ -61,8 +61,8 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 - [x] Bluetooth
 - [x] Brightness
 - [x] Camera
-- [x] Dock Support `ThinkPad UltraSeries3 and MiniDock Series3`
 - [x] CPU Power Management
+- [x] Dock Support `ThinkPad UltraSeries 3 and MiniDock Series 3`
 - [x] GPU Intel HD 4000 Graphics QE/CI
 - [x] Intel Ethernet
 - [x] Keyboard `Volume and brightness hotkeys`
@@ -76,12 +76,6 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 - [ ] Fingerprint Reader
 - [ ] VGA
-
-## Not tested
-
-- [ ] DRM `Widevine, FairPlay`
-
-
 
 ## BIOS settings
 
@@ -109,9 +103,9 @@ A simple method to install a modified BIOS is available [here](https://github.co
 
 For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 
-Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS, Type MacBookPro10,2
+Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
 
-Open Config.plist, find PlatformInfo>Generic
+Open Config.plist, find PlatformInfo >> Generic
 
 The `Type` part gets copied to SystemProductName.
 
@@ -146,34 +140,22 @@ There are some work arounds with BIOS modified:
 * **BCM94360HMB** (ABGN+AC, BT 4.0, 3x3:3):
 
   * AzureWave AW-CB160H (Recomended)
-  * Alpha Networks WMC-AC01
-  * Arcadyan WN8833B-AC
-  * Gemtek WMDB-150AC
-  * Unex DAXB-81
-  * Wistron NeWeb DNXB-C1
-
+  
 * **BCM94352HMB** (ABGN+AC, BT 4.0, 2x2:2):
-
   * AzureWave AW-CE123H
   * Dell DW1550
-  * HP TPC-Q013
   * Lenovo Lite-On WCBN606BH
-  
+
 * **Older models** 
 
-  * Atheros AR5B95 (Drop support MacOS 10.14)
-  * Dell DW1510 (Drop support MacOS 10.15)
+  * Atheros AR5B95
+  * Dell DW1510
   * Dell DW1515
-
-## Support me
-
-- PayPal: <https://www.paypal.me/thebinhluong0519>
-- Ethereum: 0xC202255193D95979A7C937aA3CB5220FAD9E2aBe
 
 ## Credits
 
 - [Apple](https://www.apple.com) for macOS
 - [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made
 - [Rehabman](https://github.com/RehabMan) for the patches and guides and kexts
-- [George Kushnir](https://github.com/n4ru) for modified BIOS.
+- [George Kushnir](https://github.com/n4ru) for modified BIOS
 - [Dortania](https://github.com/dortania) for for the OpenCore Install Guide
