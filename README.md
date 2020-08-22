@@ -4,12 +4,12 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 **Status: Work In Progress**
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](/) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/LuongTheBinh-bit/X230-OpenCore-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
+<img src="C:\Users\BINH\Documents\GitHub\X230-Hackintosh\Other\README\x230-catalina.png" alt="ThinkPad X230 Catalina" style="zoom:20%;" align="right"/>[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-OpenCore-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
-
-
+- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-OpenCore-Hackintosh/releases/latest) page.
+- Please don't clone or download the master branch for daily use
 
 ## Hardware
 
@@ -52,6 +52,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 | Driver          | Version           |
 | :-------------- | :---------------- |
+| AudioDxe.efi    | OpenCorePkg 0.6.0 |
 | HfsPlus.efi     | OcBinaryData      |
 | OpenRuntime.efi | OpenCorePkg 0.6.0 |
 
@@ -67,6 +68,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 - [x] Intel Ethernet
 - [x] Keyboard `Volume and brightness hotkeys`
 - [x] SD Card Reader `Fortunately, USB connected`
+- [x] Sleep/Wake
 - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
 - [x] Touchpad `1-4 fingers swipe works`
 - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
@@ -76,7 +78,6 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 - [ ] Fingerprint Reader
 - [ ] VGA
-- [ ] Sleep (Still test, not public yet! ^^)
 
 ## BIOS settings
 
@@ -108,7 +109,7 @@ Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selectin
 
 MacBookPro10,2
 
-Open Config.plist, find PlatformInfo >> Generic
+Open `Config.plist`, find PlatformInfo >> Generic
 
 The `Type` part gets copied to SystemProductName.
 
@@ -130,13 +131,13 @@ Recommended additional steps to improve battery life with optimized CPU power ma
   ./ssdtPRGen.sh
   ```
 
-- A customized SSDT.aml for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
+- A customized `SSDT.aml` for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
 
-- Rename it to SSDT-PM.aml, and copy to EFI/OC/ACPI/
+- Rename `SSDT-PM.aml` , and copy to EFI/OC/ACPI/
+
+- Open `Config.plist`, find ACPI >> Add, Enabled `SSDT-PM.aml`
 
 - Reboot
-
-**If you have i5-3320M same with me, you don't need do it**
 
 ### WIFI
 
@@ -163,6 +164,6 @@ There are some work arounds with BIOS modified:
 
 - [Apple](https://www.apple.com) for macOS
 - [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made
-- [Rehabman](https://github.com/RehabMan) for the patches and guides and kexts
+- [Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts
 - [George Kushnir](https://github.com/n4ru) for modified BIOS
 - [Dortania](https://github.com/dortania) for for the OpenCore Install Guide
