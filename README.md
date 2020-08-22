@@ -94,7 +94,7 @@ A simple method to install a modified BIOS is available [here](https://github.co
 |  |  |  | DVMT Total Gfx Mem | MAX |
 | Security | Security Chip |  |  | Disabled |
 |  | Memory Protection | Execution Prevention |  | Enabled |
-|  |  | Current Setting |  | Disabled |
+|  | Anti-Theft | Current Setting |  | Disabled |
 |  |  | Computrace | Current Setting | Disabled |
 |  | Secure Boot |  |  | Disabled |
 | Startup | UEFI/Legacy Boot |  |  | UEFI Only |
