@@ -76,6 +76,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 - [ ] Fingerprint Reader
 - [ ] VGA
+- [ ] Sleep
 
 ## BIOS settings
 
@@ -129,7 +130,11 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - A customized SSDT.aml for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
 
-- Copy the file name SSDT.aml to OC/ACPI/ and reboot
+- Copy the file name SSDT.aml, rename it to SSDT-PM and copy to OC/ACPI/
+
+- Reboot
+
+**If you have i5-3320M same with me, you don't need do it**
 
 ### WIFI
 
