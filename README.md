@@ -76,7 +76,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 - [ ] Fingerprint Reader
 - [ ] VGA
-- [ ] Sleep
+- [ ] Sleep (Still test, not public yet! ^^)
 
 ## BIOS settings
 
@@ -93,8 +93,8 @@ A simple method to install a modified BIOS is available [here](https://github.co
 | Advanced | System Agent (SA) configuration | Graphics Configuration | DVMT Pre-Allocated | 128MB |
 |  |  |  | DVMT Total Gfx Mem | MAX |
 | Security | Security Chip |  |  | Disabled |
-|  | Memory Protection Execution Prevention |  |  | Enabled |
-|  | Anti-Theft |  |  | Disabled |
+|  | Memory Protection | Execution Prevention |  | Enabled |
+|  |  | Current Setting |  | Disabled |
 |  |  | Computrace | Current Setting | Disabled |
 |  | Secure Boot |  |  | Disabled |
 | Startup | UEFI/Legacy Boot |  |  | UEFI Only |
@@ -105,6 +105,8 @@ A simple method to install a modified BIOS is available [here](https://github.co
 For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 
 Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
+
+MacBookPro10,2
 
 Open Config.plist, find PlatformInfo >> Generic
 
@@ -130,7 +132,7 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - A customized SSDT.aml for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
 
-- Copy the file name SSDT.aml, rename it to SSDT-PM and copy to OC/ACPI/
+- Rename it to SSDT-PM.aml, and copy to EFI/OC/ACPI/
 
 - Reboot
 
