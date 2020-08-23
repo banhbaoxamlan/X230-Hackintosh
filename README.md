@@ -8,7 +8,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
-- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-OpenCore-Hackintosh/releases/latest) page.
+- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-OpenCore-Hackintosh/releases/latest) page
 - Please don't clone or download the master branch for daily use
 
 ## Hardware
@@ -22,16 +22,16 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Monitor             | LG LP125WH2-SLB1 HD IPS 1366x768            |
 | Sound Card          | Realtek ALC269VC (layout-id: 18)         |
-| Wireless Card       | Intel Centrino Advanced-N 6205              |
-| Bluetooth | Broadcom Bluetooth 4.0 |
+| Wireless Card       | Intel Centrino Advanced-N 6205           |
+| Bluetooth | Broadcom Bluetooth 4.0 `2070B0` |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
 ## Main Software
 
-| Component      | Version |
-| :------------- | :------ |
-| MacOS Catalina | 10.15.6 |
-| OpenCore       | 0.6.0   |
+| Component      | Version           |
+| :------------- | :---------------- |
+| MacOS Catalina | 10.15.6 (19G2021) |
+| OpenCore       | 0.6.0             |
 
 ## Kernel Extensions
 

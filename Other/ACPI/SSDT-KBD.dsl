@@ -50,17 +50,6 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
 
         Name (RMCF, Package()
         {
-            "Keyboard", Package()
-            {
-                "SleepPressTime", "1500", 
-                "Swap command and option", ">y", 
-                "Custom PS2 Map", Package()
-                    {
-                        Package(){}, 
-                        "e038=e05b", 
-                        "e037=64"
-                    }
-            },
             "Synaptics TouchPad", Package()
             {
                 "BogusDeltaThreshX", 100,
@@ -89,6 +78,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
                 "Resolution", 3200,
                 "ScrollDeltaThreshX", 10,
                 "ScrollDeltaThreshY", 10,
+                "WakeDelay", 1500,
             },
         })
     }
