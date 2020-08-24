@@ -12,6 +12,7 @@
 | SSDT-GPRW      | Fix immediate wake after sleep              |
 | SSDT-HRTF      | Fix HPET, RTC amd TIMR                      |
 | SSDT-KBD       | Fix Keyboard Map, Trackpoint and Trackpad   |
+| SSDT-LID       | PNP0C0E forced sleep                        |
 | SSDT-MCHC-SBUS | Add missing SBUS, MCHC                      |
 | SSDT-PMCR      | Add PMCR                                    |
 | SSDT-PNLF      | Fix backlight                               |

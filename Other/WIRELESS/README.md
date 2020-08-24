@@ -1,6 +1,6 @@
 ## DW1510
 
-+ Copy `Config.plist` and ACPI/SSDT-WIFI.aml in **DW1510** folder to **EFI/OC/**
++ Copy `Config.plist` and `SSDT-WIFI.aml` in **DW1510** folder to **EFI/OC/**
 
 + Download file `10.14.6_IO80211Family.kext.zip`, extract and replace IO80211Family kext in **/S/L/E**
 

@@ -44,7 +44,6 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | Lilu                | 1.4.6   |
 | USBInjectAll        | 0.7.5   |
 | VirtualSMC          | 1.1.5   |
-| VoodooInput         | 1.0.7   |
 | VoodooPS2Controller | 2.1.6   |
 | WhateverGreen       | 1.4.1   |
 

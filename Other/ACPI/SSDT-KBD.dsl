@@ -1,12 +1,44 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
 {
+    External (_SB.PCI9.FNOK, IntObj)
+    External (_SB.PCI9.MODE, IntObj)
+    External (_SB.LID, DeviceObj)
     External (_SB.PCI0.LPC.EC, DeviceObj)
     External (_SB.PCI0.LPC.KBD, DeviceObj)
+    External (_SB.PCI0.LPC.EC.XQ13, MethodObj)
     External (_SB.PCI0.LPC.EC.XQ14, MethodObj)
     External (_SB.PCI0.LPC.EC.XQ15, MethodObj)
 
     Scope (_SB.PCI0.LPC.EC)
     {
+        Method (_Q13, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                If (\_SB.PCI9.MODE == 1)
+                {
+                    \_SB.PCI9.FNOK = 1
+                    \_SB.PCI0.LPC.EC.XQ13()
+                }
+                Else
+                {
+                    If (\_SB.PCI9.FNOK != 1)
+                    {
+                        \_SB.PCI9.FNOK = 1
+                    }
+                    Else
+                    {
+                        \_SB.PCI9.FNOK = 0
+                    }
+                    Notify (\_SB.LID, 0x80)
+                }
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ13()
+            }
+        }
+        
         Method (_Q14, 0, NotSerialized)
         {
             If (_OSI ("Darwin"))
@@ -78,7 +110,6 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
                 "Resolution", 3200,
                 "ScrollDeltaThreshX", 10,
                 "ScrollDeltaThreshY", 10,
-                "WakeDelay", 1500,
             },
         })
     }

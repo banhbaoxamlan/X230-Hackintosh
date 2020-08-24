@@ -76,6 +76,12 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
+				<string>SSDT-LID.aml</string>
+			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
 			<dict>
@@ -298,6 +304,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>_LID to XLID</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X0xJRAA=</data>
+				<key>Replace</key>
+				<data>WExJRAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_Q13 to XQ13</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1ExMw==</data>
+				<key>Replace</key>
+				<data>WFExMw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>_Q14 to XQ14</string>
 				<key>Enabled</key>
 				<true/>
@@ -497,21 +523,21 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooInput.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooInput</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Controller</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -548,6 +574,14 @@
 			<dict>
 				<key>BundlePath</key>
 				<string>EFICheckDisabler.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>Bluetooth_Broadcom.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>PlistPath</key>
@@ -724,9 +758,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v</string>
-				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<string></string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>prev-lang:kbd</key>
@@ -791,7 +823,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02241306J9F16P1F</string>
+			<string></string>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
@@ -799,9 +831,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro10,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02JJ9Y1DR53</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>2288A2CA-AE35-4782-A532-AD45578B9717</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
