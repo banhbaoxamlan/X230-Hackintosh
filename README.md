@@ -160,7 +160,7 @@ There are some work arounds with BIOS modified:
   * Dell DW1510
   * Dell DW1515
 
-For a detailed description see [WIRELESS.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/WIRELESS/WIRELESS.md)
+For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/WIRELESS/README.md)
 
 ## Support me <3
 
