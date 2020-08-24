@@ -4,11 +4,11 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 <img src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README/x230-catalina.png" alt="ThinkPad X230 Catalina" width="25%" align="right"/>**Status: Work In Progress**
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-OpenCore-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
-- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-OpenCore-Hackintosh/releases/latest) page
+- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
 - Please don't clone or download the master branch for daily use
 
 ## Hardware
@@ -159,6 +159,14 @@ There are some work arounds with BIOS modified:
   * Atheros AR5B95
   * Dell DW1510
   * Dell DW1515
+
+For a detailed description see [WIRELESS.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/WIRELESS/WIRELESS.md)
+
+## Support me <3
+
+The project is made for free, but you can buy me a coffee if you want ^^
+
+Paypal: https://paypal.me/thebinhluong0519
 
 ## Credits
 
