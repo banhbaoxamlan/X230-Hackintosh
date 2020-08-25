@@ -1,8 +1,8 @@
-# X230-Hackintosh
+# ThinkPad X230 MacOS with OpenCore
 
-macOS (Currently Catalina `10.15.6`) for ThinkPad X230
+macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
-<img src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README/x230-catalina.png" alt="ThinkPad X230 Catalina" width="25%" align="right"/>**Status: Work In Progress**
+<img src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/OTHER/README/x230-catalina.png" alt="ThinkPad X230 Catalina" width="25%" align="right"/>**Status: Work In Progress**
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
@@ -17,7 +17,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | :------------------ | :------------------------------------------ |
 | Computer model	    | Lenovo ThinkPad X230 (Type: 2325)           |
 | Processor           | Intel Core i5-3320M (2 Cores, 4 Threads) |
-| Memory              | Micron 8GB DDR3L 1867MHz     |
+| Memory              | Micron 16GB DDR3L 1867MHz   |
 | Hard Disk           | WD Blue 3D 250GB WDS250G2B0A      |
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Monitor             | LG LP125WH2-SLB1 HD IPS 1366x768            |
@@ -32,6 +32,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | :------------- | :---------------- |
 | MacOS Catalina | 10.15.6 (19G2021) |
 | OpenCore       | 0.6.0             |
+| BIOS version   | 2.77 (modified)   |
 
 ## Kernel Extensions
 
@@ -53,6 +54,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 | :-------------- | :---------------- |
 | AudioDxe.efi    | OpenCorePkg 0.6.0 |
 | HfsPlus.efi     | OcBinaryData      |
+| OpenCanopy.efi  | OpenCorePkg 0.6.0 |
 | OpenRuntime.efi | OpenCorePkg 0.6.0 |
 
 ## Working
@@ -77,6 +79,7 @@ macOS (Currently Catalina `10.15.6`) for ThinkPad X230
 
 - [ ] Fingerprint Reader
 - [ ] VGA
+- [ ] Trackpoint not working after wake from sleep
 
 ## BIOS settings
 
@@ -117,6 +120,10 @@ The `Serial` part gets copied to SystemSerialNumber.
 The `Board Serial` part gets copied to MLB.
 
 The `SmUUID` part gets copied to SystemUUID.
+
+##### Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"
+
+[Apple Check Coverage](https://checkcoverage.apple.com/)
 
 ### CPU Power Management
 
@@ -159,7 +166,7 @@ There are some work arounds with BIOS modified:
   * Dell DW1510
   * Dell DW1515
 
-For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/WIRELESS/README.md)
+For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/OTHER/WIRELESS/README.md)
 
 ## Support me <3
 
