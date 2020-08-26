@@ -16,8 +16,8 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
 | Computer model	    | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i5-3320M (2 Cores, 4 Threads) |
-| Memory              | Micron 16GB DDR3L 1867MHz   |
+| Processor           | Intel Core i5-3320M |
+| Memory              | Micron 16GB (8x2) DDR3L 1867MHz   |
 | Hard Disk           | WD Blue 3D 250GB WDS250G2B0A      |
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Monitor             | LG LP125WH2-SLB1 HD IPS 1366x768            |
@@ -52,9 +52,7 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 | Driver          | Version           |
 | :-------------- | :---------------- |
-| AudioDxe.efi    | OpenCorePkg 0.6.0 |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenCanopy.efi  | OpenCorePkg 0.6.0 |
 | OpenRuntime.efi | OpenCorePkg 0.6.0 |
 
 ## Working
@@ -68,7 +66,6 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 - [x] GPU Intel HD 4000 Graphics QE/CI
 - [x] Intel Ethernet
 - [x] Keyboard `Volume and brightness hotkeys`
-- [x] SD Card Reader `Fortunately, USB connected`
 - [x] Sleep/Wake
 - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
 - [x] Touchpad `1-4 fingers swipe works`
@@ -80,6 +77,7 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 - [ ] Fingerprint Reader
 - [ ] VGA
 - [ ] Trackpoint not working after wake from sleep
+- [ ] SD Card Reader (Recomended disabled)
 
 ## BIOS settings
 
@@ -113,17 +111,13 @@ MacBookPro10,2
 
 Open `Config.plist`, find PlatformInfo >> Generic
 
-The `Type` part gets copied to SystemProductName.
-
 The `Serial` part gets copied to SystemSerialNumber.
 
 The `Board Serial` part gets copied to MLB.
 
 The `SmUUID` part gets copied to SystemUUID.
 
-##### Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"
-
-[Apple Check Coverage](https://checkcoverage.apple.com/)
+**Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"** [Apple Check Coverage](https://checkcoverage.apple.com/)
 
 ### CPU Power Management
 
@@ -139,9 +133,9 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - A customized `SSDT.aml` for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
 
-- Rename `SSDT-PM.aml` , and copy to EFI/OC/ACPI/
+- Rename to `SSDT-PM.aml` , and copy to EFI/OC/ACPI/
 
-- Open `Config.plist`, find ACPI >> Add, Enabled `SSDT-PM.aml`
+- Open `Config.plist`, find ACPI >> Add, `SSDT-PM.aml` Enabled set True
 
 - Reboot
 
@@ -166,7 +160,7 @@ There are some work arounds with BIOS modified:
   * Dell DW1510
   * Dell DW1515
 
-For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/OTHER/WIRELESS/README.md)
+For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/OTHER/WIRELESS)
 
 ## Support me <3
 
