@@ -26,6 +26,8 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Bluetooth | Broadcom Bluetooth 4.0 `2070B0` |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
+Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/OTHER/README/UPGRADE.md)
+
 ## Main Software
 
 | Component      | Version           |
