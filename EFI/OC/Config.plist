@@ -154,6 +154,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>EHC1 to EH01</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>RUhDMQ==</data>
+				<key>Replace</key>
+				<data>RUgwMQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>EHC2 to EH02</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>RUhDMg==</data>
+				<key>Replace</key>
+				<data>RUgwMg==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>TP-BAT:GBIF03 to XBIF03</string>
 				<key>Enabled</key>
 				<true/>
