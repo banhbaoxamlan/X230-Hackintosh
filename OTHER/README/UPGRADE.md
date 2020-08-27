@@ -10,5 +10,6 @@
 ### IPS DISPLAY PANELS
   + LP125WH2-SLT1
   + LP125WH2-SLB3
+  
 For FHD Display : use [nitrocaster's mod kit](https://nitrocaster.me/store/x220-x230-fhd-mod-kit.html)
   + LP125WF4-SPB1 (since rev.6)
