@@ -18,12 +18,13 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
 | Computer model	    | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i5-3320M |
-| Memory              | Micron 16GB (8x2) DDR3L 1867MHz   |
+| Processor           | Intel Core i5-3320M (2C4T, 2.6 / 3.3GHz, 3MB) |
+| Memory              | Micron 16GB (8x2) DDR3L 1867MHz, dual-channel |
 | Hard Disk           | WD Blue 3D 250GB WDS250G2B0A      |
 | Integrated Graphics | Intel HD Graphics 4000                      |
-| Monitor             | LG LP125WH2-SLB1 HD IPS 1366x768            |
-| Sound Card          | Realtek ALC269VC (layout-id: 18)         |
+| Display      | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1 |
+| ThinkLight | Yes |
+| Audio support | Realtek ALC3202 (Layout-id: `18`) |
 | Ethernet | Intel 82579LM Gigabit Network Connection (Lewisville) |
 | Wireless Card       | Intel Centrino Advanced-N 6205           |
 | Bluetooth | Broadcom Bluetooth 4.0 `2070B0` |
@@ -64,7 +65,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 ## Status
 <details>
 <summary><strong>What's working :white_check_mark:</strong></summary>
-  
+
   - [x] Battery Percentage
   - [x] Bluetooth
   - [x] Brightness
@@ -78,23 +79,23 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
   - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
   - [x] Touchpad `1-4 fingers swipe works`
   - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
-  
+
 </details>
 
 <details>
 <summary><strong>What's not working :warning:</strong></summary>
-  
+
   - [ ] Fingerprint Reader
   - [ ] VGA
   - [ ] SD Card Reader
-  
+
 </details>
 
 <details>
 <summary><strong>Bug tracker :heavy_exclamation_mark:</strong></summary>
-  
+
   - [ ] Trackpoint not working after wake from sleep
-  
+
 </details>
 
 
@@ -188,6 +189,7 @@ For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-
 ## Support me <3
 
 The project is made for free, but you can buy me a coffee if you want
+
 [![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-green)](https://paypal.me/thebinhluong0519)
 
 ## Credits
