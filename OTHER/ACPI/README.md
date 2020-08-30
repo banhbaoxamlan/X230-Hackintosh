@@ -19,6 +19,7 @@
 | SSDT-PNLF      | Fix backlight                                                |
 | SSDT-PTSWAK    | Fix sleep issues                                             |
 | SSDT-PWRB      | Add Power Button                                             |
+| SSDT-SDC.dsl   | Disabled SD Card Reader                                      |
 | SSDT-WIFI      | Fix DW1510 (not need if you use DW1550,etc)                  |
 | SSDT-XDSM      | Redirect _DSM to native XDSM on non mac OS                   |
 | SSDT-XOSI      | Operating System Patch                                       |
