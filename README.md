@@ -6,6 +6,8 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
+**DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
+
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
 - Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
@@ -22,8 +24,10 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Monitor             | LG LP125WH2-SLB1 HD IPS 1366x768            |
 | Sound Card          | Realtek ALC269VC (layout-id: 18)         |
+| Ethernet | Intel 82579LM Gigabit Network Connection (Lewisville) |
 | Wireless Card       | Intel Centrino Advanced-N 6205           |
 | Bluetooth | Broadcom Bluetooth 4.0 `2070B0` |
+| Keyboard | 6-row, ThinkVantage button, spill-resistant, multimedia Fn keys, LED backlight |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
 Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/OTHER/README/UPGRADE.md)
@@ -34,7 +38,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | :------------- | :---------------- |
 | MacOS Catalina | 10.15.6 (19G2021) |
 | OpenCore       | 0.6.0             |
-| BIOS version   | 2.77 (modified)   |
+| BIOS version   | 2.77              |
 
 ## Kernel Extensions
 
@@ -64,7 +68,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 - [x] Brightness
 - [x] Camera
 - [x] CPU Power Management
-- [x] Dock Support `ThinkPad UltraSeries 3 and MiniDock Series 3`
+- [x] Dock Support `ThinkPad UltraSeries 3`
 - [x] GPU Intel HD 4000 Graphics QE/CI
 - [x] Intel Ethernet
 - [x] Keyboard `Volume and brightness hotkeys`
@@ -166,9 +170,7 @@ For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-
 
 ## Support me <3
 
-The project is made for free, but you can buy me a coffee if you want ^^
-
-Paypal: https://paypal.me/thebinhluong0519
+The project is made for free, but you can buy me a coffee if you want  [![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-green)](https://paypal.me/thebinhluong0519)
 
 ## Credits
 
