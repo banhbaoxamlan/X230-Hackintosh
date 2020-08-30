@@ -38,7 +38,6 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | :------------- | :---------------- |
 | MacOS Catalina | 10.15.6 (19G2021) |
 | OpenCore       | 0.6.0             |
-| BIOS version   | 2.77              |
 
 ## Kernel Extensions
 
@@ -61,29 +60,43 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | HfsPlus.efi     | OcBinaryData      |
 | OpenRuntime.efi | OpenCorePkg 0.6.0 |
 
-## Working
 
-- [x] Battery Percentage
-- [x] Bluetooth
-- [x] Brightness
-- [x] Camera
-- [x] CPU Power Management
-- [x] Dock Support `ThinkPad UltraSeries 3`
-- [x] GPU Intel HD 4000 Graphics QE/CI
-- [x] Intel Ethernet
-- [x] Keyboard `Volume and brightness hotkeys`
-- [x] Sleep/Wake
-- [x] Sound `Automatic headphone detection, mute, volume controls fully working`
-- [x] Touchpad `1-4 fingers swipe works`
-- [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
-- [x] USB Ports
+## Status
+<details>
+<summary><strong>What's working :white_check_mark:</strong></summary>
+  
+  - [x] Battery Percentage
+  - [x] Bluetooth
+  - [x] Brightness
+  - [x] Camera
+  - [x] CPU Power Management
+  - [x] Dock Support `ThinkPad UltraSeries 3`
+  - [x] GPU Intel HD 4000 Graphics QE/CI
+  - [x] Intel Ethernet
+  - [x] Keyboard `Volume and brightness hotkeys`
+  - [x] Sleep/Wake
+  - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
+  - [x] Touchpad `1-4 fingers swipe works`
+  - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
+  
+</details>
 
-## Not working
+<details>
+<summary><strong>What's not working :warning:</strong></summary>
+  
+  - [ ] Fingerprint Reader
+  - [ ] VGA
+  - [ ] SD Card Reader
+  
+</details>
 
-- [ ] Fingerprint Reader
-- [ ] VGA
-- [ ] Trackpoint not working after wake from sleep
-- [ ] SD Card Reader (Recomended disabled)
+<details>
+<summary><strong>Bug tracker :heavy_exclamation_mark:</strong></summary>
+  
+  - [ ] Trackpoint not working after wake from sleep
+  
+</details>
+
 
 ## BIOS settings
 
@@ -91,7 +104,8 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 
 A simple method to install a modified BIOS is available [here](https://github.com/n4ru/1vyrain/) (no external programmer required).
 
-### BIOS settings
+<details>
+<summary><strong>Settings :100:</strong></summary>
 
 | Main | Sub #1                                 | Sub #2 | Sub #3 | Setting |
 | :------------ | :----------- | ------------- | ------------- | ------------- |
@@ -106,6 +120,9 @@ A simple method to install a modified BIOS is available [here](https://github.co
 |  | Secure Boot |  |  | Disabled |
 | Startup | UEFI/Legacy Boot |  |  | UEFI Only |
 |  |  | CSM Support |  | Disabled |
+
+</details>
+
 
 ### Generate your own SMBIOS
 
@@ -170,7 +187,8 @@ For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-
 
 ## Support me <3
 
-The project is made for free, but you can buy me a coffee if you want  [![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-green)](https://paypal.me/thebinhluong0519)
+The project is made for free, but you can buy me a coffee if you want
+[![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-green)](https://paypal.me/thebinhluong0519)
 
 ## Credits
 
