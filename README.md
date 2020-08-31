@@ -1,8 +1,8 @@
 # ThinkPad X230 MacOS with OpenCore
 
 macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
-
-<img src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/OTHER/README/x230-catalina.png" alt="ThinkPad X230 Catalina" width="25%" align="right"/>**Status: Work In Progress**
+**Status: Work In Progress**
+<img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/`README Resources`/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
@@ -17,21 +17,21 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
-| Computer model	    | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i5-3320M (2C4T, 2.6 / 3.3GHz, 3MB) |
-| Memory              | Micron 16GB (8x2) DDR3L 1867MHz, dual-channel |
-| Hard Disk           | WD Blue 3D 250GB WDS250G2B0A      |
+| Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |
+| Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3GHz, 3MB) |
+| Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     |
+| Hard Disk           | WD Blue 3D 250GB WDS250G2B0A                |
 | Integrated Graphics | Intel HD Graphics 4000                      |
-| Display      | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1 |
-| ThinkLight | Yes |
-| Audio support | Realtek ALC3202 (Layout-id: `18`) |
-| Ethernet | Intel 82579LM Gigabit Network Connection (Lewisville) |
-| Wireless Card       | Intel Centrino Advanced-N 6205           |
-| Bluetooth | Broadcom Bluetooth 4.0 `2070B0` |
-| Keyboard | 6-row, ThinkVantage button, spill-resistant, multimedia Fn keys, LED backlight |
+| Display             | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1  |
+| ThinkLight          | Yes                                         |
+| Audio               | Realtek ALC3202 (Layout-id: `18`)           |
+| Ethernet            | Intel 82579LM Gigabit Network Connection    |
+| Wireless Card       | Intel Centrino Advanced-N 6205              |
+| Bluetooth           | Broadcom Bluetooth 4.0 `2070B0`             |
+| Keyboard            | 6-row, multimedia Fn keys, LED backlight    |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
-Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/OTHER/README/UPGRADE.md)
+Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/`README Resources`/)
 
 ## Main Software
 
@@ -61,47 +61,46 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | HfsPlus.efi     | OcBinaryData      |
 | OpenRuntime.efi | OpenCorePkg 0.6.0 |
 
-
 ## Status
+
 <details>
 <summary><strong>What's working :white_check_mark:</strong></summary>
 
-  - [x] Battery Percentage
-  - [x] Bluetooth
-  - [x] Brightness
-  - [x] Camera
-  - [x] CPU Power Management
-  - [x] Dock Support `ThinkPad UltraSeries 3`
-  - [x] GPU Intel HD 4000 Graphics QE/CI
-  - [x] Intel Ethernet
-  - [x] Keyboard `Volume and brightness hotkeys`
-  - [x] Sleep/Wake
-  - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
-  - [x] Touchpad `1-4 fingers swipe works`
-  - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
+- [x] Battery Percentage
+- [x] Bluetooth
+- [x] Brightness
+- [x] Camera
+- [x] CPU Power Management
+- [x] Dock Support `ThinkPad UltraSeries 3`
+- [x] GPU Intel HD 4000 Graphics QE/CI
+- [x] Intel Ethernet
+- [x] Keyboard `Volume and brightness hotkeys`
+- [x] Sleep/Wake
+- [x] Sound `Automatic headphone detection, mute, volume controls fully working`
+- [x] Touchpad `1-4 fingers swipe works`
+- [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
 
 </details>
 
 <details>
 <summary><strong>What's not working :warning:</strong></summary>
 
-  - [ ] Fingerprint Reader
-  - [ ] VGA
-  - [ ] SD Card Reader
+- [ ] Fingerprint Reader
+- [ ] VGA
+- [ ] SD Card Reader
 
 </details>
 
 <details>
 <summary><strong>Bug tracker :heavy_exclamation_mark:</strong></summary>
 
-  - [ ] Trackpoint not working after wake from sleep
+- [ ] Trackpoint not working after wake from sleep
 
 </details>
 
-
 ## BIOS settings
 
-### Modified BIOS!!!
+### Modified BIOS
 
 A simple method to install a modified BIOS is available [here](https://github.com/n4ru/1vyrain/) (no external programmer required).
 
@@ -124,8 +123,10 @@ A simple method to install a modified BIOS is available [here](https://github.co
 
 </details>
 
+## Post-install
 
-### Generate your own SMBIOS
+<details>
+<summary><strong>Generate your own SMBIOS</strong></summary>
 
 For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 
@@ -143,54 +144,52 @@ The `SmUUID` part gets copied to SystemUUID.
 
 **Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"** [Apple Check Coverage](https://checkcoverage.apple.com/)
 
-### CPU Power Management
+</details>
+
+<details>
+<summary><strong>CPU power management</strong></summary>
 
 Recommended additional steps to improve battery life with optimized CPU power management:
 
 - Open Terminal, copy and paste the following command:
 
-  ```
+  ```bash
   curl -o ~/ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/master/ssdtPRGen.sh
   chmod +x ~/ssdtPRGen.sh
   ./ssdtPRGen.sh
   ```
 
-- A customized `SSDT.aml` for your specific machine will now be in the directory /Users/yourusername/Library/ssdtPRGen
+- A customized `SSDT.aml` for your specific machine will now be in the directory **/Users/yourusername/Library/ssdtPRGen**
 
-- Rename to `SSDT-PM.aml` , and copy to EFI/OC/ACPI/
+- Rename it to `SSDT-PM.aml` , and copy to **EFI/OC/ACPI/**
 
-- Open `Config.plist`, find ACPI >> Add, `SSDT-PM.aml` Enabled set True
+- Open `Config.plist`, find ACPI >> Add, `SSDT-PM.aml` set Enabled to True
 
 - Reboot
 
-### WIFI
+</details>
 
-Inbuilt Intel WiFi won't work out of box.
+<details>  
+<summary><strong>Fully functioning multimedia Fn keys</strong></summary>
 
-There are some work arounds with BIOS modified:
+- Download and install [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant/releases)
+- Open the app and check the `launch on login` option
+- Use SSDT-KBD correct with your X230 : [Keyboard](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/Keyboard/)
 
-* **BCM94360HMB** (ABGN+AC, BT 4.0, 3x3:3):
+</details>
 
-  * AzureWave AW-CB160H (Recomended)
-  
-* **BCM94352HMB** (ABGN+AC, BT 4.0, 2x2:2):
-  * AzureWave AW-CE123H
-  * Dell DW1550
-  * Lenovo Lite-On WCBN606BH
+<details>  
+<summary><strong>Use PrtSc key as Screenshot shortcut</strong></summary>
 
-* **Older models** 
-
-  * Atheros AR5B95
-  * Dell DW1510
-  * Dell DW1515
-
-For a detailed description see [WIRELESS](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/OTHER/WIRELESS)
+- Go under `SystemPreferences > Keyboard > Shortcuts > Screenshots`
+- Click on `Screenshot and recording options` key map
+- Press `PrtSc` on your keyboard (it should came out as `F13`)
 
 ## Support me <3
 
 The project is made for free, but you can buy me a coffee if you want
 
-[![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-green)](https://paypal.me/thebinhluong0519)
+[![Paypal](https://img.shields.io/badge/paypal-blue)](https://paypal.me/thebinhluong0519)
 
 ## Credits
 

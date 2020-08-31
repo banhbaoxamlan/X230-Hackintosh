@@ -1,8 +1,10 @@
+# Wireless
+
 ## DW1510
 
-+ Copy `Config.plist` and `SSDT-WIFI.aml` in **DW1510** folder to **EFI/OC/**
-
 + Download file `10.14.6_IO80211Family.kext.zip`, extract and replace IO80211Family kext in **/S/L/E**
+
++ Copy `Config.plist` and `SSDT-WIFI.aml` in **DW1510** folder to **EFI/OC/**
 
 + If you've tried other network-related Kernel Extensions before
 
@@ -39,4 +41,4 @@ BONUS: REBRAND THE DW1510 AS APPLE AIRPORT EXTREME [HERE](https://prasys.info/20
 
 ## INTEL WIRELESS (AX200, 7260AC, etc)
 
-See more here: https://openintelwireless.github.io/itlwm/
+See more here: ![OpenIntelWireless](https://openintelwireless.github.io/)
