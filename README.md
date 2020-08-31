@@ -132,17 +132,17 @@ A simple method to install a modified BIOS is available [here](https://github.co
 
 For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 
-Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
+- Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
 
-MacBookPro10,2
+  - MacBookPro10,2
 
-Open `Config.plist`, find PlatformInfo >> Generic
+- Open `Config.plist`, find PlatformInfo >> Generic
 
-The `Serial` part gets copied to SystemSerialNumber.
+  - The `Serial` part gets copied to SystemSerialNumber.
 
-The `Board Serial` part gets copied to MLB.
+  - The `Board Serial` part gets copied to MLB.
 
-The `SmUUID` part gets copied to SystemUUID.
+  - The `SmUUID` part gets copied to SystemUUID.
 
 **Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"** [Apple Check Coverage](https://checkcoverage.apple.com/)
 
@@ -177,7 +177,10 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 - Download and install [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant/releases)
 - Open the app and check the `launch on login` option
 - Use SSDT-KBD correct with your X230 : [Keyboard](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/Keyboard/)
-
+  - ThinkLight only: `SSDT-KBD-Basic.aml`
+  - Blacklight + ThinkLight: `SSDT-KBD.aml`
+  - X220 7-row keyboard: `SSDT-KBD-X220.aml`
+  
 </details>
 
 <details>  
