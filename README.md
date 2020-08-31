@@ -2,7 +2,7 @@
 
 macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 **Status: Work In Progress**
-<img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/`README Resources`/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
+<img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
@@ -31,7 +31,7 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Keyboard            | 6-row, multimedia Fn keys, LED backlight    |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
-Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/`README Resources`/)
+Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/)
 
 ## Main Software
 
