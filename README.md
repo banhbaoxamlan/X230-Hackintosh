@@ -17,21 +17,21 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 ## Hardware
 
-| Specifications      | Detail                                      |
-| :------------------ | :------------------------------------------ |
-| Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3GHz, 3MB) |
-| Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     |
-| Hard Disk           | WD Blue 3D 250GB WDS250G2B0A                |
-| Integrated Graphics | Intel HD Graphics 4000                      |
-| Display             | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1  |
-| ThinkLight          | Yes                                         |
-| Audio               | Realtek ALC3202 (Layout-id: `18`)           |
-| Ethernet            | Intel 82579LM Gigabit Network Connection    |
-| Wireless Card       | Intel Centrino Advanced-N 6205              |
-| Bluetooth           | Broadcom Bluetooth 4.0 `2070B0`             |
-| Keyboard            | 6-row, multimedia Fn keys, LED backlight    |
-| Dock                | ThinkPad UltraBase Series 3                 |
+| Specifications      | Detail #1                                   | Detail #2                                                    |
+| :------------------ | :------------------------------------------ | ------------------------------------------------------------ |
+| Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |                                                              |
+| Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3GHz, 3MB) | Intel Core i7-3520M (2C4T, 2.9/3.6Ghz, 4MB)                  |
+| Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     | Samsung 8GB DDR3L 1600MHz                                    |
+| Hard Disk           | WD Blue 3D 250GB WDS250G2B0A                | Samsung 860 Evo 250GB                                        |
+| Integrated Graphics | Intel HD Graphics 4000                      |                                                              |
+| Display             | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1  | 12.5" HD (1366x768) TN - B125XW01.V0                         |
+| ThinkLight          | Yes                                         | Yes                                                          |
+| Audio               | Realtek ALC3202 (Layout-id: `18`)           |                                                              |
+| Ethernet            | Intel 82579LM Gigabit Network Connection    |                                                              |
+| Wireless Card       | Intel Centrino Advanced-N 6205              | AzureWave AW-CB160H (WIFI+BT)                                |
+| Bluetooth           | Broadcom Bluetooth 4.0 `2070B0`             | Use [THIS](https://item.taobao.com/item.htm?id=557977322810) for 1 USB 3.0 Port |
+| Keyboard            | 6-row, multimedia Fn keys, LED backlight    |                                                              |
+| Dock                | ThinkPad UltraBase Series 3                 | None                                                         |
 
 Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/)
 
@@ -181,6 +181,7 @@ Recommended additional steps to improve battery life with optimized CPU power ma
   - Blacklight + ThinkLight: `SSDT-KBD.aml`
   - X220 7-row keyboard: `SSDT-KBD-X220.aml`
   
+
 </details>
 
 <details>  
