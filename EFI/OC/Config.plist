@@ -108,6 +108,12 @@
 				<key>Path</key>
 				<string>SSDT-XDSM.aml</string>
 			</dict>
+			<dict>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-WIFI.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -334,7 +340,17 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q13 to XQ13</string>
+				<string>_Q6A to XQ6A (Microphone Mute Button)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1E2QQ==</data>
+				<key>Replace</key>
+				<data>WFE2QQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_Q13 to XQ13 (F4 - Sleep)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
@@ -344,7 +360,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q14 to XQ14</string>
+				<string>_Q14 to XQ14 (F9 - Brightness Up)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
@@ -354,13 +370,43 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q15 to XQ15</string>
+				<string>_Q15 to XQ15 (F8 - Brightness Down)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>X1ExNQ==</data>
 				<key>Replace</key>
 				<data>WFExNQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_Q16 to XQ16 (F7 - Dual Display)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1ExNg==</data>
+				<key>Replace</key>
+				<data>WFExNg==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_Q64 to XQ64 (F5 - WiFi)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1E2NA==</data>
+				<key>Replace</key>
+				<data>WFE2NA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_Q1F to XQ1F (FN - Space)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1ExRg==</data>
+				<key>Replace</key>
+				<data>WFExRg==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -607,6 +653,44 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>BrcmBluetoothInjector.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>BrcmFirmwareData.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM2</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -697,7 +781,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
 		<array/>
@@ -741,6 +825,8 @@
 			<dict>
 				<key>boot-args</key>
 				<string></string>
+				<key>csr-active-config</key>
+				<data>AwAAAA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>prev-lang:kbd</key>
