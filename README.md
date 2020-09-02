@@ -47,11 +47,11 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | Kext                | Version |
 | :------------------ | :------ |
 | AppleALC            | 1.5.1   |
-| Bluetooth_BCM       | 1.0.0   |
+| Bluetooth_BCM       |         |
 | EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.3   |
 | Lilu                | 1.4.6   |
-| USBInjectAll        | 0.7.5   |
+| USBPorts            |         |
 | VirtualSMC          | 1.1.5   |
 | VoodooPS2Controller | 2.1.6   |
 | WhateverGreen       | 1.4.1   |
@@ -81,7 +81,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
 - [x] Touchpad `1-4 fingers swipe works`
 - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
-- [x] eGPU `Thanks [lese9855](https://github.com/lese9855) have confirmed it [#11](https://github.com/banhbaoxamlan/X230-Hackintosh/issues/11)
+- [x] eGPU `Thanks [lese9855](https://github.com/lese9855) have confirmed it [#11](https://github.com/banhbaoxamlan/X230-Hackintosh/issues/11)`
 
 </details>
 
