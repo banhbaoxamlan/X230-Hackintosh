@@ -21,7 +21,7 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | :------------------ | :------------------------------------------ | :----------------------------------------------------------- |
 | Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |                                                              |
 | Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3GHz, 3MB) | Intel Core i7-3520M (2C4T, 2.9/3.6Ghz, 4MB)                  |
-| Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     | Samsung 8GB DDR3L 1600MHz                                    |
+| Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     | Samsung 16GB DDR3L 1600MHz, dual-channel                     |
 | Hard Disk           | WD Blue 3D 250GB WDS250G2B0A                | Samsung 860 Evo 250GB                                        |
 | Integrated Graphics | Intel HD Graphics 4000                      |                                                              |
 | Display             | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1  | 12.5" HD (1366x768) TN - B125XW01.V0                         |
@@ -81,7 +81,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
 - [x] Touchpad `1-4 fingers swipe works`
 - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
-- [x] eGPU `Thanks [lese9855](https://github.com/lese9855) have confirmed it [#11](https://github.com/banhbaoxamlan/X230-Hackintosh/issues/11)`
+- [x] eGPU  (Thanks [lese9855](https://github.com/lese9855) have confirmed it [#11](https://github.com/banhbaoxamlan/X230-Hackintosh/issues/11))
 
 </details>
 
@@ -90,7 +90,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 
 - [ ] Fingerprint Reader
 - [ ] VGA
-- [ ] SD Card Reader
+- [ ] SD Card Reader (Disable with `SSDT-SDC.aml`)
 
 </details>
 
