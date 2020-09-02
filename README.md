@@ -18,7 +18,7 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 ## Hardware
 
 | Specifications      | Detail #1                                   | Detail #2                                                    |
-| :------------------ | :------------------------------------------ | ------------------------------------------------------------ |
+| :------------------ | :------------------------------------------ | :----------------------------------------------------------- |
 | Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |                                                              |
 | Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3GHz, 3MB) | Intel Core i7-3520M (2C4T, 2.9/3.6Ghz, 4MB)                  |
 | Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     | Samsung 8GB DDR3L 1600MHz                                    |
@@ -47,7 +47,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | Kext                | Version |
 | :------------------ | :------ |
 | AppleALC            | 1.5.1   |
-| Bluetooth_Broadcom  | 1.0.0   |
+| Bluetooth_BCM       | 1.0.0   |
 | EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.3   |
 | Lilu                | 1.4.6   |
@@ -81,6 +81,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 - [x] Sound `Automatic headphone detection, mute, volume controls fully working`
 - [x] Touchpad `1-4 fingers swipe works`
 - [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
+- [x] eGPU `Thanks [lese9855](https://github.com/lese9855) have confirmed it [#11](https://github.com/banhbaoxamlan/X230-Hackintosh/issues/11)
 
 </details>
 
