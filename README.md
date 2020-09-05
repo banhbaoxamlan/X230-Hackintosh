@@ -1,6 +1,6 @@
 # ThinkPad X230 MacOS with OpenCore
 
-macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
+MacOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 **Status: Work In Progress**
 
@@ -10,39 +10,44 @@ macOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 **DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
 
-- To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
-- Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
-- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
-- Please don't clone or download the master branch for daily use
+## Introduction
 
-## Hardware
+<details>
 
-| Specifications      | Detail #1                                   | Detail #2                                                    |
-| :------------------ | :------------------------------------------ | :----------------------------------------------------------- |
-| Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |                                                              |
-| Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3GHz, 3MB) | Intel Core i7-3520M (2C4T, 2.9/3.6Ghz, 4MB)                  |
-| Memory              | Micron 16GB DDR3L 1867MHz, dual-channel     | Samsung 16GB DDR3L 1600MHz, dual-channel                     |
-| Hard Disk           | WD Blue 3D 250GB WDS250G2B0A                | Samsung 860 Evo 250GB                                        |
-| Integrated Graphics | Intel HD Graphics 4000                      |                                                              |
-| Display             | 12.5" HD (1366x768) IPS - LG LP125WH2-SLB1  | 12.5" HD (1366x768) TN - B125XW01.V0                         |
-| ThinkLight          | Yes                                         | Yes                                                          |
-| Audio               | Realtek ALC3202 (Layout-id: `18`)           |                                                              |
-| Ethernet            | Intel 82579LM Gigabit Network Connection    |                                                              |
-| Wireless Card       | Intel Centrino Advanced-N 6205              | AzureWave AW-CB160H (WIFI+BT)                                |
-| Bluetooth           | Broadcom Bluetooth 4.0 `2070B0`             | Use [THIS](https://item.taobao.com/item.htm?id=557977322810) for 1 USB 3.0 Port |
-| Keyboard            | 6-row, multimedia Fn keys, LED backlight    |                                                              |
-| Dock                | ThinkPad UltraBase Series 3                 | None                                                         |
+<summary><strong>Hardware</strong></summary>
 
-Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/)
+| Specifications      | Detail                                      |
+| :------------------ | :------------------------------------------ |
+| Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |
+| Processor           | Intel Core i7-3520M (2C4T, 2.9/3.6Ghz, 4MB) |
+| Memory              | Crucial 16GB DDR3L 1867MHz, dual-channel    |
+| Hard Disk           | Crucial BX500 3D-NAND 240GB                 |
+| Integrated Graphics | Intel HD Graphics 4000                      |
+| Display             | 12.5" HD (1366x768) TN - B125XW01.V0        |
+| Audio               | Realtek ALC3202 (Layout-id: `18`)           |
+| Ethernet            | Intel 82579LM Gigabit Network Connection    |
+| WIFI+BT             | AzureWave AW-CB160H (BCM94360HMB)           |
+| Keyboard            | 6-row, multimedia Fn keys, LED backlight    |
+| Dock                | ThinkPad UltraBase Series 3                 |
 
-## Main Software
+Recomended Upgrade: [HERE](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/)
+
+</details>
+
+<details>
+
+<summary><strong>Main software</strong></summary>
 
 | Component      | Version           |
 | :------------- | :---------------- |
 | MacOS Catalina | 10.15.6 (19G2021) |
 | OpenCore       | 0.6.0             |
 
-## Kernel Extensions
+</details>
+
+<details>
+
+<summary><strong>Kernel extensions</strong></summary>
 
 | Kext                | Version |
 | :------------------ | :------ |
@@ -56,12 +61,148 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 | VoodooPS2Controller | 2.1.6   |
 | WhateverGreen       | 1.4.1   |
 
-## UEFI Drivers
+</details>
+
+<details>
+
+<summary><strong>UEFI drivers</strong></summary>
 
 | Driver          | Version           |
 | :-------------- | :---------------- |
 | HfsPlus.efi     | OcBinaryData      |
 | OpenRuntime.efi | OpenCorePkg 0.6.0 |
+
+</details>
+
+
+## Installation
+
+<details>
+
+<summary><strong>How to install macOS</strong></summary>
+
+- To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
+- Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
+- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
+
+<details>
+
+<summary><strong>BIOS settings :100:</strong></summary>
+
+A simple method to install a modified BIOS is available [here](https://github.com/n4ru/1vyrain/) (no external programmer required).
+
+| Main | Sub #1                                 | Sub #2 | Sub #3 | Setting |
+| :------------ | :----------- | ------------- | ------------- | ------------- |
+| Config | Network | Wake On Lan |  | Disabled |
+|  | Serial ATA (SATA) | Mode |  | AHCI |
+| Advanced | System Agent (SA) configuration | Graphics Configuration | DVMT Pre-Allocated | 128MB |
+|  |  |  | DVMT Total Gfx Mem | MAX |
+| Security | Security Chip |  |  | Disabled |
+|  | Memory Protection | Execution Prevention |  | Enabled |
+|  | Anti-Theft | Current Setting |  | Disabled |
+|  |  | Computrace | Current Setting | Disabled |
+|  | Secure Boot |  |  | Disabled |
+| Startup | UEFI/Legacy Boot |  |  | UEFI Only |
+|  |  | CSM Support |  | Disabled |
+
+</details>
+
+## Post-install
+
+<details>
+
+<summary><strong>Generate your own SMBIOS</strong></summary>
+
+For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+
+- Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
+
+  - MacBookPro10,2
+  
+  - MacBookPro11,2 (for Big Sur)
+
+- Open `Config.plist`, find PlatformInfo >> Generic
+
+  - The `Serial` part gets copied to SystemSerialNumber.
+
+  - The `Board Serial` part gets copied to MLB.
+
+  - The `SmUUID` part gets copied to SystemUUID.
+
+**Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"** [Apple Check Coverage](https://checkcoverage.apple.com/)
+
+</details>
+
+<details>
+
+<summary><strong>CPU power management</strong></summary>
+
+Recommended additional steps to improve battery life with optimized CPU power management:
+
+- Open Terminal, copy and paste the following command:
+
+  ```bash
+  curl -o ~/ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/master/ssdtPRGen.sh
+  chmod +x ~/ssdtPRGen.sh
+  ./ssdtPRGen.sh
+  ```
+
+- A customized `SSDT.aml` for your specific machine will now be in the directory **/Users/yourusername/Library/ssdtPRGen**
+
+- Rename to `SSDT-PM.aml` , and copy to **EFI/OC/ACPI/**
+
+- Open `Config.plist`, find ACPI >> Add, `SSDT-PM.aml` set Enabled to True
+
+- Reboot
+
+</details>
+
+<details>
+
+<summary><strong>USB ports map</strong></summary>
+<br>
+
+If you are using different model and alternative kext from Other folder does not work for you. Try:
+
+- [USBMap](https://github.com/corpnewt/USBMap)
+
+- [Hackintool](https://github.com/headkaze/Hackintool)
+
+</details>
+
+<details>
+
+<summary><strong>Fully functioning multimedia Fn keys</strong></summary>
+
+- Download and install [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant/releases)
+- Open the app and check the `launch on login` option
+
+</details>
+
+<details>
+
+<summary><strong>Use PrtSc key as Screenshot shortcut</strong></summary>
+
+- Go under `SystemPreferences > Keyboard > Shortcuts > Screenshots`
+- Click on `Screenshot and recording options` key map
+- Press `PrtSc` on your keyboard (it should came out as `F13`)
+
+</details>
+
+<details>  
+<summary><strong>Mac Bootloader GUI</strong></summary>
+
+**Setting up OpenCore's GUI**
+
+1. Download [Binary Resources](https://github.com/acidanthera/OcBinaryData) and [OpenCanopy.efi](https://github.com/acidanthera/OpenCorePkg/releases)
+1. Copy the [Resources folder](https://github.com/acidanthera/OcBinaryData) to `EFI/OC`
+1. Add OpenCanopy.efi to `EFI/OC/Drivers`
+1. Make these changes inside `config.plist`:
+  - `Misc -> Boot -> PickerMode`: `External`
+  - `Misc -> Boot -> PickerAttributes`:`1`
+  - `UEFI -> Drivers` and add `OpenCanopy.efi`
+
+</details>
 
 ## Status
 
@@ -86,6 +227,7 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 </details>
 
 <details>
+
 <summary><strong>What's not working :warning:</strong></summary>
 
 - [ ] Fingerprint Reader
@@ -95,110 +237,12 @@ Recomended Upgrade: [UPGRADE.md](https://github.com/banhbaoxamlan/X230-Hackintos
 </details>
 
 <details>
+
 <summary><strong>Bug tracker :heavy_exclamation_mark:</strong></summary>
 
 - [ ] Trackpoint not working after wake from sleep
 
 </details>
-
-## BIOS settings
-
-### Modified BIOS
-
-A simple method to install a modified BIOS is available [here](https://github.com/n4ru/1vyrain/) (no external programmer required).
-
-<details>
-<summary><strong>Settings :100:</strong></summary>
-
-| Main | Sub #1                                 | Sub #2 | Sub #3 | Setting |
-| :------------ | :----------- | ------------- | ------------- | ------------- |
-| Config | Network | Wake On Lan |  | Disabled |
-|  | Serial ATA (SATA) | Mode |  | AHCI |
-| Advanced | System Agent (SA) configuration | Graphics Configuration | DVMT Pre-Allocated | 128MB |
-|  |  |  | DVMT Total Gfx Mem | MAX |
-| Security | Security Chip |  |  | Disabled |
-|  | Memory Protection | Execution Prevention |  | Enabled |
-|  | Anti-Theft | Current Setting |  | Disabled |
-|  |  | Computrace | Current Setting | Disabled |
-|  | Secure Boot |  |  | Disabled |
-| Startup | UEFI/Legacy Boot |  |  | UEFI Only |
-|  |  | CSM Support |  | Disabled |
-
-</details>
-
-## Post-install
-
-<details>
-<summary><strong>Generate your own SMBIOS</strong></summary>
-
-For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-
-- Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
-
-  - MacBookPro10,2
-
-- Open `Config.plist`, find PlatformInfo >> Generic
-
-  - The `Serial` part gets copied to SystemSerialNumber.
-
-  - The `Board Serial` part gets copied to MLB.
-
-  - The `SmUUID` part gets copied to SystemUUID.
-
-**Reminder that you want either an invalid serial or valid serial numbers but those not in use, you want to get a message back like: "Invalid Serial" or "Purchase Date not Validated"** [Apple Check Coverage](https://checkcoverage.apple.com/)
-
-</details>
-
-<details>
-<summary><strong>CPU power management</strong></summary>
-
-Recommended additional steps to improve battery life with optimized CPU power management:
-
-- Open Terminal, copy and paste the following command:
-
-  ```bash
-  curl -o ~/ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/master/ssdtPRGen.sh
-  chmod +x ~/ssdtPRGen.sh
-  ./ssdtPRGen.sh
-  ```
-
-- A customized `SSDT.aml` for your specific machine will now be in the directory **/Users/yourusername/Library/ssdtPRGen**
-
-- Rename it to `SSDT-PM.aml` , and copy to **EFI/OC/ACPI/**
-
-- Open `Config.plist`, find ACPI >> Add, `SSDT-PM.aml` set Enabled to True
-
-- Reboot
-
-</details>
-
-<details>  
-<summary><strong>Fully functioning multimedia Fn keys</strong></summary>
-
-- Download and install [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant/releases)
-- Open the app and check the `launch on login` option
-- Use SSDT-KBD correct with your X230 : [Keyboard](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/Keyboard/)
-  - ThinkLight only: `SSDT-KBD-Basic.aml`
-  - Blacklight + ThinkLight: `SSDT-KBD.aml`
-  - X220 7-row keyboard: `SSDT-KBD-X220.aml`
-  
-
-</details>
-
-<details>  
-<summary><strong>Use PrtSc key as Screenshot shortcut</strong></summary>
-
-- Go under `SystemPreferences > Keyboard > Shortcuts > Screenshots`
-- Click on `Screenshot and recording options` key map
-- Press `PrtSc` on your keyboard (it should came out as `F13`)
-
-</details>
-
-## Support me <3
-
-The project is made for free, but you can buy me a coffee if you want
-
-[![Paypal](https://img.shields.io/badge/paypal-blue)](https://paypal.me/thebinhluong0519)
 
 ## Credits
 
