@@ -194,15 +194,13 @@ If you are using different model and alternative kext from Other folder does not
 <details>  
 <summary><strong>Mac Bootloader GUI</strong></summary>
 
-**Setting up OpenCore's GUI**
-
 1. Download [Binary Resources](https://github.com/acidanthera/OcBinaryData) and [OpenCanopy.efi](https://github.com/acidanthera/OpenCorePkg/releases)
 1. Copy the [Resources folder](https://github.com/acidanthera/OcBinaryData) to `EFI/OC`
 1. Add OpenCanopy.efi to `EFI/OC/Drivers`
 1. Make these changes inside `config.plist`:
-  - `Misc -> Boot -> PickerMode`: `External`
-  - `Misc -> Boot -> PickerAttributes`:`1`
-  - `UEFI -> Drivers` and add `OpenCanopy.efi`
+    - `Misc -> Boot -> PickerMode`: `External`
+    - `Misc -> Boot -> PickerAttributes`:`1`
+    - `UEFI -> Drivers` and add `OpenCanopy.efi`
 
 </details>
 
