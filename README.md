@@ -85,6 +85,8 @@ Recomended Upgrade: [HERE](https://github.com/banhbaoxamlan/X230-Hackintosh/tree
 - Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
 - Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
 
+</details>
+
 <details>
 
 <summary><strong>BIOS settings :100:</strong></summary>
