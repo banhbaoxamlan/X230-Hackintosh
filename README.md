@@ -14,7 +14,7 @@ MacOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 <details>
 
-<summary><strong>Hardware</strong></summary>
+<summary><strong>My hardware</strong></summary>
 
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
@@ -30,7 +30,18 @@ MacOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Keyboard            | 6-row, multimedia Fn keys, LED backlight    |
 | Dock                | ThinkPad UltraBase Series 3                 |
 
-Recomended Upgrade: [HERE](https://github.com/banhbaoxamlan/X230-Hackintosh/tree/master/Other/Modifications/)
+</details>
+
+<details>
+
+<summary><strong>Hardware compatibility</strong></summary>
+
+This EFI will suit any X230 regardless of CPU model, amount of RAM, display resolution, and internal storage.
+
+  1. Optional custom CPU Power Management guide (see below post-install)
+  1. Modified
+      - 1440p display models should change NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> UIScale:2
+      - X220 7-row keyboard should use : SSDT-X220-KBD.aml (SSDT-KBD.aml only for original)
 
 </details>
 
@@ -52,7 +63,6 @@ Recomended Upgrade: [HERE](https://github.com/banhbaoxamlan/X230-Hackintosh/tree
 | Kext                | Version |
 | :------------------ | :------ |
 | AppleALC            | 1.5.1   |
-| Bluetooth_BCM       |         |
 | EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.3   |
 | Lilu                | 1.4.6   |
@@ -81,9 +91,11 @@ Recomended Upgrade: [HERE](https://github.com/banhbaoxamlan/X230-Hackintosh/tree
 
 <summary><strong>How to install macOS</strong></summary>
 
-- To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
-- Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
-- Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
+To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
+
+Useful tools by [CorpNewt](https://github.com/corpnewt) and [headkaze](https://github.com/headkaze/Hackintool)
+
+Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) page
 
 </details>
 
@@ -153,7 +165,7 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - Rename to `SSDT-PM.aml` , and copy to **EFI/OC/ACPI/**
 
-- Open `Config.plist`, find ACPI >> Add, `SSDT-PM.aml` set Enabled to True
+- Open `Config.plist`, enable `ACPI>>Add>>SSDT-PM.aml`
 
 - Reboot
 
@@ -192,15 +204,15 @@ If you are using different model and alternative kext from Other folder does not
 </details>
 
 <details>  
-<summary><strong>Mac Bootloader GUI</strong></summary>
+<summary><strong>Mac bootloader GUI</strong></summary>
 
-1. Download [Binary Resources](https://github.com/acidanthera/OcBinaryData) and [OpenCanopy.efi](https://github.com/acidanthera/OpenCorePkg/releases)
-1. Copy the [Resources folder](https://github.com/acidanthera/OcBinaryData) to `EFI/OC`
-1. Add OpenCanopy.efi to `EFI/OC/Drivers`
-1. Make these changes inside `config.plist`:
-    - `Misc -> Boot -> PickerMode`: `External`
-    - `Misc -> Boot -> PickerAttributes`:`1`
-    - `UEFI -> Drivers` and add `OpenCanopy.efi`
+- Download [Binary Resources](https://github.com/acidanthera/OcBinaryData) and [OpenCanopy.efi](https://github.com/acidanthera/OpenCorePkg/releases)
+- Copy the [Resources folder](https://github.com/acidanthera/OcBinaryData) to `EFI/OC`
+- Add OpenCanopy.efi to `EFI/OC/Drivers`
+- Make these changes inside `config.plist`:
+    - `Misc >> Boot >> PickerMode`: `External`
+    - `Misc >> Boot >> PickerAttributes`:`1`
+    - `UEFI >> Drivers` and add `OpenCanopy.efi`
 
 </details>
 
@@ -246,8 +258,16 @@ If you are using different model and alternative kext from Other folder does not
 
 ## Credits
 
-- [Apple](https://www.apple.com) for macOS
-- [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made
-- [Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts
-- [George Kushnir](https://github.com/n4ru) for modified BIOS
-- [Dortania](https://github.com/dortania) for for the OpenCore Install Guide
+[Apple](https://www.apple.com) for macOS
+
+[Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made
+
+[Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts
+
+[George Kushnir](https://github.com/n4ru) for modified BIOS
+
+[Dortania](https://github.com/dortania) for for the OpenCore Install Guide
+
+[MSzturc](https://github.com/MSzturc) for ThinkpadAssistant
+
+[simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations
