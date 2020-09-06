@@ -174,7 +174,6 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 <details>
 
 <summary><strong>USB ports map</strong></summary>
-<br>
 
 If you are using different model and alternative kext from Other folder does not work for you. Try:
 
