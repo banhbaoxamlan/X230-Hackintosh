@@ -40,8 +40,8 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
   1. Optional custom CPU Power Management guide (see below post-install)
   1. Modified
-      - 1440p display models should change NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> UIScale:2
-      - X220 7-row keyboard should use : SSDT-X220-KBD.aml (SSDT-KBD.aml only for original)
+      - 1440p display models should change `NVRAM>>Add>>7C436110-AB2A-4BBB-A880-FE41995C9F82>>UIScale`: 2
+      - X220 7-row keyboard should use : `SSDT-X220-KBD.aml`
 
 </details>
 
@@ -176,7 +176,6 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 <details>
 
 <summary><strong>USB ports map</strong></summary>
-<br>
 
 If you are using different model and alternative kext from Other folder does not work for you. Try:
 
