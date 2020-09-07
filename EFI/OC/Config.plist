@@ -58,7 +58,7 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
-				<string>SSDT-x220-KBD.aml</string>
+				<string>SSDT-X220-KBD.aml</string>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -147,7 +147,7 @@
 				<key>Comment</key>
 				<string>Drop CpuPm</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>OemTableId</key>
 				<data>Q3B1UG0AAAA=</data>
 				<key>TableLength</key>
@@ -161,7 +161,7 @@
 				<key>Comment</key>
 				<string>Drop Cpu0Ist</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>OemTableId</key>
 				<data>Q3B1MElzdAA=</data>
 				<key>TableLength</key>
@@ -492,12 +492,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AwBmAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -508,6 +502,8 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Enabled</key>
@@ -518,6 +514,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Enabled</key>
@@ -528,6 +526,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Enabled</key>
@@ -538,26 +538,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
-				<key>BundlePath</key>
-				<string>SMCSuperIO.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCSuperIO</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>SMCLightSensor.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCLightSensor</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
 				<key>Enabled</key>
@@ -568,6 +550,20 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>SMCLightSensor.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCLightSensor</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Enabled</key>
@@ -578,6 +574,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Enabled</key>
@@ -588,6 +586,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
 				<key>Enabled</key>
@@ -598,6 +598,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
 				<key>Enabled</key>
@@ -606,6 +608,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Enabled</key>
@@ -616,6 +620,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Enabled</key>
@@ -626,6 +632,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 				<key>Enabled</key>
@@ -636,6 +644,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
 				<key>Enabled</key>
@@ -646,6 +656,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 				<key>Enabled</key>
@@ -656,6 +668,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>EFICheckDisabler.kext</string>
 				<key>Enabled</key>
@@ -664,6 +678,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext</string>
 				<key>Enabled</key>
@@ -674,6 +690,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Enabled</key>
@@ -682,6 +700,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Enabled</key>
@@ -692,6 +712,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM3.kext</string>
 				<key>Enabled</key>
@@ -702,6 +724,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>BlueTooth_BCM.kext</string>
 				<key>Enabled</key>
@@ -753,6 +777,15 @@
 			<false/>
 			<key>XhciPortLimit</key>
 			<true/>
+		</dict>
+		<key>Scheme</key>
+		<dict>
+			<key>FuzzyMatch</key>
+			<false/>
+			<key>KernelArch</key>
+			<string>x86_64</string>
+			<key>KernelCache</key>
+			<string>Auto</string>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -809,16 +842,24 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
+			<key>DmgLoading</key>
+			<string>Any</string>
+			<key>EnablePassword</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
-			<integer>2147483650</integer>
+			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1029,9 +1070,13 @@
 			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleRtcRam</key>
+			<false/>
+			<key>AppleSecureBoot</key>
 			<false/>
 			<key>AppleSmcIo</key>
 			<false/>

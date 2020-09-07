@@ -52,7 +52,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 | Component      | Version           |
 | :------------- | :---------------- |
 | MacOS Catalina | 10.15.6 (19G2021) |
-| OpenCore       | 0.6.0             |
+| OpenCore       | 0.6.1             |
 
 </details>
 
@@ -62,14 +62,16 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Kext                | Version |
 | :------------------ | :------ |
-| AppleALC            | 1.5.1   |
+| AirportBrcmFixup    | 2.0.9   |
+| AppleALC            | 1.5.2   |
+| BrcmPatchRAM        | 2.5.4   |
 | EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.3   |
-| Lilu                | 1.4.6   |
+| Lilu                | 1.4.7   |
 | USBPorts            |         |
-| VirtualSMC          | 1.1.5   |
+| VirtualSMC          | 1.1.6   |
 | VoodooPS2Controller | 2.1.6   |
-| WhateverGreen       | 1.4.1   |
+| WhateverGreen       | 1.4.2   |
 
 </details>
 
@@ -80,7 +82,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 | Driver          | Version           |
 | :-------------- | :---------------- |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenRuntime.efi | OpenCorePkg 0.6.0 |
+| OpenRuntime.efi | OpenCorePkg 0.6.1 |
 
 </details>
 
