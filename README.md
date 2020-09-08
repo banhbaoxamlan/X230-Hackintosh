@@ -6,7 +6,7 @@ MacOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 
 <img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
 **DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
 
@@ -134,8 +134,6 @@ For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenS
 - Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
 
   - MacBookPro10,2
-  
-  - MacBookPro11,2 (for Big Sur)
 
 - Open `Config.plist`, find PlatformInfo >> Generic
 
