@@ -412,16 +412,6 @@
 				<key>Replace</key>
 				<data>WFE2NA==</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q1F to XQ1F (FN - Space)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1ExRg==</data>
-				<key>Replace</key>
-				<data>WFExRg==</data>
-			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
