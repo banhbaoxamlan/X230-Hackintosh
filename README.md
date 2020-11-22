@@ -1,12 +1,12 @@
 # ThinkPad X230 MacOS with OpenCore
 
-MacOS (Currently Catalina `10.15.6`) working on ThinkPad X230
+MacOS (Currently Catalina `10.15.7`) working on ThinkPad X230
 
 **Status: Work In Progress**
 
 <img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.6-brightgreen.svg)](https://www.apple.com/macos/catalina/)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.3-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 
 **DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
 
@@ -19,11 +19,11 @@ MacOS (Currently Catalina `10.15.6`) working on ThinkPad X230
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
 | Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i7-3520M (2C4T, 2.9/3.6Ghz, 4MB) |
-| Memory              | Crucial 16GB DDR3L 1867MHz, dual-channel    |
-| Hard Disk           | Crucial BX500 3D-NAND 240GB                 |
+| Processor           | Intel Core i5-3380M (2C4T, 2.9/3.6Ghz, 3MB) |
+| Memory              | Crucial 16GB DDR3L 1600MHz, dual-channel    |
+| Hard Disk           | Samsung 860 Evo 250GB                       |
 | Integrated Graphics | Intel HD Graphics 4000                      |
-| Display             | 12.5" HD (1366x768) TN - B125XW01.V0        |
+| Display             | 12.5" HD (1366x768)                         |
 | Audio               | Realtek ALC3202 (Layout-id: `18`)           |
 | Ethernet            | Intel 82579LM Gigabit Network Connection    |
 | WIFI+BT             | AzureWave AW-CB160H (BCM94360HMB)           |
@@ -51,8 +51,8 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Component      | Version           |
 | :------------- | :---------------- |
-| MacOS Catalina | 10.15.6 (19G2021) |
-| OpenCore       | 0.6.1             |
+| MacOS Catalina | 10.15.7 (19G2021) |
+| OpenCore       | 0.6.3             |
 
 </details>
 
@@ -62,16 +62,16 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Kext                | Version |
 | :------------------ | :------ |
-| AirportBrcmFixup    | 2.0.9   |
-| AppleALC            | 1.5.2   |
-| BrcmPatchRAM        | 2.5.4   |
+| AirportBrcmFixup    | 2.1.1   |
+| AppleALC            | 1.5.4   |
+| BrcmPatchRAM        | 2.5.5   |
 | EFICheckDisabler    | 0.5.0   |
-| IntelMausi          | 1.0.3   |
-| Lilu                | 1.4.7   |
+| IntelMausi          | 1.0.4   |
+| Lilu                | 1.4.9   |
 | USBPorts            |         |
-| VirtualSMC          | 1.1.6   |
-| VoodooPS2Controller | 2.1.6   |
-| WhateverGreen       | 1.4.2   |
+| VirtualSMC          | 1.1.8   |
+| VoodooPS2Controller | 2.1.8   |
+| WhateverGreen       | 1.4.4   |
 
 </details>
 
@@ -82,7 +82,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 | Driver          | Version           |
 | :-------------- | :---------------- |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenRuntime.efi | OpenCorePkg 0.6.1 |
+| OpenRuntime.efi | OpenCorePkg 0.6.3 |
 
 </details>
 
