@@ -26,9 +26,9 @@ MacOS (Currently Catalina `10.15.7`) working on ThinkPad X230
 | Display             | 12.5" HD (1366x768)                         |
 | Audio               | Realtek ALC3202 (Layout-id: `18`)           |
 | Ethernet            | Intel 82579LM Gigabit Network Connection    |
-| WIFI+BT             | AzureWave AW-CB160H (BCM94360HMB)           |
-| Keyboard            | 6-row, multimedia Fn keys, LED backlight    |
-| Dock                | ThinkPad UltraBase Series 3                 |
+| WIFI+BT             | AzureWave AW-CE123H (BCM94360HMB)           |
+| Keyboard            | 7-row classic, multimedia Fn keys,          |
+| Dock                | ThinkPad Mini Dock Plus Series 3            |
 
 </details>
 
@@ -41,7 +41,6 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
   1. Optional custom CPU Power Management guide (see below post-install)
   1. Modified
       - 1440p display models should change `NVRAM>>Add>>7C436110-AB2A-4BBB-A880-FE41995C9F82>>UIScale`: 2
-      - X220 7-row keyboard should use : `SSDT-X220-KBD.aml`
 
 </details>
 
@@ -51,7 +50,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Component      | Version           |
 | :------------- | :---------------- |
-| MacOS Catalina | 10.15.7 (19G2021) |
+| MacOS Catalina | 10.15.7           |
 | OpenCore       | 0.6.3             |
 
 </details>
@@ -68,7 +67,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 | EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.4   |
 | Lilu                | 1.4.9   |
-| USBPorts            |         |
+| USBInjectAll        | 0.7.1   |
 | VirtualSMC          | 1.1.8   |
 | VoodooPS2Controller | 2.1.8   |
 | WhateverGreen       | 1.4.4   |
@@ -82,6 +81,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 | Driver          | Version           |
 | :-------------- | :---------------- |
 | HfsPlus.efi     | OcBinaryData      |
+| OpenCanopy.efi  | OpenCorePkg 0.6.3 |
 | OpenRuntime.efi | OpenCorePkg 0.6.3 |
 
 </details>
