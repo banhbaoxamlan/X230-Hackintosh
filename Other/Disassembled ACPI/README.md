@@ -9,7 +9,7 @@
 | SSDT-EXT5      | Fix LED not working after wake              |
 | SSDT-GPRW      | Fix immediate wake after sleep              |
 | SSDT-HRTF      | Fix HPET, RTC amd TIMR                      |
-| SSDT-KBD       | Fix Keyboard Map, Trackpoint and Trackpad   |
+| SSDT-KBD       | Remap Keyboard, fix rackpoint and Trackpad  |
 | SSDT-LID       | PNP0C0E forced sleep                        |
 | SSDT-MCHC-SBUS | Add missing SBUS, MCHC                      |
 | SSDT-PMCR      | Add PMCR                                    |
@@ -20,3 +20,5 @@
 | SSDT-WIFI      | Fix DW1510 (not need if you use DW1550,etc) |
 | SSDT-XDSM      | Redirect _DSM to native XDSM on non-MacOS   |
 | SSDT-XOSI      | Operating System Patch                      |
+
+*SSDT-KBD work normal with X230 6-row keyboard (non)backlight and x220 7-row classic keyboard.

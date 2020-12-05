@@ -7,8 +7,8 @@
   - `ACPI>>Add>>SSDT-WIFI.aml`
   - `Kernel>>Add>>BlueTooth_BCM.kext`
 
-
 BONUS: REBRAND THE DW1510 AS APPLE AIRPORT EXTREME [HERE](https://prasys.info/2009/12/09/rebranding-broadcom-802-11abgn-cards-as-airport/)
+More information : [HERE](https://github.com/khronokernel/IO80211-Patches)
 
 ## BCM94352HMB (DW1550)
 
@@ -18,7 +18,6 @@ BONUS: REBRAND THE DW1510 AS APPLE AIRPORT EXTREME [HERE](https://prasys.info/20
   - BrcmFirmwareData.kext
   - BrcmPatchRAM3.kext
 - Open `Config.plist`, enable:
-  - `ACPI>>Add>>SSDT-WIFI.aml`
   - `Kernel>>Add>>AirportBrcmFixup.kext`
   - `Kernel>>Add>>BrcmBluetoothInjector.kext`
   - `Kernel>>Add>>BrcmFirmwareData.kext`
@@ -26,4 +25,4 @@ BONUS: REBRAND THE DW1510 AS APPLE AIRPORT EXTREME [HERE](https://prasys.info/20
 
 ## INTEL WIRELESS (AX200, 7260AC, etc)
 
-See more here: [OpenIntelWireless](https://openintelwireless.github.io/)
+Now support stock WIFI card X230, see more here: [OpenIntelWireless](https://openintelwireless.github.io/)
