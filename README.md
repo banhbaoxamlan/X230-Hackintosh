@@ -2,10 +2,11 @@
 
 MacOS (Currently Catalina `10.15.7` and Big Sur `11.0.1`) working on ThinkPad X230
 
+![X230 MacOS BigSur](https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-big-sur.jpg)
+*X230 running on MacOS BigSur*
+
 **Status: Work In Progress**
 
-![X230 MacOS BigSur](https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-big-sur.png)
-*X230 running on MacOS BigSur*
 
 <img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
 
