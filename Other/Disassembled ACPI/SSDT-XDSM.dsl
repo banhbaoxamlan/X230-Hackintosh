@@ -3,11 +3,11 @@ DefinitionBlock ("", "SSDT", 2, "X230", "XDSM", 0)
     External (_SB.PCI0.LPC, DeviceObj)
     External (_SB.PCI0.LPC.XDSM, MethodObj)
     External (_SB.PCI0.IGBE, DeviceObj)
-	External (_SB.PCI0.IGBE.XDSM, MethodObj)
+    External (_SB.PCI0.IGBE.XDSM, MethodObj)
     External (_SB.PCI0.SMBU, DeviceObj)
     External (_SB.PCI0.SMBU.XDSM, MethodObj)
-    External (_SB.PCI0.SAT0, DeviceObj)
-    External (_SB.PCI0.SAT0.XDSM, MethodObj)
+    External (_SB.PCI0.SAT1, DeviceObj)
+    External (_SB.PCI0.SAT1.XDSM, MethodObj)
     External (_SB.PCI0.XHCI, DeviceObj)
     External (_SB.PCI0.XHCI.XDSM, MethodObj)
 
@@ -37,11 +37,11 @@ DefinitionBlock ("", "SSDT", 2, "X230", "XDSM", 0)
             }
         }
 
-        Scope (\_SB.PCI0.SAT0)
+        Scope (\_SB.PCI0.SAT1)
         {
             Method (_DSM, 4, Serialized)
             {
-                Return (\_SB.PCI0.SAT0.XDSM (Arg0, Arg1, Arg2, Arg3))
+                Return (\_SB.PCI0.SAT1.XDSM (Arg0, Arg1, Arg2, Arg3))
             }
         }
         

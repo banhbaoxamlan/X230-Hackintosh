@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
+	DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
 {
     External (_SB.PCI9.FNOK, IntObj)
     External (_SB.PCI9.MODE, IntObj)
@@ -140,10 +140,6 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
         {
             "Keyboard", Package()
             {
-                "ActionSwipeLeft",  "37 d, 21 d, 21 u, 37 u",
-                "ActionSwipeRight", "37 d, 1e d, 1e u, 37 u",
-                "SleepPressTime",   "1500",
-                "Swap command and option", ">y",
                 "Custom PS2 Map", Package()
                     {
                         Package() {},

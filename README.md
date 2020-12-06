@@ -2,13 +2,7 @@
 
 MacOS (Currently Catalina `10.15.7` and Big Sur `11.0.1`) working on ThinkPad X230
 
-![X230 MacOS BigSur](https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-big-sur.jpg)
-*X230 running on MacOS BigSur*
-
 **Status: Work In Progress**
-
-
-<img align="right" src="https://raw.githubusercontent.com/banhbaoxamlan/X230-Hackintosh/master/Other/README%20Resources/x230-catalina.png" alt="ThinkPad X230 Catalina" width="300"/>
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.3-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/) [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.0.1-purple.svg)](https://www.apple.com/macos/big-sur/)
 
@@ -17,7 +11,6 @@ MacOS (Currently Catalina `10.15.7` and Big Sur `11.0.1`) working on ThinkPad X2
 ## Introduction
 
 <details>
-
 <summary><strong>My hardware</strong></summary>
 
 | Specifications      | Detail                                      |
@@ -37,7 +30,6 @@ MacOS (Currently Catalina `10.15.7` and Big Sur `11.0.1`) working on ThinkPad X2
 </details>
 
 <details>
-
 <summary><strong>Hardware compatibility</strong></summary>
 
 This EFI will suit any X230 regardless of CPU model, amount of RAM, display resolution, and internal storage.
@@ -49,7 +41,6 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 </details>
 
 <details>
-
 <summary><strong>Main software</strong></summary>
 
 | Component      | Version           |
@@ -61,7 +52,6 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 </details>
 
 <details>
-
 <summary><strong>Kernel extensions</strong></summary>
 
 | Kext                | Version |
@@ -80,7 +70,6 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 </details>
 
 <details>
-
 <summary><strong>UEFI drivers</strong></summary>
 
 | Driver          | Version           |
@@ -91,11 +80,9 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 </details>
 
-
 ## Installation
 
 <details>
-
 <summary><strong>How to install macOS</strong></summary>
 
 To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
@@ -107,7 +94,6 @@ Complete EFI is available in the [releases](https://github.com/banhbaoxamlan/X23
 </details>
 
 <details>
-
 <summary><strong>BIOS settings :100:</strong></summary>
 
 A simple method to install a modified BIOS is available [here](https://github.com/n4ru/1vyrain/) (no external programmer required).
@@ -131,7 +117,6 @@ A simple method to install a modified BIOS is available [here](https://github.co
 ## Post-install
 
 <details>
-
 <summary><strong>Generate your own SMBIOS</strong></summary>
 
 For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
@@ -139,6 +124,7 @@ For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenS
 - Run GenSMBIOS, pick option 1 for downloading MacSerial and Option 3 for selecting out SMBIOS
 
   - MacBookPro10,2
+  - MacBookPro11,5 (Big Sur dropped support 10,x and older)
 
 - Open `Config.plist`, find PlatformInfo >> Generic
 
@@ -153,11 +139,11 @@ For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenS
 </details>
 
 <details>
-
 <summary><strong>CPU power management</strong></summary>
 
 Recommended additional steps to improve battery life with optimized CPU power management:
 
+- Open Config.plist, enable `ACPI>>Delete` : Drop CpuPm and Drop Cpu0Ist
 - Open Terminal, copy and paste the following command:
 
   ```bash
@@ -174,10 +160,11 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - Reboot
 
+- Disable Drop CpuPm and Drop Cpu0Ist
+
 </details>
 
 <details>
-
 <summary><strong>USB ports map</strong></summary>
 
 If you are using different model and alternative kext from Other folder does not work for you. Try:
@@ -189,7 +176,6 @@ If you are using different model and alternative kext from Other folder does not
 </details>
 
 <details>
-
 <summary><strong>Fully functioning multimedia Fn keys</strong></summary>
 
 - Download and install [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant/releases)
@@ -198,25 +184,11 @@ If you are using different model and alternative kext from Other folder does not
 </details>
 
 <details>
-
 <summary><strong>Use PrtSc key as Screenshot shortcut</strong></summary>
 
 - Go under `SystemPreferences > Keyboard > Shortcuts > Screenshots`
 - Click on `Screenshot and recording options` key map
 - Press `PrtSc` on your keyboard (it should came out as `F13`)
-
-</details>
-
-<details>  
-<summary><strong>Mac bootloader GUI</strong></summary>
-
-- Download [Binary Resources](https://github.com/acidanthera/OcBinaryData) and [OpenCanopy.efi](https://github.com/acidanthera/OpenCorePkg/releases)
-- Copy the [Resources folder](https://github.com/acidanthera/OcBinaryData) to `EFI/OC`
-- Add OpenCanopy.efi to `EFI/OC/Drivers`
-- Make these changes inside `config.plist`:
-    - `Misc >> Boot >> PickerMode`: `External`
-    - `Misc >> Boot >> PickerAttributes`:`1`
-    - `UEFI >> Drivers` and add `OpenCanopy.efi`
 
 </details>
 
