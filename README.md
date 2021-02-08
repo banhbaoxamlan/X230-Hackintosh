@@ -23,7 +23,7 @@ MacOS (Currently Catalina `10.15.7` and Big Sur `11.2`) working on ThinkPad X230
 | Display             | 12.5" HD (1366x768) IPS                     |
 | Audio               | Realtek ALC3202 (Layout-id: `18`)           |
 | Ethernet            | Intel 82579LM Gigabit Network Connection    |
-| WIFI+BT             | AzureWave AW-CE123H (BCM94360HMB)           |
+| WIFI+BT             | AzureWave AW-CE123H (BCM94352HMB)           |
 | Keyboard            | 7-row classic, multimedia Fn keys,          |
 | Dock                | ThinkPad Mini Dock Plus Series 3            |
 
