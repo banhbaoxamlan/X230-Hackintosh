@@ -1,10 +1,10 @@
 # ThinkPad X230 MacOS with OpenCore
 
-MacOS (Currently Catalina `10.15.7` and Big Sur `11.0.1`) working on ThinkPad X230
+MacOS (Currently Catalina `10.15.7` and Big Sur `11.2`) working on ThinkPad X230
 
 **Status: Work In Progress**
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.3-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/) [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.0.1-purple.svg)](https://www.apple.com/macos/big-sur/)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/) [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.2-purple.svg)](https://www.apple.com/macos/big-sur/)
 
 **DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
 
@@ -20,7 +20,7 @@ MacOS (Currently Catalina `10.15.7` and Big Sur `11.0.1`) working on ThinkPad X2
 | Memory              | Crucial 16GB DDR3L 1600MHz, dual-channel    |
 | Hard Disk           | Samsung 860 Evo 250GB                       |
 | Integrated Graphics | Intel HD Graphics 4000                      |
-| Display             | 12.5" HD (1366x768)                         |
+| Display             | 12.5" HD (1366x768) IPS                     |
 | Audio               | Realtek ALC3202 (Layout-id: `18`)           |
 | Ethernet            | Intel 82579LM Gigabit Network Connection    |
 | WIFI+BT             | AzureWave AW-CE123H (BCM94360HMB)           |
@@ -43,11 +43,11 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 <details>
 <summary><strong>Main software</strong></summary>
 
-| Component      | Version           |
-| :------------- | :---------------- |
-| MacOS Big Sur  | 11.0.1            |
-| MacOS Catalina | 10.15.7           |
-| OpenCore       | 0.6.3             |
+| Component      | Version |
+| :------------- | :------ |
+| MacOS Big Sur  | 11.2    |
+| MacOS Catalina | 10.15.7 |
+| OpenCore       | 0.6.6   |
 
 </details>
 
@@ -57,15 +57,15 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 | Kext                | Version |
 | :------------------ | :------ |
 | AirportBrcmFixup    | 2.1.1   |
-| AppleALC            | 1.5.4   |
+| AppleALC            | 1.5.7   |
 | BrcmPatchRAM        | 2.5.5   |
 | EFICheckDisabler    | 0.5.0   |
-| IntelMausi          | 1.0.4   |
-| Lilu                | 1.4.9   |
+| IntelMausi          | 1.0.5   |
+| Lilu                | 1.5.1   |
 | USBInjectAll        | 0.7.1   |
-| VirtualSMC          | 1.1.8   |
-| VoodooPS2Controller | 2.1.8   |
-| WhateverGreen       | 1.4.4   |
+| VirtualSMC          | 1.2.0   |
+| VoodooPS2Controller | 2.2.1   |
+| WhateverGreen       | 1.4.7   |
 
 </details>
 
@@ -74,9 +74,9 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Driver          | Version           |
 | :-------------- | :---------------- |
-| HfsPlus.efi     | OcBinaryData      |
-| OpenCanopy.efi  | OpenCorePkg 0.6.3 |
-| OpenRuntime.efi | OpenCorePkg 0.6.3 |
+| OpenHfsPlus.efi | OpenCorePkg 0.6.6 |
+| OpenCanopy.efi  | OpenCorePkg 0.6.6 |
+| OpenRuntime.efi | OpenCorePkg 0.6.6 |
 
 </details>
 
@@ -102,8 +102,6 @@ A simple method to install a modified BIOS is available [here](https://github.co
 | :------------ | :----------- | ------------- | ------------- | ------------- |
 | Config | Network | Wake On Lan |  | Disabled |
 |  | Serial ATA (SATA) | Mode |  | AHCI |
-| Advanced | System Agent (SA) configuration | Graphics Configuration | DVMT Pre-Allocated | 128MB |
-|  |  |  | DVMT Total Gfx Mem | MAX |
 | Security | Security Chip |  |  | Disabled |
 |  | Memory Protection | Execution Prevention |  | Enabled |
 |  | Anti-Theft | Current Setting |  | Disabled |
@@ -160,7 +158,6 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - Reboot
 
-- Disable Drop CpuPm and Drop Cpu0Ist
 
 </details>
 
