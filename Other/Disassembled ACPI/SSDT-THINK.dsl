@@ -1,7 +1,4 @@
-/*
- * Sample SSDT for ThinkSMC
- */
-DefinitionBlock ("", "SSDT", 2, "hack", "Think", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "X230", "Think", 0)
 {
     External (_SB.PCI0.LPC.EC, DeviceObj)    // EC path
     External (_SB.PCI0.LPC.EC.HKEY, DeviceObj)    // HKEY path
@@ -19,7 +16,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "Think", 0x00000000)
             // Initialze mute button mode like Linux when it's broken, may be combined with MuteLEDFixup in prefpane.
             LNUX = 0x01
             // Enable DYTC thermal-management on newer Thinkpads. Please check \_SB.PCI0.LPCB.EC.HKEY.DYTC()
-            WNTF = 0x01
+            WNTF = 0x00
         }
     }
 
@@ -92,4 +89,3 @@ DefinitionBlock ("", "SSDT", 2, "hack", "Think", 0x00000000)
         }
     }
 }
-
