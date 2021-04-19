@@ -25,7 +25,7 @@ More information : [HERE](https://github.com/khronokernel/IO80211-Patches)
   - EFI/OC/Config.plist > Kernel > Add > AirPortBrcmNIC_Injector > Enabled = Yes
   - EFI/OC/Config.plist > Kernel > Add > AirPortBrcm4360_Injector > Enabled = No
   - EFI/OC/Config.plist > Kernel > Add > BrcmFirmwareData.kext > Enabled = Yes
-  - EFI/OC/Config.plist > Kernel > Add > cmPatchRAM3.kext > Enabled = Yes
+  - EFI/OC/Config.plist > Kernel > Add > BrcmPatchRAM3.kext > Enabled = Yes
 
 # Bluetooth
 
