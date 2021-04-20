@@ -1,12 +1,10 @@
 # ThinkPad X230 MacOS with OpenCore
 
-MacOS (Currently Catalina `10.15.7` and Big Sur `11.2`) working on ThinkPad X230
-
-**Status: Work In Progress** (Sorry, I will update my repo next week)
-
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/) [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.2-purple.svg)](https://www.apple.com/macos/big-sur/)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) ![MacOS Big Sur](https://img.shields.io/badge/macOS-11.2.3-purple.svg)](https://www.apple.com/macos/big-sur/)
 
 **DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
+
+[![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-orange)](https://www.paypal.com/paypalme/thebinhluong0519)
 
 ## Introduction
 
@@ -16,8 +14,8 @@ MacOS (Currently Catalina `10.15.7` and Big Sur `11.2`) working on ThinkPad X230
 | Specifications      | Detail                                      |
 | :------------------ | :------------------------------------------ |
 | Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |
-| Processor           | Intel Core i5-3380M (2C4T, 2.9/3.6Ghz, 3MB) |
-| Memory              | Crucial 16GB DDR3L 1600MHz, dual-channel    |
+| Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3Ghz, 3MB) |
+| Memory              | SKHynix 16GB(8x2) DDR3L 1600MHz             |
 | Hard Disk           | Samsung 860 Evo 250GB                       |
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Display             | 12.5" HD (1366x768) IPS                     |
@@ -45,7 +43,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Component      | Version |
 | :------------- | :------ |
-| MacOS Big Sur  | 11.2    |
+| MacOS Big Sur  | 11.2.3  |
 | MacOS Catalina | 10.15.7 |
 | OpenCore       | 0.6.6   |
 
@@ -141,7 +139,9 @@ For setting up the SMBIOS info, use [GenSMBIOS](https://github.com/corpnewt/GenS
 
 Recommended additional steps to improve battery life with optimized CPU power management:
 
-- Open Config.plist, enable `ACPI>>Delete` : Drop CpuPm and Drop Cpu0Ist
+- Go to `EFI/OC/Config.plist > ACPI > Delete`, set:
+  - `Drop CpuPm > Enable = True`
+  - `Drop Cpu0Ist > Enable = True`
 - Open Terminal, copy and paste the following command:
 
   ```bash
@@ -154,7 +154,7 @@ Recommended additional steps to improve battery life with optimized CPU power ma
 
 - Rename to `SSDT-PM.aml` , and copy to **EFI/OC/ACPI/**
 
-- Open `Config.plist`, enable `ACPI>>Add>>SSDT-PM.aml`
+- Go to `EFI/OC/Config.plist > ACPI > Add > SSDT-PM.aml > Enable = True`
 
 - Reboot
 
