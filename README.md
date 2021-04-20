@@ -15,14 +15,14 @@
 | :------------------ | :------------------------------------------ |
 | Computer model      | Lenovo ThinkPad X230 (Type: 2325)           |
 | Processor           | Intel Core i5-3320M (2C4T, 2.6/3.3Ghz, 3MB) |
-| Memory              | SKHynix 16GB(8x2) DDR3L 1600MHz             |
+| Memory              | SK Hynix 16GB(8x2) DDR3L 1600MHz            |
 | Hard Disk           | Samsung 860 Evo 250GB                       |
 | Integrated Graphics | Intel HD Graphics 4000                      |
 | Display             | 12.5" HD (1366x768) IPS                     |
 | Audio               | Realtek ALC3202 (Layout-id: `18`)           |
 | Ethernet            | Intel 82579LM Gigabit Network Connection    |
 | WIFI+BT             | AzureWave AW-CE123H (BCM94352HMB)           |
-| Keyboard            | 7-row classic, multimedia Fn keys,          |
+| Keyboard            | 7-row classic, multimedia Fn keys           |
 | Dock                | ThinkPad Mini Dock Plus Series 3            |
 
 </details>
@@ -34,7 +34,7 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
   1. Optional custom CPU Power Management guide (see below post-install)
   1. Modified
-      - 1440p display models should change `NVRAM>>Add>>7C436110-AB2A-4BBB-A880-FE41995C9F82>>UIScale`: 2
+      - 1440p display models should change `NVRAM > Add > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > UIScale = 2`
 
 </details>
 
