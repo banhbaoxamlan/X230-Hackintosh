@@ -72,6 +72,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-XDSM.aml</string>
+				<key>Path</key>
+				<string>SSDT-XDSM.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-XOSI.aml</string>
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
@@ -104,6 +112,34 @@
 				<true/>
 				<key>OemTableId</key>
 				<data>Q3B1MElzdAA=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
+			<dict>
+				<key>All</key>
+				<true/>
+				<key>Comment</key>
+				<string>Drop TP-SSDT1</string>
+				<key>Enabled</key>
+				<true/>
+				<key>OemTableId</key>
+				<data>VFAtU1NEVDE=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
+			<dict>
+				<key>All</key>
+				<true/>
+				<key>Comment</key>
+				<string>Drop TP-SSDT2</string>
+				<key>Enabled</key>
+				<true/>
+				<key>OemTableId</key>
+				<data>VFAtU1NEVDI=</data>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
@@ -152,8 +188,6 @@
 				<data>hkJBVDA=</data>
 				<key>Replace</key>
 				<data>hkJBVFg=</data>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -164,8 +198,16 @@
 				<data>hkJBVDE=</data>
 				<key>Replace</key>
 				<data>hkJBVFg=</data>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Name (NBCF, 0x00) to (NBCF, 0x01)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>CE5CQ0YKAA==</data>
+				<key>Replace</key>
+				<data>CE5CQ0YKAQ==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -179,7 +221,7 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -283,6 +325,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/WhateverGreen</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>WhateverGreen.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -476,6 +536,24 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCLightSensor</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>SMCLightSensor.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
 				<key>Arch</key>
 				<string>Any</string>
@@ -589,24 +667,6 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/WhateverGreen</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>WhateverGreen.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -889,7 +949,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>C026388024NGF2C1H</string>
 			<key>ROM</key>
 			<data></data>
 			<key>SystemMemoryStatus</key>
@@ -901,9 +961,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro11,5</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02SFDYKG85Y</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>61118161-E252-4831-91E8-6ECBCEA926EF</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
