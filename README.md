@@ -1,6 +1,6 @@
 # ThinkPad X230 MacOS with OpenCore
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) ![MacOS Big Sur](https://img.shields.io/badge/macOS-11.2.3-purple.svg)](https://www.apple.com/macos/big-sur/)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.2.3-purple.svg)](https://www.apple.com/macos/big-sur/)
 
 **DISCLAIMER:** Read the entire README before you start. I am not responsible for any damages you may cause.
 
@@ -175,6 +175,12 @@ If you are using different model and alternative kext from Other folder does not
 <details>
 <summary><strong>Fully functioning multimedia Fn keys</strong></summary>
 
+To have working Keyboard Function Keys (Fn) and Fan reading etc, you need to install the YogaSMCPane and the YogaSMC App.
+YogaSMC.kext is already included in the EFI so when yo go to releases tab, you download the **YogaSMC-App-release.dmg**
+- https://github.com/zhen-zen/YogaSMC
+
+
+Or you can use ThinkPadAssistant
 - Download and install [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant/releases)
 - Open the app and check the `launch on login` option
 
