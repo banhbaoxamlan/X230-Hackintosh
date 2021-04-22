@@ -4,7 +4,7 @@
 
 **DISCLAIMER:** READ THE ENTIRE README.MD BEFORE YOU START. I am not responsible for any damages you may cause.
 
-## Introduction
+> ## Introduction
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
@@ -36,6 +36,39 @@
 </details>
 
 <details>
+<summary><strong> REFERENCES </strong></summary>
+<br>
+
+* Read these before you start:
+- [dortania's Hackintosh guides](https://github.com/dortania)
+- [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+- [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/)
+- [dortania/ Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)
+- [dortania/ opencore `multiboot`](https://github.com/dortania/OpenCore-Multiboot)
+- [dortania/ `USB map` guide](https://dortania.github.io/OpenCore-Post-Install/usb/)
+- [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
+- `Configuration.pdf` and `Differences.pdf` in each `OpenCore` releases.
+
+* ### No seriously, please read those.
+</details> 
+
+<details>
+<summary><strong> REQUIREMENTS </strong></summary>
+<br>
+
+- A macOS machine(optional): to create the macOS installer.
+- Flash drive, 12GB or more, for the above purpose.  
+- Xcode works fine for editing plist files on macOS, but I prefer [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/).  
+- [ProperTree](https://github.com/corpnewt/ProperTree) if you need to edit plist files on Windows.  
+- [MaciASL](https://github.com/acidanthera/MaciASL), for patching ACPI tables and editing ACPI patches.
+- [MountEFI](https://github.com/corpnewt/MountEFI) to quickly mount EFI partitions.  
+- [IORegistryExplorer](https://developer.apple.com/downloads), for diagnosis.  
+- [Hackintool](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/), for diagnostic ONLY, Hackintool should not be used for patching, it is outdated.
+- Patience and time, especially if this is your first time Hackintosh-ing.
+
+</details> 
+
+<details>
 <summary><strong> HARDWARE </strong></summary>
 <br>
 
@@ -52,6 +85,19 @@
 </details>
 
 <details>
+<summary><strong> GETTING STARTED </strong></summary>
+<br>
+
+Before you do anything, please familiarize yourself with basic Hackintosh terminologies and the basic Hackintosh process by throughly reading Dortania guides as linked in `REFERENCES`
+
+- Creating a macOS installer: refer to [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
+- [**README-HARDWARE**](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/Others/README-HARDWARE.md): Requirements before installing. 
+
+</details> 
+
+> ## SUPPORT
+
+<details>
 <summary><strong> CREDITS </strong></summary>
 <br>
 
@@ -63,3 +109,5 @@
 - [MSzturc](https://github.com/MSzturc) for ThinkpadAssistant
 - [simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations
 - [zhen-zen](https://github.com/zhen-zen) for YogaSMC
+
+</details>
