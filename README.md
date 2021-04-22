@@ -39,7 +39,7 @@
 <summary><strong> REFERENCES </strong></summary>
 <br>
 
-* Read these before you start:
+Read these before you start:
 - [dortania's Hackintosh guides](https://github.com/dortania)
 - [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/)
@@ -49,7 +49,6 @@
 - [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
 - `Configuration.pdf` and `Differences.pdf` in each `OpenCore` releases.
 
-* ### No seriously, please read those.
 </details> 
 
 <details>
