@@ -54,16 +54,16 @@ This EFI will suit any X230 regardless of CPU model, amount of RAM, display reso
 
 | Kext                | Version |
 | :------------------ | :------ |
-| AirportBrcmFixup    | 2.1.1   |
-| AppleALC            | 1.5.7   |
-| BrcmPatchRAM        | 2.5.5   |
+| AirportBrcmFixup    | 2.1.2   |
+| AppleALC            | 1.5.9   |
+| BrcmPatchRAM        | 2.5.8   |
 | EFICheckDisabler    | 0.5.0   |
 | IntelMausi          | 1.0.5   |
-| Lilu                | 1.5.1   |
+| Lilu                | 1.5.2   |
 | USBInjectAll        | 0.7.1   |
-| VirtualSMC          | 1.2.0   |
-| VoodooPS2Controller | 2.2.1   |
-| WhateverGreen       | 1.4.7   |
+| VirtualSMC          | 1.2.2   |
+| VoodooPS2Controller | 2.2.2   |
+| WhateverGreen       | 1.4.9   |
 
 </details>
 
