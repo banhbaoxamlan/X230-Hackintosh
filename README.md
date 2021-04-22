@@ -91,7 +91,7 @@
 Before you do anything, please familiarize yourself with basic Hackintosh terminologies and the basic Hackintosh process by throughly reading Dortania guides as linked in `REFERENCES`
 
 - Creating a macOS installer: refer to [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
-- [**README-HARDWARE**](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/Others/README-HARDWARE.md): Requirements before installing. 
+- [**README-HARDWARE**](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/Other/README_HARDWARE.md): Requirements before installing. 
 
 </details> 
 
