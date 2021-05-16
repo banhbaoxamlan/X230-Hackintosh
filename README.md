@@ -77,13 +77,12 @@ Read these before you start:
 <summary><strong> HARDWARE </strong></summary>
 <br>
 
-| Category  | Component                            |
-| --------- | ------------------------------------ |
-| CPU       | [Intel Core i5-3320M](https://ark.intel.com/content/www/us/en/ark/products/64896/intel-core-i5-3320m-processor-3m-cache-up-to-3-30-ghz.html) |
-| SSD       | Samsung 860 Evo 500GB |
-| Display   | 12.5" IPS HD (1366x1768) |
-| WiFi & BT | BCM94352HMB |
-| WWAN      | None |
+| Category  | THINKPAD X230            | THINKPAD T530
+| --------- | ------------------------ | ------------------------ |
+| CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |
+| SSD       | Samsung 860 Evo 500GB    | SanDisk A400 256GB       |
+| Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |
+| WiFi & BT | BCM94352HMB              | BCM94352HMB              |
 
 - Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
 
