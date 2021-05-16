@@ -16,41 +16,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-ALS0.aml</string>
+				<string>SSDT-ECRW.aml</string>
 				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-BAT0.aml</string>
-				<key>Path</key>
-				<string>SSDT-BAT0.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EHC1.aml</string>
-				<key>Path</key>
-				<string>SSDT-EHC1.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EXT4.aml</string>
-				<key>Path</key>
-				<string>SSDT-EXT4.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EXT5.aml</string>
-				<key>Path</key>
-				<string>SSDT-EXT5.aml</string>
+				<string>SSDT-ECRW.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -80,27 +48,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-LID.aml</string>
-				<key>Path</key>
-				<string>SSDT-LID.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-MCHC-SBUS.aml</string>
-				<key>Path</key>
-				<string>SSDT-MCHC-SBUS.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-PM.aml</string>
 				<key>Path</key>
 				<string>SSDT-PM.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -120,25 +72,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PTSWAK.aml</string>
+				<string>SSDT-PTWK.aml</string>
 				<key>Path</key>
-				<string>SSDT-PTSWAK.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PWRB.aml</string>
-				<key>Path</key>
-				<string>SSDT-PWRB.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-SDC.aml</string>
-				<key>Path</key>
-				<string>SSDT-SDC.aml</string>
+				<string>SSDT-PTWK.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -147,6 +83,22 @@
 				<string>SSDT-XDSM.aml</string>
 				<key>Path</key>
 				<string>SSDT-XDSM.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ThinkSMC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-THINK.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-VDEV.aml</string>
+				<key>Path</key>
+				<string>SSDT-VDEV.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -204,93 +156,23 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>TP-BAT:GBIF03 to XBIF03</string>
+				<string>_DSM to XDSM</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R0JJRgM=</data>
+				<data>X0RTTQ==</data>
 				<key>Replace</key>
-				<data>WEJJRgM=</data>
+				<data>WERTTQ==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>TP-BAT:GBST04 to XBST04</string>
+				<string>HPET (\WNTF\!WXPF to _OSI("Darwin"))</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R0JTVAQ=</data>
+				<data>oBCQXFdOVEaSXFdYUEY=</data>
 				<key>Replace</key>
-				<data>WEJTVAQ=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:MDGS=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AU1ER1MH</data>
-				<key>Replace</key>
-				<data>AU1ER1MA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:MCPU=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AU1DUFUH</data>
-				<key>Replace</key>
-				<data>AU1DUFUA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:BATM=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AUJBVE0H</data>
-				<key>Replace</key>
-				<data>AUJBVE0A</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:MSMI=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AU1TTUkH</data>
-				<key>Replace</key>
-				<data>AU1TTUkA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:BFWM=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AUJGV00H</data>
-				<key>Replace</key>
-				<data>AUJGV00A</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:XDHK=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AVhESEsH</data>
-				<key>Replace</key>
-				<data>AVhESEsA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Mutex:MWMI=0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AU1XTUkH</data>
-				<key>Replace</key>
-				<data>AU1XTUkA</data>
+				<data>oA9fT1NJDURhcndpbgA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -344,93 +226,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HPET (\WNTF\!WXPF to _OSI("Darwin"))</string>
+				<string>Name (NBCF, 0x00) to (NBCF, 0x01)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>oBCQXFdOVEaSXFdYUEY=</data>
+				<data>CE5CQ0YKAA==</data>
 				<key>Replace</key>
-				<data>oA9fT1NJDURhcndpbgA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_LID to XLID</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X0xJRAA=</data>
-				<key>Replace</key>
-				<data>WExJRAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q13 to XQ13</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1ExMw==</data>
-				<key>Replace</key>
-				<data>WFExMw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q6A to XQ6A (Microphone Mute Button)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1E2QQ==</data>
-				<key>Replace</key>
-				<data>WFE2QQ==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q13 to XQ13 (F4 - Sleep)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1ExMw==</data>
-				<key>Replace</key>
-				<data>WFExMw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q14 to XQ14 (F9 - Brightness Up)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1ExNA==</data>
-				<key>Replace</key>
-				<data>WFExNA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q15 to XQ15 (F8 - Brightness Down)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1ExNQ==</data>
-				<key>Replace</key>
-				<data>WFExNQ==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q16 to XQ16 (F7 - Dual Display)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1ExNg==</data>
-				<key>Replace</key>
-				<data>WFExNg==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q64 to XQ64 (F5 - WiFi)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1E2NA==</data>
-				<key>Replace</key>
-				<data>WFE2NA==</data>
+				<data>CE5CQ0YKAQ==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -450,8 +252,7 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -502,7 +303,12 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwBmAQ==</data>
+				<data>BABmAQ==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x1)</key>
+			<dict>
+				<key>#compatible</key>
+				<string>#pci14e4,4353</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -560,6 +366,96 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
+				<string>Contents/MacOS/WhateverGreen</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>WhateverGreen.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AppleALC</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AppleALC.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCBatteryManager</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>SMCBatteryManager.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCProcessor</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>SMCProcessor.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ECEnabler</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>ECEnabler.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportBrcmFixup</string>
 				<key>Arch</key>
 				<string>Any</string>
@@ -574,7 +470,7 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
@@ -601,24 +497,6 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AppleALC</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>AppleALC.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -722,83 +600,11 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCBatteryManager</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>SMCBatteryManager.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCLightSensor</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>SMCLightSensor.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCProcessor</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>SMCProcessor.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBInjectAll</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBInjectAll.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<false/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -902,16 +708,51 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/WhateverGreen</string>
+				<string>Contents/MacOS/BrightnessKeys</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>WhateverGreen.kext</string>
+				<string>BrightnessKeys.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/YogaSMC</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>YogaSMC.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict>
 			<key>DummyPowerManagement</key>
@@ -926,8 +767,7 @@
 			<string></string>
 		</dict>
 		<key>Patch</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -976,8 +816,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -1021,8 +860,7 @@
 			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -1051,8 +889,7 @@
 			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
-		<array>
-		</array>
+		<array/>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -1071,7 +908,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-no_compat_check</string>
+				<string>-v</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>prev-lang:kbd</key>
@@ -1306,7 +1143,19 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array>
+				<array>
+			<dict>
+				<key>Address</key>
+				<integer>569344</integer>
+				<key>Type</key>
+				<string>RuntimeCode</string>
+				<key>Comment</key>
+				<string>Fix black screen on wake from hibernation for Lenovo Thinkpad T480/T490</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Size</key>
+				<integer>4096</integer>
+			</dict>
 		</array>
 	</dict>
 </dict>
