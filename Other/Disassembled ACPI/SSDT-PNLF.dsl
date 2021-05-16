@@ -1,12 +1,13 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
-{
-    External (_SB_.PCI0.VID_, DeviceObj)
+{   
     External (RMCF.BKLT, IntObj)
     External (RMCF.FBTP, IntObj)
     External (RMCF.GRAN, IntObj)
     External (RMCF.LEVW, IntObj)
     External (RMCF.LMAX, IntObj)
 
+    External (_SB.PCI0.VID, DeviceObj)
+    
     Scope (_SB.PCI0.VID)
     {
         OperationRegion (RMP3, PCI_Config, Zero, 0x14)
@@ -14,11 +15,21 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
 
     Device (_SB.PCI0.VID.PNLF)
     {
-        Name (_ADR, Zero)
         Name (_HID, EisaId ("APP0002"))
         Name (_CID, "backlight")
-        Name (_UID, Zero)
-        Name (_STA, 0x0B)
+        Name (_UID, 0)
+        Method (_STA, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0B)
+            }
+            Else
+            {
+                Return (Zero)
+            }
+        }
+        
         Field (^RMP3, AnyAcc, NoLock, Preserve)
         {
             Offset (0x02), 
@@ -74,7 +85,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
             }
         }
 
-        Method (_INI, 0, NotSerialized)  // _INI: Initialize
+        Method (_INI, 0, NotSerialized)
         {
             Store (One, Local4)
             If (CondRefOf (\RMCF.BKLT))
