@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19H524</string>
+	<string>18B57c</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Keyboard</string>
 	<key>CFBundleGetInfoString</key>
-	<string>2.2.3, Copyright Apple Computer, Inc. 2000-2003, RehabMan 2012-2013</string>
+	<string>1.9.2, Copyright Apple Computer, Inc. 2000-2003, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
-	<string>as.acidanthera.voodoo.driver.PS2Keyboard</string>
+	<string>org.rehabman.voodoo.driver.PS2Keyboard</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.2.3</string>
+	<string>1.9.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,29 +25,27 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.2.3</string>
+	<string>1.9.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12B45b</string>
-	<key>DTPlatformName</key>
-	<string>macosx</string>
+	<string>10A255</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>20A2408</string>
+	<string>18A384</string>
 	<key>DTSDKName</key>
-	<string>macosx11.0</string>
+	<string>macosx10.14</string>
 	<key>DTXcode</key>
-	<string>1220</string>
+	<string>1000</string>
 	<key>DTXcodeBuild</key>
-	<string>12B45b</string>
+	<string>10A255</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ApplePS2Keyboard</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.voodoo.driver.PS2Keyboard</string>
+			<string>org.rehabman.voodoo.driver.PS2Keyboard</string>
 			<key>IOClass</key>
 			<string>ApplePS2Keyboard</string>
 			<key>IOProviderClass</key>
@@ -277,6 +275,14 @@
 				</dict>
 				<key>Default</key>
 				<dict>
+					<key>ActionSwipeDown</key>
+					<string>3b d, 37 d, 7d d, 7d u, 37 u, 3b u</string>
+					<key>ActionSwipeLeft</key>
+					<string>3b d, 37 d, 7b d, 7b u, 37 u, 3b u</string>
+					<key>ActionSwipeRight</key>
+					<string>3b d, 37 d, 7c d, 7c u, 37 u, 3b u</string>
+					<key>ActionSwipeUp</key>
+					<string>3b d, 37 d, 7e d, 7e u, 37 u, 3b u</string>
 					<key>Breakless PS2</key>
 					<array>
 						<string>;Items must be strings in the form of breaklessscan (in hex)</string>
@@ -306,7 +312,7 @@
 					<key>Swap capslock and left control</key>
 					<false/>
 					<key>Swap command and option</key>
-					<false/>
+					<true/>
 					<key>Use ISO layout keyboard</key>
 					<false/>
 					<key>alt_handler_id</key>
@@ -578,6 +584,147 @@
 						</array>
 					</dict>
 				</dict>
+				<key>LENOVO</key>
+				<dict>
+					<key>Options</key>
+					<dict>
+						<key>ActionSwipeDown</key>
+						<string>3b d, 37 d, 7d d, 7d u, 37 u, 3b u</string>
+						<key>ActionSwipeLeft</key>
+						<string>37 d, 21 d, 21 u, 37 u</string>
+						<key>ActionSwipeRight</key>
+						<string>37 d, 1e d, 1e u, 37 u</string>
+						<key>ActionSwipeUp</key>
+						<string>3b d, 37 d, 7e d, 7e u, 37 u, 3b u</string>
+						<key>HIDF12EjectDelay</key>
+						<integer>250</integer>
+						<key>LogScanCodes</key>
+						<integer>0</integer>
+						<key>Make Application key into Apple Fn key</key>
+						<false/>
+						<key>Make Application key into right windows</key>
+						<true/>
+						<key>Make right modifier keys into Hangul and Hanja</key>
+						<false/>
+						<key>SleepPressTime</key>
+						<integer>1500</integer>
+						<key>Swap capslock and left control</key>
+						<false/>
+						<key>Swap command and option</key>
+						<true/>
+						<key>Use ISO layout keyboard</key>
+						<false/>
+						<key>alt_handler_id</key>
+						<integer>3</integer>
+					</dict>
+					<key>Options-Keys</key>
+					<dict>
+						<key>ActionSwipeDown</key>
+						<string>3b d, 37 d, 7d d, 7d u, 37 u, 3b u</string>
+						<key>ActionSwipeLeft</key>
+						<string>37 d, 21 d, 21 u, 37 u</string>
+						<key>ActionSwipeRight</key>
+						<string>37 d, 1e d, 1e u, 37 u</string>
+						<key>ActionSwipeUp</key>
+						<string>3b d, 37 d, 7e d, 7e u, 37 u, 3b u</string>
+						<key>Custom ADB Map</key>
+						<array>
+							<string>e01e=4d;previous</string>
+							<string>e045=42;next</string>
+						</array>
+						<key>Custom PS2 Map</key>
+						<array>
+							<string>e01e=e037;Map tp disable to f8</string>
+							<string>e037=e01e;Prevent PrntScr from triggering tp disable</string>
+						</array>
+						<key>Function Keys Special</key>
+						<array>
+							<string>;The following 12 items map fkeys to Fn+fkeys</string>
+							<string>3b=e012; F1  - Brightness Down</string>
+							<string>3c=e017; F2  - Brightness Up</string>
+							<string>3d=e00a; F3  - Mission Control (app select)</string>
+							<string>3e=e009; F4  - Launchpad</string>
+							<string>3f=0;    F5  - nothing</string>
+							<string>40=0;    F6  - nothing</string>
+							<string>41=e06e; F7  - Video Mirror</string>
+							<string>42=e037; F8  - TP on/off</string>
+							<string>43=0;    F9  - nothing</string>
+							<string>44=e020; F10 - Volume Mute</string>
+							<string>57=e02e; F11 - Volume Up</string>
+							<string>58=e030; F12 - Volume Up</string>
+							<string>46=e022; ScrLck - iTunes - play/pause</string>
+						</array>
+						<key>Function Keys Standard</key>
+						<array>
+							<string>;The following 12 items map Fn+fkeys to Fn+fkeys</string>
+							<string>e05f=e05f</string>
+							<string>e012=e012</string>
+							<string>e017=e017</string>
+							<string>e06e=e06e</string>
+							<string>e00a=e00a</string>
+							<string>e009=e009</string>
+							<string>e020=e020</string>
+							<string>e02e=e02e</string>
+							<string>e030=e030</string>
+							<string>e010=e010</string>
+							<string>e022=e022</string>
+							<string>e019=e019</string>
+							<string>;The following 12 items map fkeys to fkeys</string>
+							<string>3b=3b</string>
+							<string>3c=3c</string>
+							<string>3d=3d</string>
+							<string>3e=3e</string>
+							<string>3f=3f</string>
+							<string>40=40</string>
+							<string>41=41</string>
+							<string>42=42</string>
+							<string>43=43</string>
+							<string>44=44</string>
+							<string>57=57</string>
+							<string>58=58</string>
+						</array>
+						<key>HIDF12EjectDelay</key>
+						<integer>250</integer>
+						<key>LogScanCodes</key>
+						<integer>0</integer>
+						<key>Make Application key into Apple Fn key</key>
+						<false/>
+						<key>Make Application key into right windows</key>
+						<true/>
+						<key>Make right modifier keys into Hangul and Hanja</key>
+						<false/>
+						<key>SleepPressTime</key>
+						<integer>1500</integer>
+						<key>Swap capslock and left control</key>
+						<false/>
+						<key>Swap command and option</key>
+						<true/>
+						<key>Use ISO layout keyboard</key>
+						<false/>
+						<key>alt_handler_id</key>
+						<integer>3</integer>
+					</dict>
+					<key>T420</key>
+					<string>Options</string>
+					<key>T460</key>
+					<string>Options</string>
+					<key>T560</key>
+					<dict>
+						<key>ActionSwipeLeft</key>
+						<string>37 d, 21 d, 21 u, 37 u</string>
+						<key>ActionSwipeRight</key>
+						<string>37 d, 1e d, 1e u, 37 u</string>
+						<key>Custom ADB Map</key>
+						<array>
+							<string>e038=3a</string>
+							<string>e001d=3b</string>
+						</array>
+						<key>SleepPressTime</key>
+						<integer>1500</integer>
+						<key>Swap command and option</key>
+						<true/>
+					</dict>
+				</dict>
 				<key>SECCSD</key>
 				<dict>
 					<key>LH43STAR</key>
@@ -595,14 +742,10 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>LSMinimumSystemVersion</key>
-	<string>10.11</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>as.acidanthera.voodoo.driver.PS2Controller</key>
-		<string>2.2.3</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
-		<string>1.0.0b1</string>
+		<string>1.1</string>
 		<key>com.apple.kpi.bsd</key>
 		<string>8.0.0</string>
 		<key>com.apple.kpi.iokit</key>
@@ -613,8 +756,12 @@
 		<string>8.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
 		<string>8.0.0</string>
+		<key>org.rehabman.voodoo.driver.PS2Controller</key>
+		<string>1.9.2</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
+	<key>Source Code</key>
+	<string>https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller</string>
 </dict>
 </plist>

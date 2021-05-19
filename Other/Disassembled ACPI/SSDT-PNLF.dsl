@@ -1,5 +1,7 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
 {   
+    External (OSDW, MethodObj)
+    
     External (RMCF.BKLT, IntObj)
     External (RMCF.FBTP, IntObj)
     External (RMCF.GRAN, IntObj)
