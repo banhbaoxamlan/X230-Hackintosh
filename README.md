@@ -8,7 +8,7 @@
 
 #### CONTACT:
  - Email: thebinhluong0519@gmail.com
- - Telegram: +84 867450107
+ - Telegram: +84 867 450 107
 
 > ## Introduction
 
@@ -28,7 +28,7 @@
 | Audio Playback/Recording             | ✅ | `AppleALC.kext` with Layout ID = 18 and `SSDT-HRTF.aml` |
 | Automatic Headphone Output Switching | ✅ | `AppleALC.kext` with Layout ID = 18 and `SSDT-HRTF.aml` |
 | Battery Life                         | ✅ | Native |
-| Battery Percentage Indication        | ✅ | `SSDT-BATX.aml` |
+| Battery Percentage Indication        | ✅ | `ECEnabler.kext` |
 | Brightness Adjustments               | ✅ | `WhateverGreen.kext`, `SSDT-PNLF.aml`, and `BrightnessKeys.kext` |
 | CPU Power Management                 | ✅ | Generate your own `SSDT-PM.aml` with [ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh) |
 | Custom Charge Threshold              | ✅ | `SSDT-ECRW.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) |
@@ -77,7 +77,7 @@ Read these before you start:
 <summary><strong> HARDWARE </strong></summary>
 <br>
 
-| Category  | THINKPAD X230            | THINKPAD T530
+| Category  | THINKPAD X230            | THINKPAD T530            |
 | --------- | ------------------------ | ------------------------ |
 | CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |
 | SSD       | Samsung 860 Evo 500GB    | SanDisk A400 256GB       |
@@ -99,6 +99,14 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 
 </details> 
 
+<details>
+<summary><strong> OTHER REPOSITORIES </strong></summary>
+<br>
+
+- X230-hackintosh repositories:
+  - [i0Ek3/X230-Hackintosh-Backup](https://github.com/i0Ek3/X230-Hackintosh-Backup) 
+</details> 
+
 > ## SUPPORT
 
 <details>
@@ -110,7 +118,6 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 - [Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts
 - [George Kushnir](https://github.com/n4ru) for modified BIOS
 - [Dortania](https://github.com/dortania) for for the OpenCore Install Guide
-- [MSzturc](https://github.com/MSzturc) for ThinkpadAssistant
 - [simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations
 - [zhen-zen](https://github.com/zhen-zen) for YogaSMC
 
