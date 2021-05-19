@@ -1,8 +1,8 @@
-// Adding various virtual devices for macOS compatibility
-
-DefinitionBlock ("", "SSDT", 2, "X230", "VDEV", 0)
+DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
 {
-    Scope (\_SB)
+    External (OSDW, MethodObj)
+    
+    Scope (_SB)
     {
         Device (ALS0)
         {
@@ -20,14 +20,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "VDEV", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (OSDW ())
                 {
-                    Return (0x0F)
+                    Return (0x0B)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
         }
 
@@ -35,25 +33,28 @@ DefinitionBlock ("", "SSDT", 2, "X230", "VDEV", 0)
         {
             Name (_HID, EisaId ("PNP0C0C"))
 
+            Method (_DSM, 4, NotSerialized)
+            {
+                Return (Zero)
+            }
+            
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (OSDW ())
                 {
-                    Return (0x0F)
+                    Return (0x0B)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
         }
 
     }
 
-    External (\_SB.PCI0, DeviceObj)
-    External (\_SB.PCI0.SMBU, DeviceObj)
+    External (_SB.PCI0, DeviceObj)
+    External (_SB.PCI0.SMBU, DeviceObj)
 
-    Scope (\_SB.PCI0)
+    Scope (_SB.PCI0)
     {
         Device (MCHC)
         {
@@ -61,19 +62,17 @@ DefinitionBlock ("", "SSDT", 2, "X230", "VDEV", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (OSDW ())
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+                
+                Return (Zero)
             }
         }
     }
 
-    Scope (\_SB.PCI0.SMBU)
+    Scope (_SB.PCI0.SMBU)
     {
         Device (BUS0)
         {
@@ -94,7 +93,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "VDEV", 0)
                         })
                     }
 
-                    Return (Package (0x02)
+                    Return (Package ()
                     {
                         "address",
                         0x57
@@ -104,14 +103,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "VDEV", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (OSDW ())
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
         }
     }

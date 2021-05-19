@@ -20,14 +20,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
         Name (_UID, 0)
         Method (_STA, 0, NotSerialized)
         {
-            If (_OSI ("Darwin"))
+            If (\OSDW ())
             {
                 Return (0x0B)
             }
-            Else
-            {
-                Return (Zero)
-            }
+            
+            Return (Zero)
         }
         
         Field (^RMP3, AnyAcc, NoLock, Preserve)
@@ -276,4 +274,3 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
         }
     }
 }
-

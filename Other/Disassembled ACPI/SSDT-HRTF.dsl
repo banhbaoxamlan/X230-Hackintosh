@@ -1,5 +1,7 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
 {
+    External (OSDW, MethodObj)
+    
     External (_SB.PCI0.LPC, DeviceObj)
     External (_SB.PCI0.LPC.PIC, DeviceObj)
     External (_SB.PCI0.LPC.RTC, DeviceObj)
@@ -11,14 +13,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
     {
         Method (_STA, 0, NotSerialized)
         {
-            If (_OSI ("Darwin"))
+            If (\OSDW ())
             {
                 Return (Zero)
             }
-            Else
-            {
-                Return (0x0F)
-            }
+            
+            Return (0x0F)
         }
     }
 
@@ -26,14 +26,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
     {
         Method (_STA, 0, NotSerialized)
         {
-            If (_OSI ("Darwin"))
+            If (\OSDW ())
             {
                 Return (Zero)
             }
-            Else
-            {
-                Return (0x0F)
-            }
+            
+            Return (0x0F)
         }
     }
 
@@ -41,14 +39,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
     {
         Method (_STA, 0, NotSerialized)
         {
-            If (_OSI ("Darwin"))
+            If (\OSDW ())
             {
                 Return (Zero)
             }
-            Else
-            {
-                Return (0x0F)
-            }
+            
+            Return (0x0F)
         }
     }
 
@@ -83,14 +79,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (\OSDW ())
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
         }
 
@@ -112,14 +106,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (\OSDW ())
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
 
             Method (_CRS, 0, Serialized)
@@ -145,14 +137,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (\OSDW ())
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
         }
 
@@ -171,14 +161,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HRTF", 0)
 
             Method (_STA, 0, NotSerialized)
             {
-                If (_OSI ("Darwin"))
+                If (\OSDW ())
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+
+                Return (Zero)
             }
         }
     }

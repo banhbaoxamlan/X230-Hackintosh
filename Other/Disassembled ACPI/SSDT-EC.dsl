@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "X230", "ECRW", 0)
+DefinitionBlock ("", "SSDT", 2, "X230", "EC", 0)
 {
     External (_SB.PCI0.LPC.EC, DeviceObj) 
     

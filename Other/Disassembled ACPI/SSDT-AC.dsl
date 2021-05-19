@@ -1,14 +1,26 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "AC", 0)
 {
-    External (_SB.PCI0.LPC.EC.AC, DeviceObj)
+    External (OSDW, MethodObj)
 
-    Scope (\_SB.PCI0.LPC.EC.AC)
+    External (_SB.PCI0.LPC.EC.AC, DeviceObj)
+    External (LWCP, FieldUnitObj)
+
+    Scope (_SB.PCI0.LPC.EC.AC)
     {
-        If (_OSI ("Darwin"))
+        Method (_PRW, 0, NotSerialized)
         {
-            Name (_PRW, Package()
+            If (\OSDW () || \LWCP)
             {
-                0x18, 
+                Return (Package ()
+                {
+                    0x17, 
+                    0x04
+                })
+            }
+
+            Return (Package ()
+            {
+                0x17, 
                 0x03
             })
         }
