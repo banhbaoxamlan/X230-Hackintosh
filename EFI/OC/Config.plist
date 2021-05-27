@@ -296,7 +296,7 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -348,15 +348,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwBmAQ=</data>
-				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-flags</key>
-				<data>MAIAAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
+				<data>AwBmAQ==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -550,6 +542,60 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
+				<string>BrcmBluetoothInjector.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>12.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>BrcmFirmwareData.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
+				<key>MaxKernel</key>
+				<string>19.9.9</string>
+				<key>MinKernel</key>
+				<string>12.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>17.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -590,7 +636,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Mouse</string>
 				<key>MaxKernel</key>
@@ -683,6 +729,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>USBInjectAll.kext</string>
+				<key>Comment</key>
+				<string>USBInjectAll</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBInjectAll</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -923,18 +987,22 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>C025155014NFH31CB</string>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
 			<true/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro11,1</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02PKBYNFH00</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>F3C91F06-3E16-4F1E-A04F-0F164A5F0698</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

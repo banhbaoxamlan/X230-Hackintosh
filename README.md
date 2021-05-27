@@ -8,7 +8,7 @@
 
 #### CONTACT:
  - Email: thebinhluong0519@gmail.com
- - Telegram: +84 867 450 107
+ - Telegram: +84 867-450-107
 
 > ## Introduction
 
@@ -31,10 +31,10 @@
 | Battery Percentage Indication        | ✅ | `ECEnabler.kext` |
 | Brightness Adjustments               | ✅ | `WhateverGreen.kext`, `SSDT-PNLF.aml`, and `BrightnessKeys.kext` |
 | CPU Power Management                 | ✅ | Generate your own `SSDT-PM.aml` with [ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh) |
-| Custom Charge Threshold              | ✅ | `SSDT-ECRW.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) |
+| Custom Charge Threshold              | ✅ | `SSDT-EC.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) |
 | Ethernet                             | ✅ | `IntelMausi.kext` |
 | Full Graphics Accleration (QE/CI)    | ✅ | `WhateverGreen.kext` |
-| Fan Control                          | ✅ | `SSDT-ECRW.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
+| Fan Control                          | ✅ | `SSDT-EC.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
 | Multimedia Keys                      | ✅ | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
 | USB ports and Micro SD Card Reader   | ✅ |  Mapping|
 | TrackPoint, TrackPad and Keyboard    | ✅ | `VoodooPS2Controller.kext` |
@@ -80,9 +80,9 @@ Read these before you start:
 | Category  | THINKPAD X230            | THINKPAD T530            |
 | --------- | ------------------------ | ------------------------ |
 | CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |
-| SSD       | Samsung 860 Evo 500GB    | SanDisk A400 256GB       |
+| SSD       | Samsung 870 Evo 500GB    | SanDisk A400 256GB       |
 | Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |
-| WiFi & BT | BCM94352HMB              | BCM94352HMB              |
+| WiFi & BT | DW1550 (BCM94352HMB)     | BCM94352HMB              |
 
 - Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
 
