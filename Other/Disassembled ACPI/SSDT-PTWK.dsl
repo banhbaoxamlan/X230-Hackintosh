@@ -1,7 +1,5 @@
 DefinitionBlock("", "SSDT", 2, "X230", "PTWK", 0)
-{
-    External (OSDW, MethodObj)
-    
+{   
     External (ZPTS, MethodObj)
     External (ZWAK, MethodObj)
     
@@ -25,12 +23,14 @@ DefinitionBlock("", "SSDT", 2, "X230", "PTWK", 0)
             Name (TWAK, Zero)
             Method (_STA, 0, NotSerialized)
             {
-                If (OSDW ())
+                If (_OSI ("Darwin"))
                 {
                     Return (0x0F)
                 }
-                
-                Return (Zero)
+                Else
+                {
+                    Return (Zero)
+                }
             }
         }
     }

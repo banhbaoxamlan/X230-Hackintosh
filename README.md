@@ -6,6 +6,10 @@
 
 #### I am not responsible for any damages you may cause.
 
+- Complete EFI packs are available in the releases page.
+
+- Please don't clone or download the main branch for daily use.
+
 #### CONTACT:
  - Email: thebinhluong0519@gmail.com
  - Telegram: +84 867-450-107
@@ -19,25 +23,43 @@
 > ### Non-Fuctional:
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
-| Fingerprint Reader   | ❌ | `DISABLED` in BIOS to save power.   |
-| Wireless WAN         | ❌ | `DISABLED` in BIOS to save power.   |
+| Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power.   |
+| Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power.   |
 
-> ### Working:
+> ### Video and Audio
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
-| Audio Playback/Recording             | ✅ | `AppleALC.kext` with Layout ID = 18 and `SSDT-HRTF.aml` |
-| Automatic Headphone Output Switching | ✅ | `AppleALC.kext` with Layout ID = 18 and `SSDT-HRTF.aml` |
-| Battery Life                         | ✅ | Native |
-| Battery Percentage Indication        | ✅ | `ECEnabler.kext` |
-| Brightness Adjustments               | ✅ | `WhateverGreen.kext`, `SSDT-PNLF.aml`, and `BrightnessKeys.kext` |
-| CPU Power Management                 | ✅ | Generate your own `SSDT-PM.aml` with [ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh) |
-| Custom Charge Threshold              | ✅ | `SSDT-EC.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) |
-| Ethernet                             | ✅ | `IntelMausi.kext` |
-| Full Graphics Accleration (QE/CI)    | ✅ | `WhateverGreen.kext` |
-| Fan Control                          | ✅ | `SSDT-EC.aml`, [YogaSMC.kext and YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
-| Multimedia Keys                      | ✅ | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
-| USB ports and Micro SD Card Reader   | ✅ |  Mapping|
-| TrackPoint, TrackPad and Keyboard    | ✅ | `VoodooPS2Controller.kext` |
+| Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`                   |
+| Audio Recording                      | ✅   | `AppleALC.kext` with Layout ID = 29 and `SSDT-HPET.aml`   |
+| Audio Playback                       | ✅   | `AppleALC.kext` with Layout ID = 29 and `SSDT-HPET.aml`   |
+| Automatic Headphone Output Switching | ✅   | `AppleALC.kext` with Layout ID = 29 and `SSDT-HPET.aml`   |
+
+> ### Power, Charge, Sleep and Hibernation
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| Battery Percentage Indication        | ✅   | `ECEnabler.kext`            | 
+| iGPU Power Management                | ✅   | `XCPM`, enabled by [`SSDT-PM.aml`](https://github.com/Piker-Alpha/ssdtPRGen.sh) |
+| S3 Sleep/ Hibernation Mode 3         | ✅   | `SSDT-PWTK.aml` |  |   
+| Custom Charge Threshold              | ✅   | `SSDT-EC.aml`, [YogaSMC.kext](https://github.com/zhen-zen/YogaSMC), and [YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
+| Fan Control                          | ✅   | `SSDT-EC.aml`, [YogaSMC.kext](https://github.com/zhen-zen/YogaSMC), and [YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
+| Battery Life                         | ✅   | Native, comparable to Windows/Linux. |
+
+> ### Input/ Output
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| WiFi                                 | ✅   | `AirportItlwm.kext`  |
+| Bluetooth                            | ✅   | `IntelBluetoothFirmware.kext`  |
+| Ethernet                             | ✅   | `IntelMausi.kext`  |
+| USB 2.0, USB 3.0                     | ✅   | `USBInjectAll.kext`    |
+
+> ### Display, TrackPad, TrackPoint, and Keyboard
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| Brightness Adjustments | ✅  | `WhateverGreen.kext`, `SSDT-PNLF.aml` and `BrightnessKeys.kext`|
+| TrackPoint             | ✅  | `VoodooPS2Controller.kext`                                      |
+| TrackPad               | ✅  | `VoodooPS2Controller.kext` |
+| Built-in Keyboard      | ✅  | `VoodooPS2Controller.kext` |
+| Multimedia Keys        | ✅  | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
 
 </details>
 
@@ -82,7 +104,7 @@ Read these before you start:
 | CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |
 | SSD       | Samsung 870 Evo 500GB    | SanDisk A400 256GB       |
 | Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |
-| WiFi & BT | DW1550 (BCM94352HMB)     | BCM94352HMB              |
+| WiFi & BT | Intel Wireless-AC 7260   | BCM94352HMB              |
 
 - Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
 

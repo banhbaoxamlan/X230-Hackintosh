@@ -1,7 +1,5 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
-{   
-    External (OSDW, MethodObj)
-    
+{       
     External (RMCF.BKLT, IntObj)
     External (RMCF.FBTP, IntObj)
     External (RMCF.GRAN, IntObj)
@@ -22,12 +20,14 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
         Name (_UID, 0)
         Method (_STA, 0, NotSerialized)
         {
-            If (\OSDW ())
+            If (_OSI ("Darwin"))
             {
                 Return (0x0B)
             }
-            
-            Return (Zero)
+            Else
+            {
+                Return (Zero)
+            }
         }
         
         Field (^RMP3, AnyAcc, NoLock, Preserve)
