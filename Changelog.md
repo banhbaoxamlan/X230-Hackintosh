@@ -2,6 +2,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 > ## 0.5
+- Added `AirportItlwm.kext`: set default enabled for support Intel Wireless
 - Added `BrightnessKeys.kext` to make Brightness Keys work in macOS.
 - Added `SSDT-EC.aml` and `SSDT-THINK.aml`: support for YogaSMC
 - Added `ECEnabler.kext` for battery status, delete `SSDT-BAT0.aml` and all patch for battery (not need)
@@ -12,5 +13,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Updated `SSDT-HPET.aml`: work correct to patch HPET for macOS Big Sur
 - Updated `SSDT-KBD.aml`: delete all patch for custom keymap func, add `DisableDeepSleep` to fix trackpoint not working after sleep
 - Updated `SSDT-PLNF.aml`: now work correct with maximum backlight
+- Updated audio layout : set id `29`
 - Updated OpenCore 0.7.0 to the latest commit
 - Updated kexts to May 2021
