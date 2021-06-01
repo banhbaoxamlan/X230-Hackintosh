@@ -10,14 +10,14 @@ DefinitionBlock ("", "SSDT", 2, "X230", "AC", 0)
             {
                 Return (Package ()
                 {
-                    0x17, 
+                    0x18, 
                     0x04
                 })
             }
 
             Return (Package ()
             {
-                0x17, 
+                0x18, 
                 0x03
             })
         }

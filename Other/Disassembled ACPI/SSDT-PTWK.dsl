@@ -35,22 +35,6 @@ DefinitionBlock("", "SSDT", 2, "X230", "PTWK", 0)
         }
     }
     
-    Scope (\_SB.PCI0.LPC.EC)
-    {
-        OperationRegion (WRAM, EmbeddedControl, Zero, 0x0100)
-        Field (WRAM, ByteAcc, NoLock, Preserve)
-        {
-            Offset (0x36),
-            WAC0,   8,
-            WAC1,   8
-        }
-
-        Method (WACH, 0, NotSerialized)
-        {
-        	Return ((WAC0 | (WAC1 << 0x08)))
-        }
-    }
-    
     Method (_PTS, 1, NotSerialized)
     {
         If (_OSI ("Darwin"))
