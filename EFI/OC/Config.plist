@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Virtual devices for macOS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>TrackPad, TrackPoint Fixup</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>ThinkSMC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -171,6 +171,36 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WE9TSQ==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>_DSM to XDSM</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X0RTTQ==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WERTTQ==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -422,12 +452,30 @@
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>HQAAAA==</data>
+				<data>NwAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AwBmAQ==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAQAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAQAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con3-type</key>
+				<data>AAQAAA==</data>
+				<key>framebuffer-con3-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>BAAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -819,13 +867,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>EFICheckDisabler.kext</string>
+				<string>RestrictEvents.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/RestrictEvents</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>

@@ -10,12 +10,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HPET", 0)
             Name (_UID, Zero)
             Name (BUF0, ResourceTemplate ()
             {
-                IRQNoFlags ()
-                    {0}
-                IRQNoFlags ()
-                    {8}
-                IRQNoFlags ()
-                    {11}
+                IRQNoFlags () { 0, 8, 11 }
                 Memory32Fixed (ReadOnly,
                     0xFED00000,
                     0x00000400,

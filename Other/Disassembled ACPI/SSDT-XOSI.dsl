@@ -8,7 +8,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "XOSI", 0)
             "Windows 2001 SP1", 
             "Windows 2001 SP2", 
             "Windows 2009", 
-            "Windows 2012", 
+            "Windows 2012",
             "Windows 2018", 
             "Windows 2018.2", 
             "Windows 2019", 

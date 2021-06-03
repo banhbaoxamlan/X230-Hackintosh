@@ -1,16 +1,17 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
 {       
-    External (RMCF.BKLT, IntObj)
-    External (RMCF.FBTP, IntObj)
-    External (RMCF.GRAN, IntObj)
     External (RMCF.LEVW, IntObj)
-    External (RMCF.LMAX, IntObj)
 
     External (_SB.PCI0.VID, DeviceObj)
     
     Scope (_SB.PCI0.VID)
     {
         OperationRegion (RMP3, PCI_Config, Zero, 0x14)
+        
+        Method (_IRC, 0, NotSerialized)
+        {
+            Return (0x00)
+        }
     }
 
     Device (_SB.PCI0.VID.PNLF)
@@ -48,7 +49,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
             LEVD,   32
         }
 
-        Method (_INI, 0, NotSerialized)  // _INI: Initialize
+        Method (_INI, 0, NotSerialized)
         {
             Local2 = 0x0710
             Local1 = (^LEVX >> 0x10)
