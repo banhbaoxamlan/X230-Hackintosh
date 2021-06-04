@@ -30,9 +30,10 @@
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`                   |
-| Audio Recording                      | ✅   | `AppleALC.kext` with Layout ID = 29 and `SSDT-HPET.aml`   |
-| Audio Playback                       | ✅   | `AppleALC.kext` with Layout ID = 29 and `SSDT-HPET.aml`   |
-| Automatic Headphone Output Switching | ✅   | `AppleALC.kext` with Layout ID = 29 and `SSDT-HPET.aml`   |
+| Audio Recording                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
+| Audio Playback                       | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
+| Automatic Headphone Output Switching | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
+| Dock Audio Port                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 
 > ### Power, Charge, Sleep and Hibernation
 | Feature                              | Status | Dependency          |
