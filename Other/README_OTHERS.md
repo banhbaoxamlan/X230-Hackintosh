@@ -127,4 +127,4 @@ sudo pmset -a lidwake 1
 sudo pmset -a powernap 0
 ```
 
-- To restore default system settings run `pmset restoredefaults ` command.
+- To restore default system settings run `pmset restoredefaults` command.
