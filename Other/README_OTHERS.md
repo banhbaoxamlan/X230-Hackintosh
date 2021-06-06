@@ -35,7 +35,7 @@ open /Users/YOURUSERNAME/Library/ssdtPRGen
   - Download [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases).
   - Copy `IntelBluetoothFirmware.kext` and `IntelBluetoothInjector.kext` to `/EFI/OC/Kexts`.
   - Open `/EFI/OC/Config.plist` with any editor.
-  - Add the content of [#intel-wlan.plist](/EFI/OC/#intel-wlan.plist).
+  - Add the content of [#intel-wlan.plist](/EFI/OC/%23intel-wlan.plist).
   - Save and reboot.
 
 - ### Enable non-natively supported Broadcom WLAN cards:
@@ -43,12 +43,12 @@ open /Users/YOURUSERNAME/Library/ssdtPRGen
    [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases).
   - Copy `AirportBrcmFixup.kext`, `BrcmBluetoothInjector.kext`, `BrcmFirmwareData.kext` and `BrcmPatchRAM3.kext` to `/EFI/OC/Kexts`.
   - Open `/EFI/OC/Config.plist` with any editor.
-  - Add the content of [#broadcom-wlan.plist](/EFI/OC/#broadcom-wlan.plist).
+  - Add the content of [#broadcom-wlan.plist](/EFI/OC/%23broadcom-wlan.plist).
   - Save and reboot.
 
 - ### Original (Intel Centrino + ThinkPad BT module):
   - Open `/EFI/OC/Config.plist` with any editor.
-  - Add the content of [#original-wlan.plist](/EFI/OC/#original-wlan.plist).
+  - Add the content of [#original-wlan.plist](/EFI/OC/%23original-wlan.plist).
   - Save and reboot.
 
 > ## Enable Apple Services (iMessage/iCloud/FaceTime):
@@ -103,14 +103,14 @@ git clone https://github.com/corpnewt/GenSMBIOS && cd GenSMBIOS && chmod +x GenS
 > ## Setup Hibernatemode & Sleep:
 
 - Open terminal, enter commands below one by one:
-  - Settings for AC:
+- Settings for AC:
 
 ```
 sudo pmset -c standby 1
 sudo pmset -c hibernatemode 0
 ```
 
-  - Setting for battery:
+- Setting for battery:
 
 ```
 sudo pmset -b standby 1
