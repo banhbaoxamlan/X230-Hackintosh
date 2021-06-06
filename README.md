@@ -1,6 +1,6 @@
 # MacOS on ThinkPad X230
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![MacOS Big Sur](https://img.shields.io/badge/macOS-Big_Sur-purple.svg)](https://www.apple.com/macos/big-sur/) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-orange)](https://www.paypal.com/paypalme/thebinhluong0519)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![MacOS Big Sur](https://img.shields.io/badge/macOS-Big_Sur-purple.svg)](https://www.apple.com/macos/big-sur/) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
 
 #### READ THE ENTIRE README.MD BEFORE YOU START.
 
@@ -10,11 +10,15 @@
 
 - Please don't clone or download the main branch for daily use.
 
-#### CONTACT:
- - Email: thebinhluong0519@gmail.com
- - Telegram: +84 867-450-107
+> ## Update
 
-> ## Introduction
+#### [Changelog Archive](/Other/Changelog.md)
+
+> ### 2021-06-06:
+- Add patch wireless for intel, boardcom and original.
+- Add guide [README-OTHERS](/Other/README_OTHERS.md).
+- Delete folder `Modifications`.
+- Update `README.md` (Benchmark).
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
@@ -25,6 +29,7 @@
 | :----------------------------------- | ------ | ------------------- |
 | Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power.   |
 | Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power.   |
+| VGA Port                             | ❌   | Does not exist on real apple computers.   |
 
 > ### Video and Audio
 | Feature                              | Status | Dependency          |
@@ -51,16 +56,24 @@
 | WiFi                                 | ✅   | `AirportItlwm.kext`  |
 | Bluetooth                            | ✅   | `IntelBluetoothFirmware.kext`  |
 | Ethernet                             | ✅   | `IntelMausi.kext`  |
-| USB 2.0, USB 3.0                     | ✅   | `USBInjectAll.kext`    |
+| USB 2.0, USB 3.0                     | ✅   | `USBPorts.kext`    |
+| USB Power Properties in macOS        | ✅   | `SSDT-EC-USBX.aml` |
 
 > ### Display, TrackPad, TrackPoint, and Keyboard
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Brightness Adjustments | ✅  | `WhateverGreen.kext`, `SSDT-PNLF.aml` and `BrightnessKeys.kext`|
-| TrackPoint             | ✅  | `VoodooPS2Controller.kext`                                      |
+| TrackPoint             | ✅  | `VoodooPS2Controller.kext` |
 | TrackPad               | ✅  | `VoodooPS2Controller.kext` |
 | Built-in Keyboard      | ✅  | `VoodooPS2Controller.kext` |
 | Multimedia Keys        | ✅  | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
+
+> ### macOS Continuity
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| iCloud, iMessage, FaceTime           | ✅   | Whitelisted Apple ID, Valid SMBIOS  |
+| AirDrop                              |      | Not tested  |
+| Time Machine                         | ✅   | Native  |
 
 </details>
 
@@ -69,13 +82,13 @@
 <br>
 
 Read these before you start:
-- [dortania's Hackintosh guides](https://github.com/dortania)
-- [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-- [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/)
-- [dortania/ Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)
-- [dortania/ opencore `multiboot`](https://github.com/dortania/OpenCore-Multiboot)
-- [dortania/ `USB map` guide](https://dortania.github.io/OpenCore-Post-Install/usb/)
-- [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
+- [dortania's Hackintosh guides](https://github.com/dortania).
+- [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/).
+- [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/).
+- [dortania/ Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/).
+- [dortania/ opencore `multiboot`](https://github.com/dortania/OpenCore-Multiboot).
+- [dortania/ `USB map` guide](https://dortania.github.io/OpenCore-Post-Install/usb/).
+- [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
 - `Configuration.pdf` and `Differences.pdf` in each `OpenCore` releases.
 
 </details> 
@@ -103,9 +116,9 @@ Read these before you start:
 | Category  | THINKPAD X230            | THINKPAD T530            |
 | --------- | ------------------------ | ------------------------ |
 | CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |
-| SSD       | Samsung 870 Evo 500GB    | SanDisk A400 256GB       |
+| SSD       | Samsung 870 Evo 250GB    | SanDisk A400 256GB       |
 | Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |
-| WiFi & BT | Intel Wireless-AC 7260   | BCM94352HMB              |
+| WiFi & BT | Intel Wireless-AC 7260   | DW1550 (BCM94352HMB)     |
 
 - Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
 
@@ -118,17 +131,40 @@ Read these before you start:
 Before you do anything, please familiarize yourself with basic Hackintosh terminologies and the basic Hackintosh process by throughly reading Dortania guides as linked in `REFERENCES`
 
 - Creating a macOS installer: refer to [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
-- [**README-HARDWARE**](https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/Other/README_HARDWARE.md): Requirements before installing. 
+- [**README-HARDWARE**](/Other/README_HARDWARE.md): Requirements before installing.
+- [**README-OTHERS**](/Other/README_OTHERS.md): for post installation settings and other remarks.
 
 </details> 
+
+<details>
+<summary><strong> BENCHMARKS </strong></summary>
+</br>
+
+- macOS 11.4, EFI 0.5-RC5, OpenCore 0.7.0
+
+| CPU            | Single-Core | Multi-Core |
+| :------------- | ----------: | ---------: |
+| Cinebench R23  |             |       1576 |
+| Geekbench 5    |         694 |       1421 |
+
+| GPU            | OpenCL      | Metal      |
+| :------------- | ----------: | ---------: |
+| Geekbench 5    |        1028 |        193 |
+
+</details>
 
 <details>
 <summary><strong> OTHER REPOSITORIES </strong></summary>
 <br>
 
 - X230-hackintosh repositories:
-  - [i0Ek3/X230-Hackintosh-Backup](https://github.com/i0Ek3/X230-Hackintosh-Backup) 
+  - [i0Ek3/X230-Hackintosh-Backup](https://github.com/i0Ek3/X230-Hackintosh-Backup).
+
 </details> 
+
+> ## CONTACT:
+ - Email: thebinhluong0519@gmail.com
+ - Telegram: +84 (867)-450-107
 
 > ## SUPPORT
 
@@ -136,12 +172,12 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 <summary><strong> CREDITS </strong></summary>
 <br>
 
-- [Apple](https://www.apple.com) for macOS
-- [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made
-- [Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts
-- [George Kushnir](https://github.com/n4ru) for modified BIOS
-- [Dortania](https://github.com/dortania) for for the OpenCore Install Guide
-- [simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations
-- [zhen-zen](https://github.com/zhen-zen) for YogaSMC
+- [Apple](https://www.apple.com) for macOS.
+- [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made.
+- [Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts.
+- [George Kushnir](https://github.com/n4ru) for modified BIOS.
+- [Dortania](https://github.com/dortania) for for the OpenCore Install Guide.
+- [simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations.
+- [zhen-zen](https://github.com/zhen-zen) for **YogaSMC**.
 
 </details>
