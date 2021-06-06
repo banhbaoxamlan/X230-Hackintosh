@@ -12,7 +12,7 @@
 
 > ## Update
 
-#### [Changelog Archive](/Other/Changelog.md)
+##### Recent | [Changelog Archive](/Other/Changelog.md)
 
 > ### 2021-06-06:
 - Add patch wireless for intel, boardcom and original.
