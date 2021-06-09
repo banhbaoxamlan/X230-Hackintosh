@@ -1,15 +1,13 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
-{       
-    External (RMCF.LEVW, IntObj)
-
-    External (_SB.PCI0.VID, DeviceObj)
+{
+    External (\_SB.PCI0.VID, DeviceObj)
     
-    Scope (_SB.PCI0.VID)
+    Scope (\_SB.PCI0.VID)
     {
         OperationRegion (RMP3, PCI_Config, Zero, 0x14)
     }
 
-    Scope (_SB)
+    Scope (\_SB)
     {
         Device (PNLF)
         {
@@ -34,7 +32,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
                 BAR1,   32
             }
 
-            OperationRegion (RMB1, SystemMemory, And (BAR1, 0xFFFFFFFFFFFFFFF0), 0x000E1184)
+            OperationRegion (RMB1, SystemMemory, And (BAR1, 0xFFFFFFF0), 0x000E1184)
             Field (RMB1, AnyAcc, Lock, Preserve)
             {
                 Offset (0x48250), 

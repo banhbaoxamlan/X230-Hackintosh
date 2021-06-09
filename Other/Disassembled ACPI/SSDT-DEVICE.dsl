@@ -9,14 +9,13 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
             Name (_ALI, 0x012C)
             Name (_ALR, Package ()
             {
-                Package ()
-                {
+                Package () {
                     0x64,
                     0x012C
                 }
             })
 
-            Method (_STA, 0, NotSerialized)  // _STA: Status
+            Method (_STA, 0, NotSerialized)
             {
                 If (_OSI ("Darwin"))
                 {
@@ -53,10 +52,10 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
 
     }
 
-    External (_SB.PCI0, DeviceObj)
-    External (_SB.PCI0.SMBU, DeviceObj)
+    External (\_SB.PCI0, DeviceObj)
+    External (\_SB.PCI0.SMBU, DeviceObj)
     
-    Scope (_SB.PCI0)
+    Scope (\_SB.PCI0)
     {
         Device (MCHC)
         {
@@ -76,12 +75,13 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
         }
     }
     
-    Scope (_SB.PCI0.SMBU)
+    Scope (\_SB.PCI0.SMBU)
     {
         Device (BUS0)
         {
             Name (_CID, "smbus")
             Name (_ADR, Zero)
+            
             Device (DVL0)
             {
                 Name (_ADR, 0x57)
@@ -103,6 +103,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
                     })
                 }
             }
+            
             Method (_STA, 0, NotSerialized)
             {
                 If (_OSI ("Darwin"))

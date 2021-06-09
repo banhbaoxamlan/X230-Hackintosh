@@ -1,13 +1,29 @@
 DefinitionBlock ("", "SSDT", 2, "X230", "HPET", 0)
 {
-    External (_SB.PCI0.LPC, DeviceObj)
-    External (_SB.PCI0.LPC.PIC, DeviceObj)
-    External (_SB.PCI0.LPC.RTC, DeviceObj)
-    External (_SB.PCI0.LPC.TIMR, DeviceObj)
-    External (_SB.PCI0.LPC.HPET, DeviceObj)
+    External (\_SB.PCI0.LPC, DeviceObj)
+    External (\_SB.PCI0.LPC.FPU, DeviceObj)
+    External (\_SB.PCI0.LPC.PIC, DeviceObj)
+    External (\_SB.PCI0.LPC.RTC, DeviceObj)
+    External (\_SB.PCI0.LPC.TIMR, DeviceObj)
+    External (\_SB.PCI0.LPC.HPET, DeviceObj)
     External (\HPET, FieldUnitObj)
 
     Scope (\_SB.PCI0.LPC.PIC)
+    {
+        Method (_STA, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (Zero)
+            }
+            Else
+            {
+                Return (0x0F)
+            }
+        }
+    }
+    
+    Scope (\_SB.PCI0.LPC.FPU)
     {
         Method (_STA, 0, NotSerialized)
         {
@@ -130,6 +146,34 @@ DefinitionBlock ("", "SSDT", 2, "X230", "HPET", 0)
             }
         }
 
+        Device (MATH)
+        {
+            Name (_HID, EisaId ("PNP0C04"))
+            Name (_CRS, ResourceTemplate ()
+            {
+                IO (Decode16,
+                    0x00F0,             // Range Minimum
+                    0x00F0,             // Range Maximum
+                    0x01,               // Alignment
+                    0x01,               // Length
+                )
+                IRQNoFlags ()
+                    {13}
+            })
+            
+            Method (_STA, 0, NotSerialized)
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
+                
         Device (RTC0)
         {
             Name (_HID, EisaId ("PNP0B00"))
