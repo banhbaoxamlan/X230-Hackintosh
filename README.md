@@ -1,24 +1,27 @@
 # MacOS on ThinkPad X230
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) [![MacOS Big Sur](https://img.shields.io/badge/macOS-Big_Sur-purple.svg)](https://www.apple.com/macos/big-sur/) [![release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest) [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest) [![donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
+[![MacOS Big Sur](https://img.shields.io/badge/macOS-Big_Sur-purple.svg)](https://www.apple.com/macos/big-sur/)
+[![MacOS Monterey](https://img.shields.io/badge/macOS-Monterey-pink.svg)](https://www.apple.com/macos/monterey-preview/)
+[![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+[![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
 
 #### READ THE ENTIRE README.MD BEFORE YOU START.
 
 #### I am not responsible for any damages you may cause.
 
 - Complete EFI packs are available in the releases page.
-
+- I will try my best to keep the repo updated with the latest kexts and OpenCore version.
 - Please don't clone or download the main branch for daily use.
+- With every EFI update you retrieve from here please remember to go through the post install guide.
 
 > ## Update
 
 ##### Recent | [Changelog Archive](/Other/Changelog.md)
 
-> ### 2021-06-06:
-- Add patch wireless for intel, boardcom and original.
-- Add guide [README-OTHERS](/Other/README_OTHERS.md).
-- Delete folder `Modifications`.
-- Update `README.md` (Benchmark).
+> ### 2021-06-10:
+- **Change SMBIOS to `MacBookPro11,5` or `MacBook12,1` and add boot-arg `-lilubetaall` if you want to use MacOS 12. (OR download Lilu v1.5.4).**
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
@@ -72,7 +75,7 @@
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | iCloud, iMessage, FaceTime           | ✅   | Whitelisted Apple ID, Valid SMBIOS  |
-| AirDrop                              |      | Not tested  |
+| AirDrop                              | ✅   | Not tested  |
 | Time Machine                         | ✅   | Native  |
 
 </details>
@@ -113,12 +116,12 @@ Read these before you start:
 <summary><strong> HARDWARE </strong></summary>
 <br>
 
-| Category  | THINKPAD X230            | THINKPAD T530            |
-| --------- | ------------------------ | ------------------------ |
-| CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |
-| SSD       | Samsung 870 Evo 250GB    | SanDisk A400 256GB       |
-| Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |
-| WiFi & BT | Intel Wireless-AC 7260   | DW1550 (BCM94352HMB)     |
+| Category  | THINKPAD X230            | THINKPAD T530            | THINKPAD T430s            |
+| --------- | ------------------------ | ------------------------ | ------------------------- |
+| CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |  Intel Core i7-3520M      |
+| SSD       | Samsung 870 Evo 250GB    | SanDisk A400 256GB       |  Samsung 870 Evo 256GB    |
+| Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |  14' TN HD+ (1600x900)    |
+| WiFi & BT | Intel Wireless-AC 7260   | DW1550 (BCM94352HMB)     |  Intel Centrino N-6205    |
 
 - Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
 
