@@ -1,14 +1,16 @@
 # MacOS on ThinkPad X230
 
+<img align="right" src="/Other/Pics/X230.png" alt="Lenovo Thinkpad X230 macOS Hackintosh OpenCore" width="300">
+
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
 [![MacOS Big Sur](https://img.shields.io/badge/Big_Sur-11.4-purple.svg)](https://www.apple.com/macos/big-sur/)
 [![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
 
-#### READ THE ENTIRE README.MD BEFORE YOU START.
+## READ THE ENTIRE README.MD BEFORE YOU START
 
-#### I am not responsible for any damages you may cause.
+### I am not responsible for any damages you may cause
 
 - Complete EFI packs are available in the releases page.
 - I will try my best to keep the repo updated with the latest kexts and OpenCore version.
@@ -17,30 +19,37 @@
 
 > ## Update
 
-##### Recent | [Changelog Archive](/Other/Changelog.md)
+### Recent | [Changelog Archive](/Other/Changelog.md)
 
-> ### 2021-06-10:
-### Added
-- `SSDT-UIAC.aml` mapping USB ports (included Dock ports) and USB Power.
-- `EFICheckDisabler.kext`.
-### Changed
-- Config:
+> ## 2021-06-10
+
+- ### Added
+
+  - `SSDT-UIAC.aml` mapping USB ports (included Dock ports) and USB Power.
+  - `EFICheckDisabler.kext`.
+
+- ### Changed
+
+  - Config:
     - Disabled `ExternalDiskIcons`.
     - Enabled `ThirdPartyDrives`.
-- Change SMBIOS to `MacBookPro12,1`.
-- Updated ACPI (`SSDT-HPET.aml`, `SSDT-PNLF.aml`, `SSDT-XOSI.aml`).
-- Updated OpenCore 0.7.1 to the latest commit.
-- Updated kexts to June 2021.
-### Removed
-- `SSDT-EC-USBX.aml` and `USBPorts.kext`, used `SSDT-UIAC.aml`.
-- `PXSX to ARPT` rename.
-- `RestrictEvents.kext` no longer necessary.
+  - Change SMBIOS to `MacBookPro12,1`.
+  - Updated ACPI (`SSDT-HPET.aml`, `SSDT-PNLF.aml`, `SSDT-XOSI.aml`).
+  - Updated OpenCore 0.7.1 to the latest commit.
+  - Updated kexts to June 2021.
+
+- ### Removed
+
+  - `SSDT-EC-USBX.aml` and `USBPorts.kext`, used `SSDT-UIAC.aml`.
+  - `PXSX to ARPT` rename.
+  - `RestrictEvents.kext` no longer necessary.
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
 <br>
 
-> ### Non-Fuctional:
+> ### Non-Fuctional
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power.   |
@@ -48,6 +57,7 @@
 | VGA Port                             | ❌   | Does not exist on real apple computers.   |
 
 > ### Video and Audio
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`                   |
@@ -57,6 +67,7 @@
 | Dock Audio Port                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 
 > ### Power, Charge, Sleep and Hibernation
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Battery Percentage Indication        | ✅   | `ECEnabler.kext`            | 
@@ -67,6 +78,7 @@
 | Battery Life                         | ✅   | Native, comparable to Windows/Linux. |
 
 > ### Input/ Output
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | WiFi                                 | ✅   | `AirportItlwm.kext`  |
@@ -76,6 +88,7 @@
 | USB Power Properties in macOS        | ✅   | `SSDT-EC-USBX.aml` |
 
 > ### Display, TrackPad, TrackPoint, and Keyboard
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Brightness Adjustments | ✅  | `WhateverGreen.kext`, `SSDT-PNLF.aml` and `BrightnessKeys.kext`|
@@ -85,6 +98,7 @@
 | Multimedia Keys        | ✅  | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
 
 > ### macOS Continuity
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | iCloud, iMessage, FaceTime           | ✅   | Whitelisted Apple ID, Valid SMBIOS  |
@@ -98,6 +112,7 @@
 <br>
 
 Read these before you start:
+
 - [dortania's Hackintosh guides](https://github.com/dortania).
 - [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/).
 - [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/).
@@ -107,7 +122,7 @@ Read these before you start:
 - [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
 - `Configuration.pdf` and `Differences.pdf` in each `OpenCore` releases.
 
-</details> 
+</details>
 
 <details>
 <summary><strong> REQUIREMENTS </strong></summary>
@@ -123,7 +138,7 @@ Read these before you start:
 - [Hackintool](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/), for diagnostic ONLY, Hackintool should not be used for patching, it is outdated.
 - Patience and time, especially if this is your first time Hackintosh-ing.
 
-</details> 
+</details>
 
 <details>
 <summary><strong> HARDWARE </strong></summary>
@@ -150,13 +165,13 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 - [**README-HARDWARE**](/Other/README_HARDWARE.md): Requirements before installing.
 - [**README-OTHERS**](/Other/README_OTHERS.md): for post installation settings and other remarks.
 
-</details> 
+</details>
 
 <details>
 <summary><strong> BENCHMARKS </strong></summary>
 </br>
 
-- macOS 11.4, EFI 0.5-RC5, OpenCore 0.7.0
+- macOS 11.4, EFI OpenCore 0.7.1
 
 | CPU            | Single-Core | Multi-Core |
 | :------------- | ----------: | ---------: |
@@ -176,11 +191,12 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 - X230-hackintosh repositories:
   - [i0Ek3/X230-Hackintosh-Backup](https://github.com/i0Ek3/X230-Hackintosh-Backup).
 
-</details> 
+</details>
 
-> ## CONTACT:
- - Email: thebinhluong0519@gmail.com
- - Telegram: +84 (867)-450-107
+> ## CONTACT
+
+- Email: thebinhluong0519@gmail.com
+- Telegram: +84 (867)-450-107
 
 > ## SUPPORT
 
