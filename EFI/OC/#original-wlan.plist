@@ -12,7 +12,7 @@
 				<key>BundlePath</key>
 				<string>AirportItlwm.kext</string>
 				<key>Comment</key>
-				<string>Intel WiFi driver</string>
+				<string>Intel WiFi driver (Big Sur)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>

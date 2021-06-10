@@ -2,7 +2,22 @@
 All notable changes to this project will be documented in this file.  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## 2021-06-10
+### Added
+- `SSDT-UIAC.aml` mapping USB ports (included Dock ports) and USB Power.
+- `EFICheckDisabler.kext`.
+### Changed
+- Config:
+    - Disabled `ExternalDiskIcons`.
+    - Enabled `ThirdPartyDrives`.
+- Change SMBIOS to `MacBookPro12,1`.
+- Updated ACPI (`SSDT-HPET.aml`, `SSDT-PNLF.aml`, `SSDT-XOSI.aml`).
+- Updated OpenCore 0.7.1 to the latest commit.
+- Updated kexts to June 2021.
+### Removed
+- `SSDT-EC-USBX.aml` and `USBPorts.kext`, used `SSDT-UIAC.aml`.
+- `PXSX to ARPT` rename.
+- `RestrictEvents.kext` no longer necessary.
 
 ## 2021-06-06
 ### Added

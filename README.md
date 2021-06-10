@@ -2,7 +2,6 @@
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-Big_Sur-purple.svg)](https://www.apple.com/macos/big-sur/)
-[![MacOS Monterey](https://img.shields.io/badge/macOS-Monterey-pink.svg)](https://www.apple.com/macos/monterey-preview/)
 [![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
@@ -21,7 +20,21 @@
 ##### Recent | [Changelog Archive](/Other/Changelog.md)
 
 > ### 2021-06-10:
-- **Change SMBIOS to `MacBookPro11,5` or `MacBook12,1` and add boot-arg `-lilubetaall` if you want to use MacOS 12. (OR download Lilu v1.5.4).**
+### Added
+- `SSDT-UIAC.aml` mapping USB ports (included Dock ports) and USB Power.
+- `EFICheckDisabler.kext`.
+### Changed
+- Config:
+    - Disabled `ExternalDiskIcons`.
+    - Enabled `ThirdPartyDrives`.
+- Change SMBIOS to `MacBookPro12,1`.
+- Updated ACPI (`SSDT-HPET.aml`, `SSDT-PNLF.aml`, `SSDT-XOSI.aml`).
+- Updated OpenCore 0.7.1 to the latest commit.
+- Updated kexts to June 2021.
+### Removed
+- `SSDT-EC-USBX.aml` and `USBPorts.kext`, used `SSDT-UIAC.aml`.
+- `PXSX to ARPT` rename.
+- `RestrictEvents.kext` no longer necessary.
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
