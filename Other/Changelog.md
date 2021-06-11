@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+> ## 2021-06-12
+
+### Added
+
+- `HibernationFixup.kext` for support of Hibernation Mode 25.
+- `AudioDxe.efi` for aduio boot.
+
+### Changed
+
+- Disabled `SSDT-PM.aml`, `Delete CpuPm` , `Delete Cpu0Ist` (re-enabled when you create SSDT-PM).
+- Updated OpenCore 0.7.1 to the latest commit.
+
 > ## 2021-06-10
 
 ### Added

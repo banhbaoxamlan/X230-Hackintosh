@@ -3,6 +3,7 @@
 <img align="right" src="/Other/Pics/X230.png" alt="Lenovo Thinkpad X230 macOS Hackintosh OpenCore" width="300">
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
+[![MacOS Catalina](https://img.shields.io/badge/Catalina-10.15-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Big Sur](https://img.shields.io/badge/Big_Sur-11.4-purple.svg)](https://www.apple.com/macos/big-sur/)
 [![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
@@ -14,35 +15,24 @@
 
 - Complete EFI packs are available in the releases page.
 - I will try my best to keep the repo updated with the latest kexts and OpenCore version.
-- Please don't clone or download the main branch for daily use.
+- Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
 - With every EFI update you retrieve from here please remember to go through the post install guide.
 
 > ## Update
 
 ### Recent | [Changelog Archive](/Other/Changelog.md)
 
-> ## 2021-06-10
+## 2021-06-12
 
 - ### Added
 
-  - `SSDT-UIAC.aml` mapping USB ports (included Dock ports) and USB Power.
-  - `EFICheckDisabler.kext`.
+  - `HibernationFixup.kext` for support of Hibernation Mode 25.
+  - `AudioDxe.efi` for aduio boot.
 
 - ### Changed
 
-  - Config:
-    - Disabled `ExternalDiskIcons`.
-    - Enabled `ThirdPartyDrives`.
-  - Change SMBIOS to `MacBookPro12,1`.
-  - Updated ACPI (`SSDT-HPET.aml`, `SSDT-PNLF.aml`, `SSDT-XOSI.aml`).
+  - Disabled `SSDT-PM.aml`, `Delete CpuPm` , `Delete Cpu0Ist` (re-enabled when you create SSDT-PM).
   - Updated OpenCore 0.7.1 to the latest commit.
-  - Updated kexts to June 2021.
-
-- ### Removed
-
-  - `SSDT-EC-USBX.aml` and `USBPorts.kext`, used `SSDT-UIAC.aml`.
-  - `PXSX to ARPT` rename.
-  - `RestrictEvents.kext` no longer necessary.
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
@@ -52,15 +42,15 @@
 
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
-| Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power.   |
-| Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power.   |
-| VGA Port                             | ❌   | Does not exist on real apple computers.   |
+| Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power. |
+| Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power. |
+| VGA Port                             | ❌   | Does not exist on real apple computers. |
 
 > ### Video and Audio
 
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
-| Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`                   |
+| Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`  |
 | Audio Recording                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 | Audio Playback                       | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 | Automatic Headphone Output Switching | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
