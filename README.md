@@ -3,8 +3,9 @@
 <img align="right" src="/Other/Pics/X230.png" alt="Lenovo Thinkpad X230 macOS Hackintosh OpenCore" width="300">
 
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
-[![MacOS Catalina](https://img.shields.io/badge/Catalina-10.15-red.svg)](https://www.apple.com/macos/big-sur/)
-[![MacOS Big Sur](https://img.shields.io/badge/Big_Sur-11.4-purple.svg)](https://www.apple.com/macos/big-sur/)
+[![MacOS Catalina](https://img.shields.io/badge/Catalina-10.15-red.svg)](https://www.apple.com/)
+[![MacOS Big Sur](https://img.shields.io/badge/Big_Sur-11.4-blue.svg)](https://www.apple.com/macos/big-sur/)
+[![MacOS Monterey](https://img.shields.io/badge/Big_Sur-11.4-purple.svg)](https://www.apple.com/macos/monterey-preview/)
 [![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
@@ -16,23 +17,39 @@
 - Complete EFI packs are available in the releases page.
 - I will try my best to keep the repo updated with the latest kexts and OpenCore version.
 - Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
+- This EFI is configured with Catalina and Big Sur. (Not completed for Monterey).
 - With every EFI update you retrieve from here please remember to go through the post install guide.
+
+#### Status : WIP
 
 > ## Update
 
 ### Recent | [Changelog Archive](/Other/Changelog.md)
 
-## 2021-06-12
+## 2021-06-14
 
-- ### Added
+### Added
 
-  - `HibernationFixup.kext` for support of Hibernation Mode 25.
-  - `AudioDxe.efi` for aduio boot.
+- Repo
 
-- ### Changed
+  - `EFI-Install_USB` for installing and booting macOS first time.
+  - `README_MONTEREY` for MacOS Monterey.
 
-  - Disabled `SSDT-PM.aml`, `Delete CpuPm` , `Delete Cpu0Ist` (re-enabled when you create SSDT-PM).
-  - Updated OpenCore 0.7.1 to the latest commit.
+**`EFI` folder I will upload later**
+
+### Changed
+
+- `SSDT-DEVICE` : remove device `ALS0`.
+- `SSDT-HPET` : change to used `SSDTTime`.
+- `SSDT-PNLF` : remove `LEVD` not used.
+- `SSDT-THINK` : remove `WNTF` not used.
+- `SSDT-XOSI` : add `Windows`.
+- Updated OpenCore 0.7.1 to the latest commit.
+- Updated kexts to nightly for support MacOS 12.
+
+### Removed
+
+- `XHCI to XHC` rename.
 
 <details>
 <summary><strong> SUMMARY </strong></summary>

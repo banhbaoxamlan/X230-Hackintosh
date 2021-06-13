@@ -7,14 +7,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "Think", 0)
     External (_SB.PCI0.LPC.EC.VRST, FieldUnitObj)
     External (_SI._SST, MethodObj)
     External (LNUX, IntObj)
-    External (WNTF, IntObj)
     
     Scope (\)
     {
         If (_OSI ("Darwin"))
         {
             LNUX = 0x01
-            WNTF = 0x01
         }
     }
     

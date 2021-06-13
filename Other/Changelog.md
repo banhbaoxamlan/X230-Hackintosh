@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+> ## 2021-06-14
+
+### Added
+
+### Changed
+
+- `SSDT-DEVICE` : remove device `ALS0`.
+- `SSDT-HPET` : change to used `SSDTTime`.
+- `SSDT-PNLF` : remove `LEVD` not used.
+- `SSDT-THINK` : remove `WNTF` not used.
+- `SSDT-XOSI` : add `Windows`.
+- Updated OpenCore 0.7.1 to the latest commit.
+- Updated kexts to nightly for support MacOS 12.
+
+### Removed
+
+- `XHCI to XHC` rename.
+
 > ## 2021-06-12
 
 ### Added

@@ -6,7 +6,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
     {
         Method (_DSM, 4, NotSerialized)
         {
-            If (!Arg2) { Return (Buffer() { 0x03 } ) }
+            If (!Arg2) { Return (Buffer(One) { 0x03 } ) }
             Return (Package()
             {
                 "RM,oem-id", "LENOVO",

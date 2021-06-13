@@ -4,11 +4,14 @@ DefinitionBlock ("", "SSDT", 2, "X230", "XOSI", 0)
     {
         Local0 = Package ()
         {
+            "Windows",
             "Windows 2001", 
-            "Windows 2001 SP1", 
-            "Windows 2001 SP2", 
+            "Windows 2001 SP2",
+            "Windows 2006",
+            "Windows 2006 SP1",
             "Windows 2009", 
             "Windows 2012",
+            "Windows 2015",
             "Windows 2018", 
             "Windows 2018.2", 
             "Windows 2019", 

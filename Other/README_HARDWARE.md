@@ -44,6 +44,9 @@ However, there exists other alternatives with better WiFi and Bluetooth standard
 | Main Menu | Sub 1         | Sub 2         | Sub 3        | Setting       |
 | --------- | ------------- | ------------- |------------- | ------------- |
 | Config    | Network       | Wake On Lan   |              | `Disabled`    |
+|           | USB           | USB UEFI BIOS Support |      | `Enabled`     |
+|           |               | Always On USB |              | `Disabled`    |
+|           |               | USB 3.0 Mode  |              | `Enabled`     |
 |           | Serial ATA (SATA) | Mode      |              | `AHCI`        |
 | Security  | Security Chip |               |              | `Disabled`    |
 |           | Memory Protection | Execution Prevention |   | `Enabled`     |
@@ -52,6 +55,7 @@ However, there exists other alternatives with better WiFi and Bluetooth standard
 |           | Secure Boot   |               |              | `Disabled`    |
 | Startup   | UEFI/Legacy Boot |            |              | `UEFI Only`   |
 |           |               | CSM Support   |              | `No`          |
+|           | Boot Mode     |               |              | `Quick`       |
 
 > ## Modding the BIOS
 
