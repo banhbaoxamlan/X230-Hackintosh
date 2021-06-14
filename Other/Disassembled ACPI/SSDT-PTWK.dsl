@@ -41,13 +41,14 @@ DefinitionBlock("", "SSDT", 2, "X230", "PTWK", 0)
         {
             \_SB.PCI9.TPTS = Arg0
             
-            if(\_SB.PCI9.FNOK ==1)
+            If (\_SB.PCI9.FNOK == 1)
             {
                 Arg0 = 3
             }
             
-            If ((5 == Arg0) && CondRefOf (\_SB.PCI0.XHCI.PMEE)) {
-            \_SB.PCI0.XHCI.PMEE = 0
+            If ((5 == Arg0) && CondRefOf (\_SB.PCI0.XHCI.PMEE))
+            {
+                \_SB.PCI0.XHCI.PMEE = 0
             }
         }
 
@@ -61,18 +62,21 @@ DefinitionBlock("", "SSDT", 2, "X230", "PTWK", 0)
         {
             \_SB.PCI9.TWAK = Arg0
             
-            if(\_SB.PCI9.FNOK ==1)
+            If (\_SB.PCI9.FNOK == 1)
             {
-                \_SB.PCI9.FNOK =0
+                \_SB.PCI9.FNOK = 0
                 Arg0 = 3
             }
+
             If (Arg0 < 1 || Arg0 > 5)
-            { Arg0 = 3 }
+            {
+                Arg0 = 3
+            }
 
             If (3 == Arg0)
             {
                 Notify (\_SB.LID, 0x80)
-             }
+            }
         }
 
         Local0 = ZWAK(Arg0)

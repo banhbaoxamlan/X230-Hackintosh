@@ -46,7 +46,6 @@ However, there exists other alternatives with better WiFi and Bluetooth standard
 | Config    | Network       | Wake On Lan   |              | `Disabled`    |
 |           | USB           | USB UEFI BIOS Support |      | `Enabled`     |
 |           |               | Always On USB |              | `Disabled`    |
-|           |               | USB 3.0 Mode  |              | `Enabled`     |
 |           | Serial ATA (SATA) | Mode      |              | `AHCI`        |
 | Security  | Security Chip |               |              | `Disabled`    |
 |           | Memory Protection | Execution Prevention |   | `Enabled`     |

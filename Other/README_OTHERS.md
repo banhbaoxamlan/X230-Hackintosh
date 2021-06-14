@@ -64,7 +64,7 @@ git clone https://github.com/corpnewt/GenSMBIOS && cd GenSMBIOS && chmod +x GenS
 
 - Type `1` to install MacSerial, then press ENTER.
 - Type `3` to Generate SMBIOS, then press ENTER.
-- Type `MacbookPro12,1`, then press ENTER.
+- Type `MacbookPro9,1`, then press ENTER.
 - Open `/EFI/OC/Config.plist` with any editor and navigate to `PlatformInfo -> Generic`
 - Add the script's last result to `MLB, SystemSerialNumber and SystemUUID`
 
@@ -89,7 +89,7 @@ git clone https://github.com/corpnewt/GenSMBIOS && cd GenSMBIOS && chmod +x GenS
       <key>SystemMemoryStatus</key>
       <string>Auto</string>
       <key>SystemProductName</key>
-      <string>MacBookPro12,1</string>
+      <string>MacBookPro9,1</string>
       <key>SystemSerialNumber</key>
 +     <string>W00000000001</string>
       <key>SystemUUID</key>

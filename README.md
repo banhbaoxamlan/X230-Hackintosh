@@ -30,20 +30,21 @@
 
 ### Added
 
+- `SidecarFixup.kext` for enable Sidecar.
+- `RestrictEvents.kext` for Process Blocker,
 - Repo
-
   - `EFI-Install_USB` for installing and booting macOS first time.
   - `README_MONTEREY` for MacOS Monterey.
 
-**`EFI` folder I will upload later**
 
 ### Changed
 
-- `SSDT-DEVICE` : remove device `ALS0`.
-- `SSDT-HPET` : change to used `SSDTTime`.
+- `SSDT-HPET` : used `SSDTTime`.
 - `SSDT-PNLF` : remove `LEVD` not used.
-- `SSDT-THINK` : remove `WNTF` not used.
+- `SSDT-PTWK` : fix typo.
+- `SSDT-THINK`: remove `WNTF` not used.
 - `SSDT-XOSI` : add `Windows`.
+- Disabled `SSDT-PTWK` and patch.
 - Updated OpenCore 0.7.1 to the latest commit.
 - Updated kexts to nightly for support MacOS 12.
 
