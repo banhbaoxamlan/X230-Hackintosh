@@ -31,7 +31,7 @@
 ### Added
 
 - `SidecarFixup.kext` for enable Sidecar.
-- `RestrictEvents.kext` for Process Blocker,
+- `RestrictEvents.kext` for Process Blocker.
 - Repo
   - `EFI-Install_USB` for installing and booting macOS first time.
   - `README_MONTEREY` for MacOS Monterey.

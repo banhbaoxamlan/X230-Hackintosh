@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - `SidecarFixup.kext` for enable Sidecar.
-- `RestrictEvents.kext` for Process Blocker,
+- `RestrictEvents.kext` for Process Blocker.
 - Repo
   - `EFI-Install_USB` for installing and booting macOS first time.
   - `README_MONTEREY` for MacOS Monterey.
