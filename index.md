@@ -1,37 +1,197 @@
-## Welcome to GitHub Pages
+# MacOS on ThinkPad X230
 
-You can use the [editor on GitHub](https://github.com/banhbaoxamlan/X230-Hackintosh/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<img align="right" src="https://github.com/banhbaoxamlan/X230-Hackintosh/blob/master/Other/Pics/X230.png" alt="Lenovo Thinkpad X230 macOS Hackintosh OpenCore" width="300">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
+[![MacOS Catalina](https://img.shields.io/badge/Catalina-10.15-red.svg)](https://www.apple.com/)
+[![MacOS Big Sur](https://img.shields.io/badge/Big_Sur-11.4-blue.svg)](https://www.apple.com/macos/big-sur/)
+[![MacOS Monterey](https://img.shields.io/badge/Monterey-12.0-purple.svg)](https://www.apple.com/macos/monterey-preview/)
+[![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+[![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
 
-### Markdown
+## READ THE ENTIRE README.MD BEFORE YOU START
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### I am not responsible for any damages you may cause
 
-```markdown
-Syntax highlighted code block
+- Complete EFI packs are available in the releases page.
+- I will try my best to keep the repo updated with the latest kexts and OpenCore version.
+- Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
+- This EFI is configured with Catalina and Big Sur. (Not completed for Monterey).
+- With every EFI update you retrieve from here please remember to go through the post install guide.
 
-# Header 1
-## Header 2
-### Header 3
+#### Status : WIP
 
-- Bulleted
-- List
+> ## Update
 
-1. Numbered
-2. List
+### Recent | [Changelog Archive](/Other/Changelog.md)
 
-**Bold** and _Italic_ and `Code` text
+<details>
+<summary><strong> SUMMARY </strong></summary>
+<br>
 
-[Link](url) and ![Image](src)
-```
+> ### Non-Fuctional
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power. |
+| Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power. |
+| VGA Port                             | ❌   | Does not exist on real apple computers. |
 
-### Jekyll Themes
+> ### Video and Audio
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/banhbaoxamlan/X230-Hackintosh/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`  |
+| Audio Recording                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
+| Audio Playback                       | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
+| Automatic Headphone Output Switching | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
+| Dock Audio Port                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 
-### Support or Contact
+> ### Power, Charge, Sleep and Hibernation
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| Battery Percentage Indication        | ✅   | `ECEnabler.kext`            | 
+| iGPU Power Management                | ✅   | `XCPM`, enabled by [`SSDT-PM.aml`](https://github.com/Piker-Alpha/ssdtPRGen.sh) |
+| S3 Sleep/ Hibernation Mode 3         | ✅   | `SSDT-PWTK.aml` |  |   
+| Custom Charge Threshold              | ✅   | `SSDT-EC.aml`, [YogaSMC.kext](https://github.com/zhen-zen/YogaSMC), and [YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
+| Fan Control                          | ✅   | `SSDT-EC.aml`, [YogaSMC.kext](https://github.com/zhen-zen/YogaSMC), and [YogaSMCPane](https://github.com/zhen-zen/YogaSMC)|
+| Battery Life                         | ✅   | Native, comparable to Windows/Linux. |
+
+> ### Input/ Output
+
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| WiFi                                 | ✅   | `AirportItlwm.kext`  |
+| Bluetooth                            | ✅   | `IntelBluetoothFirmware.kext`  |
+| Ethernet                             | ✅   | `IntelMausi.kext`  |
+| USB 2.0, USB 3.0                     | ✅   | `USBPorts.kext`    |
+| USB Power Properties in macOS        | ✅   | `SSDT-EC-USBX.aml` |
+
+> ### Display, TrackPad, TrackPoint, and Keyboard
+
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| Brightness Adjustments | ✅  | `WhateverGreen.kext`, `SSDT-PNLF.aml` and `BrightnessKeys.kext`|
+| TrackPoint             | ✅  | `VoodooPS2Controller.kext` |
+| TrackPad               | ✅  | `VoodooPS2Controller.kext` |
+| Built-in Keyboard      | ✅  | `VoodooPS2Controller.kext` |
+| Multimedia Keys        | ✅  | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
+
+> ### macOS Continuity
+
+| Feature                              | Status | Dependency          |
+| :----------------------------------- | ------ | ------------------- |
+| iCloud, iMessage, FaceTime           | ✅   | Whitelisted Apple ID, Valid SMBIOS  |
+| AirDrop                              | ✅   | Not tested  |
+| Time Machine                         | ✅   | Native  |
+
+</details>
+
+<details>
+<summary><strong> REFERENCES </strong></summary>
+<br>
+
+Read these before you start:
+
+- [dortania's Hackintosh guides](https://github.com/dortania).
+- [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/).
+- [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/).
+- [dortania/ Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/).
+- [dortania/ opencore `multiboot`](https://github.com/dortania/OpenCore-Multiboot).
+- [dortania/ `USB map` guide](https://dortania.github.io/OpenCore-Post-Install/usb/).
+- [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
+- `Configuration.pdf` and `Differences.pdf` in each `OpenCore` releases.
+
+</details>
+
+<details>
+<summary><strong> REQUIREMENTS </strong></summary>
+<br>
+
+- A macOS machine(optional): to create the macOS installer.
+- Flash drive, 12GB or more, for the above purpose.  
+- Xcode works fine for editing plist files on macOS, but I prefer [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/).  
+- [ProperTree](https://github.com/corpnewt/ProperTree) if you need to edit plist files on Windows.  
+- [MaciASL](https://github.com/acidanthera/MaciASL), for patching ACPI tables and editing ACPI patches.
+- [MountEFI](https://github.com/corpnewt/MountEFI) to quickly mount EFI partitions.  
+- [IORegistryExplorer](https://developer.apple.com/downloads), for diagnosis.  
+- [Hackintool](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/), for diagnostic ONLY, Hackintool should not be used for patching, it is outdated.
+- Patience and time, especially if this is your first time Hackintosh-ing.
+
+</details>
+
+<details>
+<summary><strong> HARDWARE </strong></summary>
+<br>
+
+| Category  | THINKPAD X230            | THINKPAD T530            | THINKPAD T430s            |
+| --------- | ------------------------ | ------------------------ | ------------------------- |
+| CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |  Intel Core i7-3520M      |
+| SSD       | Samsung 870 Evo 250GB    | SanDisk A400 256GB       |  Samsung 870 Evo 256GB    |
+| Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |  14' TN HD+ (1600x900)    |
+| WiFi & BT | Intel Wireless-AC 7260   | DW1550 (BCM94352HMB)     |  Intel Centrino N-6205    |
+
+- Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
+
+</details>
+
+<details>
+<summary><strong> GETTING STARTED </strong></summary>
+<br>
+
+Before you do anything, please familiarize yourself with basic Hackintosh terminologies and the basic Hackintosh process by throughly reading Dortania guides as linked in `REFERENCES`
+
+- Creating a macOS installer: refer to [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
+- [**README-HARDWARE**](/Other/README_HARDWARE.md): Requirements before installing.
+- [**README-OTHERS**](/Other/README_OTHERS.md): for post installation settings and other remarks.
+
+</details>
+
+<details>
+<summary><strong> BENCHMARKS </strong></summary>
+</br>
+
+- macOS 11.4, EFI OpenCore 0.7.1
+
+| CPU            | Single-Core | Multi-Core |
+| :------------- | ----------: | ---------: |
+| Cinebench R23  |             |       1576 |
+| Geekbench 5    |         694 |       1421 |
+
+| GPU            | OpenCL      | Metal      |
+| :------------- | ----------: | ---------: |
+| Geekbench 5    |        1028 |        193 |
+
+</details>
+
+<details>
+<summary><strong> OTHER REPOSITORIES </strong></summary>
+<br>
+
+- X230-hackintosh repositories:
+  - [i0Ek3/X230-Hackintosh-Backup](https://github.com/i0Ek3/X230-Hackintosh-Backup).
+
+</details>
+
+> ## CONTACT
+
+- Email: thebinhluong0519@gmail.com
+- Telegram: +84 (867)-450-107
+
+> ## SUPPORT
+
+<details>
+<summary><strong> CREDITS </strong></summary>
+<br>
+
+- [Apple](https://www.apple.com) for macOS.
+- [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made.
+- [Rehabman](https://github.com/RehabMan) and [Daliansky](https://github.com/daliansky) for the patches and guides and kexts.
+- [George Kushnir](https://github.com/n4ru) for modified BIOS.
+- [Dortania](https://github.com/dortania) for for the OpenCore Install Guide.
+- [simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations.
+- [zhen-zen](https://github.com/zhen-zen) for **YogaSMC**.
+
+</details>
