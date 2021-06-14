@@ -1,5 +1,7 @@
 # MacOS Monterey on ThinkPad X230
 
+- Thanks to [Dortania](https://github.com/dortania) with [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher), we can install and update to MacOS 12 Monterey on ThinkPad X230.
+
 > ## Install
 
 - Download [gibMacOS](https://github.com/corpnewt/gibMacOS).
@@ -21,6 +23,8 @@ sudo /Applications/Install\ macOS\ 12\ Beta.app/Contents/Resources/createinstall
 ```bash
 diskutil list
 ```
+
+then
 
 ```bash
 sudo diskutil mount /dev/diskNsN
