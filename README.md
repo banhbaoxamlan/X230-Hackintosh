@@ -10,7 +10,6 @@
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
 
-Sorry, I no longer use macOS on my X230. If a maintained fork is formed, it will be listed here.
 
 ## READ THE ENTIRE README.MD BEFORE YOU START
 
