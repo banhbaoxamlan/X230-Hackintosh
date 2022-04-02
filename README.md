@@ -18,10 +18,10 @@
 - Complete EFI packs are available in the releases page.
 - I will try my best to keep the repo updated with the latest kexts and OpenCore version.
 - Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
-- This EFI is configured with Catalina and Big Sur. (Not completed for Monterey).
+- This EFI is configured with Catalina,Big Sur and Monterey.
 - With every EFI update you retrieve from here please remember to go through the post install guide.
 
-#### Status : WIP
+#### Status : Stable
 
 > ## Update
 
