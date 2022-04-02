@@ -20,6 +20,7 @@
 - Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
 - This EFI is configured with Catalina,Big Sur and Monterey.
 - With every EFI update you retrieve from here please remember to go through the post install guide.
+- For Monterey - Please go through README_MONTEREY.
 
 #### Status : Stable
 
