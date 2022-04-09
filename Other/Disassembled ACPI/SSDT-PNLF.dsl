@@ -32,16 +32,15 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
                 Offset(0x02), GDID, 16,
                 Offset(0x10), BAR1, 32,
             }
-
-            OperationRegion (RMB1, SystemMemory, And (BAR1, 0xFFFFFFF0), 0x000E1184)
+            
+            OperationRegion (RMB1, SystemMemory, BAR1 & ~0xF, 0xe1184)
             Field (RMB1, AnyAcc, Lock, Preserve)
             {
-                Offset (0x48250), 
-                Offset (0x48254), 
-                LEVL,   32, 
-                Offset (0xC8250), 
-                LEVW,   32, 
-                LEVX,   32,
+                Offset (0x48250),
+                LEVL, 32,
+                Offset (0xC8250),
+                LEVW, 32,
+                LEVX, 32,
             }
 
             Method (_INI, 0, NotSerialized)
