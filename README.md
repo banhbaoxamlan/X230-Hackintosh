@@ -9,7 +9,7 @@
 [![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
-[![Donate prabhakaran1021 ](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.buymeacoffee.com/karan1021)
+[![Donate prabhakaran1021 ](https://img.shields.io/badge/Donate%20prabhakaran-Buymeacoffee%20-orange)](https://www.buymeacoffee.com/karan1021)
 
 
 ## READ THE ENTIRE README.MD BEFORE YOU START
