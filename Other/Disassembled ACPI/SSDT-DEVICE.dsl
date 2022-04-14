@@ -12,7 +12,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
                 Package () { 0x64, 0x012C }
             })
 
-            Method (_STA, 0, NotSerialized)
+            Method (_STA, 0)
             {
                 If (_OSI ("Darwin"))
                 {
@@ -29,12 +29,12 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
         {
             Name (_HID, EisaId ("PNP0C0C"))
 
-            Method (_DSM, 4, NotSerialized)
+            Method (_DSM, 4)
             {
                 Return (Zero)
             }
             
-            Method (_STA, 0, NotSerialized)
+            Method (_STA, 0)
             {
                 If (_OSI ("Darwin"))
                 {
@@ -58,7 +58,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
         {
             Name (_ADR, Zero)
 
-            Method (_STA, 0, NotSerialized)
+            Method (_STA, 0)
             {
                 If (_OSI ("Darwin"))
                 {
@@ -83,25 +83,22 @@ DefinitionBlock ("", "SSDT", 2, "X230", "DEVICE", 0)
             {
                 Name (_ADR, 0x57)
                 Name (_CID, "diagsvault")
-                Method (_DSM, 4, NotSerialized)
+                
+                Method (_DSM, 4)
                 {
                     If (!Arg2)
                     {
-                        Return (Buffer (One)
-                        {
-                             0x03
-                        })
+                        Return (Buffer () { 0x03 })
                     }
 
                     Return (Package ()
                     {
-                        "address", 
-                        0x57
+                        "address", 0x57
                     })
                 }
             }
             
-            Method (_STA, 0, NotSerialized)
+            Method (_STA, 0)
             {
                 If (_OSI ("Darwin"))
                 {

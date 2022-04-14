@@ -4,9 +4,10 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
     
     Scope (_SB.PCI0.LPC.KBD)
     {
-        Method (_DSM, 4, NotSerialized)
+        Method (_DSM, 4)
         {
-            If (!Arg2) { Return (Buffer(One) { 0x03 } ) }
+            If (!Arg2) { Return (Buffer() { 0x03 } ) }
+
             Return (Package()
             {
                 "RM,oem-id", "LENOVO",
@@ -23,6 +24,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "KBD", 0)
                 "Clicking", ">y",
                 "DisableDeepSleep", ">y",
                 "DragLockTempMask", 0x40004,
+                "DynamicEWMode", ">n",
                 "FakeMiddleButton", ">n",
                 "HWResetOnStart", ">y",
                 "PalmNoAction When Typing", ">y",

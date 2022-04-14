@@ -15,7 +15,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
             Name (_CID, "backlight")
             Name (_UID, 14)
             
-            Method (_STA, 0, NotSerialized)
+            Method (_STA, 0)
             {
                 If (_OSI ("Darwin"))
                 {
@@ -43,7 +43,7 @@ DefinitionBlock ("", "SSDT", 2, "X230", "PNLF", 0)
                 LEVX, 32,
             }
 
-            Method (_INI, 0, NotSerialized)
+            Method (_INI, 0)
             {
                 Local2 = 0x0710
                 Local1 = (^LEVX >> 0x10)
