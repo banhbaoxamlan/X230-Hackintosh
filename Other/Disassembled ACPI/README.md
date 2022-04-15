@@ -7,11 +7,9 @@
 | SSDT-EC     | Alow Reads/Write and Provide an Interface with Embedded Controller via YogaSMC |
 | SSDT-HPET   | Patch HPET and fixup TIMR, RTC                          |
 | SSDT-KBD    | Fix Trackpad and Trackpoint                             |
-| SSDT-PM     | Enables Native Intel Power Managements (i5-3320M)       |
 | SSDT-PNLF   | Enables Brightness Management in macOS                  |
 | SSDT-PTWK   | Fix Sleep and Wake issues                               |
 | SSDT-THINK  | Support YogaSMC                                         |
-| SSDT-UIAC   | Mapping USB ports and USB Power                         |
 | SSDT-XOSI   | Enables Windows-only functionality in macOS             |
 
 > ## ACPI Patching

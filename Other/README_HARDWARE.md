@@ -69,4 +69,3 @@ However, there exists other alternatives with better WiFi and Bluetooth standard
 | Main Menu | Sub 1 | Sub 2 | Sub 3 | Setting |
 |-----------|-------|------ |------ |-------- |
 | Advanced  | System Agent (SA) configuration | Graphics Configuration | DVMT Pre-Allocated | `128MB` |
-| | | | DVMT Total Gfx Mem | `MAX` |
