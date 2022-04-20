@@ -16,6 +16,9 @@
         <img src="https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg"></a>
     <a href="https://www.buymeacoffee.com/karan1021">
         <img src="https://img.shields.io/badge/Donate%20prabhakaran-Buymeacoffee%20-FFF27D"></a>
+    <a href="https://t.me/+KuAH5jUCAocwMzBl">
+        <img src="https://img.shields.io/badge/Telegram-Channel-33A8E3"></a>
+    
 </p>
 
 <p align="center">
