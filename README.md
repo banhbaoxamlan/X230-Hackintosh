@@ -5,10 +5,12 @@
         <img src="https://img.shields.io/badge/Catalina-10.15.7-red.svg"/></a>
     <a href="https://www.apple.com/macos/big-sur/">
         <img src="https://img.shields.io/badge/Big_Sur-11.6.5-purple.svg"></a>
+    <a href="https://www.apple.com/macos/monterey/">
+        <img src="https://img.shields.io/badge/Monterey-12.3.1-brown"></a>
     <a href="https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf">
         <img src="https://img.shields.io/badge/ThinkPad-X230-blue"/></a>
     <a href="https://github.com/acidanthera/OpenCorePkg">
-        <img src="https://img.shields.io/badge/OpenCore-0.7.1-12AED6"/></a>
+        <img src="https://img.shields.io/badge/OpenCore-0.7.9-blue"/></a>
 </p>
 
 <p align="center">
