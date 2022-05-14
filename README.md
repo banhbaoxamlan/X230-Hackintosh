@@ -186,7 +186,9 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 # CONTACT
 
 - Email: thebinhluong0519@gmail.com
+- Email(Prabhakaran): prabha.karan.1021@gmail.com
 - Telegram: +84 (867)-450-107
+- Telegram(group): Click on the telegram button in the top
 
 # Credits
 
